@@ -1785,21 +1785,21 @@ MonoBehaviour:
   head:
     vrTarget: {fileID: 0}
     ikTarget: {fileID: 2335963771416064645}
-    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingPositionOffset: {x: 0, y: 1.25, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftHand:
     vrTarget: {fileID: 0}
-    ikTarget: {fileID: 1990258997}
+    ikTarget: {fileID: 1163386812}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 180, z: 90}
   rightHand:
     vrTarget: {fileID: 0}
-    ikTarget: {fileID: 1590339511}
+    ikTarget: {fileID: 2098058615}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: -78, y: 180, z: -15}
   f_turnSmoothness: 0
   ikHead: {fileID: 2335963771416064645}
-  headBodyOffset: {x: 0, y: 0, z: 0}
+  headBodyOffset: {x: 0, y: -1.215, z: -0.015}
 --- !u!1 &6911750950501780629
 GameObject:
   m_ObjectHideFlags: 0
