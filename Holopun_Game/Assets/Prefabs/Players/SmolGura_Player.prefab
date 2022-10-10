@@ -1645,7 +1645,7 @@ GameObject:
   - component: {fileID: 1944496965}
   - component: {fileID: 1944496964}
   - component: {fileID: 1944496963}
-  - component: {fileID: 1944496917}
+  - component: {fileID: 8717615141905439379}
   m_Layer: 0
   m_Name: SmolGura_Player
   m_TagString: Untagged
@@ -1770,7 +1770,7 @@ MonoBehaviour:
   - {fileID: 2053283462808283450}
   - {fileID: 2585388987324674997}
   - {fileID: 4911370453588913567}
---- !u!114 &1944496917
+--- !u!114 &8717615141905439379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1790,13 +1790,13 @@ MonoBehaviour:
   leftHand:
     vrTarget: {fileID: 0}
     IKTarget: {fileID: 1163386812}
-    trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: 0, y: 180, z: 90}
+    trackingPositionOffset: {x: 0.02, y: 0, z: 0}
+    trackingRotationOffset: {x: 120, y: 0, z: -35}
   rightHand:
     vrTarget: {fileID: 0}
     IKTarget: {fileID: 2098058615}
-    trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: -78, y: 180, z: -15}
+    trackingPositionOffset: {x: 0.02, y: 0, z: 0}
+    trackingRotationOffset: {x: -150, y: 90, z: -300}
   turnSmoothness: 0
   IKHead: {fileID: 2335963771416064645}
   headBodyOffset: {x: 0, y: -1.215, z: -0.015}
