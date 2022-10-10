@@ -1,37 +1,38 @@
 using UnityEngine;
 
 [System.Serializable]
-public class MapTransforms
+public class MapTransform
 {
     public Transform vrTarget;
-    public Transform ikTarget;
-
+    public Transform IKTarget;
     public Vector3 trackingPositionOffset;
     public Vector3 trackingRotationOffset;
 
-    public void VRMapping()
+    public void MapVRAvatar()
     {
-        ikTarget.position = vrTarget.TransformPoint(trackingPositionOffset);
-        ikTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
+        IKTarget.position = vrTarget.TransformPoint(trackingPositionOffset);
+        IKTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
     }
 }
 public class AvatarController : MonoBehaviour
 {
-    [SerializeField] private MapTransforms head;
-    [SerializeField] private MapTransforms leftHand;
-    [SerializeField] private MapTransforms rightHand;
+    [SerializeField] private MapTransform head;
+    [SerializeField] private MapTransform leftHand;
+    [SerializeField] private MapTransform rightHand;
 
-    [SerializeField] private float f_turnSmoothness;
-    [SerializeField] private Transform ikHead;
+    [SerializeField] private float turnSmoothness;
+
+    [SerializeField] private Transform IKHead;
+
     [SerializeField] private Vector3 headBodyOffset;
 
-    private void LateUpdate()
+    void FixedUpdate()
     {
-        transform.position = ikHead.position + headBodyOffset;
-        transform.forward = Vector3.Lerp(transform.forward,Vector3.ProjectOnPlane(ikHead.forward, Vector3.up).normalized, Time.deltaTime * f_turnSmoothness);
+        transform.position = IKHead.position + headBodyOffset;
+        transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(IKHead.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
 
-        head.VRMapping();
-        leftHand.VRMapping();
-        rightHand.VRMapping();
+        head.MapVRAvatar();
+        leftHand.MapVRAvatar();
+        rightHand.MapVRAvatar();
     }
 }

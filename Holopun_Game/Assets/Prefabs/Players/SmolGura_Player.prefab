@@ -555,7 +555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9221067786320333396}
   - component: {fileID: 1675794169924956941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: smolguramesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1784,21 +1784,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   head:
     vrTarget: {fileID: 0}
-    ikTarget: {fileID: 2335963771416064645}
-    trackingPositionOffset: {x: 0, y: 1.25, z: 0}
+    IKTarget: {fileID: 2335963771416064645}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftHand:
     vrTarget: {fileID: 0}
-    ikTarget: {fileID: 1163386812}
+    IKTarget: {fileID: 1163386812}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 180, z: 90}
   rightHand:
     vrTarget: {fileID: 0}
-    ikTarget: {fileID: 2098058615}
+    IKTarget: {fileID: 2098058615}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: -78, y: 180, z: -15}
-  f_turnSmoothness: 0
-  ikHead: {fileID: 2335963771416064645}
+  turnSmoothness: 0
+  IKHead: {fileID: 2335963771416064645}
   headBodyOffset: {x: 0, y: -1.215, z: -0.015}
 --- !u!1 &6911750950501780629
 GameObject:
@@ -2151,7 +2151,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9090588917583071882}
-  m_LocalRotation: {x: 0.011091453, y: -0.000000117155665, z: -0.0000000013449282, w: 0.9999385}
+  m_LocalRotation: {x: 0.013278804, y: -0.00000014026, z: -0.0000000016101621, w: 0.9999118}
   m_LocalPosition: {x: -1.9376297e-16, y: 0.0008179576, z: -3.7252902e-11}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
   m_Children:
