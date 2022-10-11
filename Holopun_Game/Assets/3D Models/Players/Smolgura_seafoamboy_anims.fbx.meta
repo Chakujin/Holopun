@@ -68,40 +68,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'smolguraAnimationsRESOURCE' has import animation
-      warnings that might lower retargeting quality:\nNote: Activate translation
-      DOF on avatar to improve retargeting quality.\n\t'spine.002' has translation
-      animation that will be discarded.\n\t'spine.003' has translation animation
-      that will be discarded.\n\t'spine.004' is inbetween humanoid transforms and
-      has rotation animation that will be discarded.\n\t'upper_arm.L' has scale animation
-      that will be discarded.\n\t'forearm.L' has translation animation that will
-      be discarded.\n\t'forearm.L' has scale animation that will be discarded.\n\t'hand.L'
-      has scale animation that will be discarded.\n\t'upper_arm.R' has scale animation
-      that will be discarded.\n\t'forearm.R' has scale animation that will be discarded.\n\t'hand.R'
-      has scale animation that will be discarded.\n\t'thigh.L' has scale animation
-      that will be discarded.\n\t'shin.L' has scale animation that will be discarded.\n\t'foot.L'
-      has scale animation that will be discarded.\n\t'thigh.R' has scale animation
-      that will be discarded.\n\t'shin.R' has scale animation that will be discarded.\n\t'foot.R'
-      has scale animation that will be discarded.\n\nClip 'ParadeWalk' has import
-      animation warnings that might lower retargeting quality:\nNote: Activate translation
-      DOF on avatar to improve retargeting quality.\n\t'spine.004' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'upper_arm.L'
-      has scale animation that will be discarded.\n\t'forearm.L' has scale animation
-      that will be discarded.\n\t'hand.L' has scale animation that will be discarded.\n\t'upper_arm.R'
-      has scale animation that will be discarded.\n\t'forearm.R' has scale animation
-      that will be discarded.\n\t'hand.R' has scale animation that will be discarded.\n\t'thigh.L'
-      has scale animation that will be discarded.\n\t'shin.L' has scale animation
-      that will be discarded.\n\t'foot.L' has scale animation that will be discarded.\n\t'thigh.R'
-      has scale animation that will be discarded.\n\t'shin.R' has scale animation
-      that will be discarded.\n\t'foot.R' has scale animation that will be discarded.\n\nClip
-      'idle' has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'hand.L'
-      has scale animation that will be discarded.\n\t'upper_arm.R' has scale animation
-      that will be discarded.\n\t'forearm.R' has scale animation that will be discarded.\n\t'hand.R'
-      has scale animation that will be discarded.\n\t'thigh.L' has scale animation
-      that will be discarded.\n\t'foot.L' has scale animation that will be discarded.\n\t'thigh.R'
-      has scale animation that will be discarded.\n\t'foot.R' has scale animation
-      that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
