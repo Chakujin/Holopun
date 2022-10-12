@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 2016183096220217043}
   - component: {fileID: 493738103}
   m_Layer: 0
-  m_Name: XR Origin
+  m_Name: XR_Gura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
