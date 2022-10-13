@@ -1431,7 +1431,7 @@ GameObject:
   - component: {fileID: 8957216993885467598}
   - component: {fileID: 8957216993885467599}
   m_Layer: 7
-  m_Name: bae (IKHead constrain problema si se quita funciona pero no en vertical)
+  m_Name: Hakos_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

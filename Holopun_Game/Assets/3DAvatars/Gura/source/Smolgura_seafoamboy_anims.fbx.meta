@@ -12,7 +12,27 @@ ModelImporter:
   - first:
       74: -5252816984213320552
     second: idle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmolGura
+    second: {fileID: 2100000, guid: 5d9784070719120459bbf313dfdf18b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmolguraEye
+    second: {fileID: 2100000, guid: 1686af4acb54233439f6d769ea85c78f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmolguraHead
+    second: {fileID: 2100000, guid: 1686af4acb54233439f6d769ea85c78f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmolguraOutline
+    second: {fileID: 2100000, guid: f5b58729302f64f47a840cbaa3519278, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
