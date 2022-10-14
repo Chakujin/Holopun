@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 5830027499170426642}
   - component: {fileID: 5830027499170426643}
   m_Layer: 0
-  m_Name: XR Origin_SmolGura
+  m_Name: XR Origin_SmolHolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

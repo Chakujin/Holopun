@@ -159,7 +159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5830027499170426646, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
       propertyPath: m_Name
-      value: XR Origin_SmolGura (1)
+      value: XR Origin_SmolHolo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
