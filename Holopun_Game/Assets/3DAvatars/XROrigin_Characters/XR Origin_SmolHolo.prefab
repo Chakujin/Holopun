@@ -483,7 +483,6 @@ GameObject:
   - component: {fileID: 5830027499170426863}
   - component: {fileID: 5830027499170426860}
   - component: {fileID: 5830027499170426861}
-  - component: {fileID: 5830027499170426642}
   - component: {fileID: 5830027499170426643}
   m_Layer: 0
   m_Name: XR Origin_SmolHolo
@@ -499,7 +498,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5830027499170426646}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -629,13 +628,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.31
+  m_Height: 1
+  m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &5830027499170426860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,18 +664,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &5830027499170426642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5830027499170426646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5830027499170426643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,6 +770,7 @@ GameObject:
   - component: {fileID: 5830027499343770230}
   - component: {fileID: 5830027499343770231}
   - component: {fileID: 5830027499343770228}
+  - component: {fileID: 3596979068588606917}
   m_Layer: 0
   m_Name: LeftBaseController
   m_TagString: Untagged
@@ -983,7 +971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5830027499170426642}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1074,6 +1062,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1331f31719980a4a856d6fcd57e2881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3596979068588606917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830027499343770234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myInteractor: {fileID: 5830027499343770230}
 --- !u!1 &5830027499419151651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,7 +1289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5830027499170426642}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1926,7 +1927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5830027499170426642}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2240,6 +2241,7 @@ GameObject:
   - component: {fileID: 5830027500162045992}
   - component: {fileID: 5830027500162045998}
   - component: {fileID: 5830027500162045999}
+  - component: {fileID: 3631590991867351918}
   m_Layer: 0
   m_Name: RightBaseController
   m_TagString: Untagged
@@ -2440,7 +2442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5830027499170426642}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2519,6 +2521,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.051116947
   m_Center: {x: -0.06, y: -0.010635074, z: 0.0013746396}
+--- !u!114 &3631590991867351918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830027500162045997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myInteractor: {fileID: 5830027500162045998}
 --- !u!1 &7050248439197906670
 GameObject:
   m_ObjectHideFlags: 0
