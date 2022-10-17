@@ -769,7 +769,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23778
+  m_Name: pb_Mesh23772
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1506,6 +1506,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7339611813113546480, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339611813113546480, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.23625433
       objectReference: {fileID: 0}
@@ -1515,7 +1519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7339611813113546480, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.9576527
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 7339611813113546480, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1549,6 +1553,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: plunger
       objectReference: {fileID: 0}
+    - target: {fileID: 8471454320795794847, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471454320795794847, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471454320795794847, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eeb56f39c73fdfa43b4908836d3ef5fa, type: 2}
+    - target: {fileID: 8471454320795794847, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f5aabae2f4a98143bb9675308627631, type: 2}
     - target: {fileID: 9033877781852638280, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -1688,10 +1708,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MrSqueak
       objectReference: {fileID: 0}
-    - target: {fileID: 3430078588743414857, guid: cd8d3e3ed7f0f0246acf892ff06916c9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6540293380478853183, guid: cd8d3e3ed7f0f0246acf892ff06916c9, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1740,9 +1756,5 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690812492}
-    - target: {fileID: 8238059776530320281, guid: cd8d3e3ed7f0f0246acf892ff06916c9, type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd8d3e3ed7f0f0246acf892ff06916c9, type: 3}
