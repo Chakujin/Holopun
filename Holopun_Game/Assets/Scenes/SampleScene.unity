@@ -1643,6 +1643,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 4443003881832894501, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+    - target: {fileID: 4443003881832894497, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_Name
+      value: XR Origin_SmolHolo_Gura
+      objectReference: {fileID: 0}
     - target: {fileID: 4443003883371075292, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_InteractionManager
       value: 

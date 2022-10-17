@@ -214,6 +214,36 @@ Transform:
   m_Father: {fileID: 6381006578471888370}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1434795769353367783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6103298220957665865}
+  m_Layer: 7
+  m_Name: AttackObjects.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6103298220957665865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434795769353367783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.00126, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2252162125585128779}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1443486808472291478
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +424,8 @@ Transform:
   m_LocalRotation: {x: -0.033794872, y: -0.00041227226, z: -0.012187303, w: 0.9993544}
   m_LocalPosition: {x: 5.9604643e-10, y: 0.002207933, z: 0.0000000010430813}
   m_LocalScale: {x: 0.9999995, y: 0.9999998, z: 0.99999976}
-  m_Children: []
+  m_Children:
+  - {fileID: 750361820381394911}
   m_Father: {fileID: 2230076232061968740}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -547,7 +578,8 @@ Transform:
   m_LocalRotation: {x: -0.033795286, y: 0.00041228344, z: 0.012187346, w: 0.9993544}
   m_LocalPosition: {x: 0.0000000012665987, y: 0.002207932, z: -6.3329936e-10}
   m_LocalScale: {x: 0.9999997, y: 0.99999994, z: 0.9999994}
-  m_Children: []
+  m_Children:
+  - {fileID: 6103298220957665865}
   m_Father: {fileID: 6911871224352560158}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1552,6 +1584,36 @@ Transform:
   m_Children:
   - {fileID: 2252162125585128779}
   m_Father: {fileID: 4449261441889576622}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7646100044344410006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750361820381394911}
+  m_Layer: 7
+  m_Name: AttackObjects.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &750361820381394911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7646100044344410006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.00126, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1886665284661988374}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7691359512118486181

@@ -106,6 +106,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7606095117336785123, guid: f4bce42553be78944bc8219dd12978c0, type: 3}
   m_PrefabInstance: {fileID: 4741589885055901059}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1548894699448899530 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6103298220957665865, guid: f4bce42553be78944bc8219dd12978c0, type: 3}
+  m_PrefabInstance: {fileID: 4741589885055901059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5450570481508723292 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 750361820381394911, guid: f4bce42553be78944bc8219dd12978c0, type: 3}
+  m_PrefabInstance: {fileID: 4741589885055901059}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7872524569567510327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159,8 +169,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5830027499170426646, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
       propertyPath: m_Name
-      value: XR Origin_SmolHolo
+      value: XR Origin_SmolHoloGura
       objectReference: {fileID: 0}
+    - target: {fileID: 5830027499343770230, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 1548894699448899530}
+    - target: {fileID: 5830027500162045998, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 5450570481508723292}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
 --- !u!4 &4443003881832894503 stripped
