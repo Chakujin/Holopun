@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class TargetCylinder : MonoBehaviour
 {
+    private PlungerGameManagerPoints m_myManagerPoints;
+    private void Awake()
+    {
+        m_myManagerPoints = GameObject.FindGameObjectWithTag("PlungerGameManager").GetComponent<PlungerGameManagerPoints>();
+    }
+
     [SerializeField] private Renderer m_renderer;
     private bool b_hited = false;
     private void OnTriggerEnter(Collider other)
@@ -40,6 +46,6 @@ public class TargetCylinder : MonoBehaviour
         color.a = 0;
         m_renderer.material.color = color;
 
-        //Evento añadir puntos
+        m_myManagerPoints.UpdateScoreborad(); //Updatea el scoreboard (Alomejor solo haverlo al final del juego)
     }
 }
