@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 8458496325062349034}
   - component: {fileID: 4813580555214315343}
   - component: {fileID: 7289552407981599621}
+  - component: {fileID: 9065572310769748522}
+  - component: {fileID: 9043865684244301720}
+  - component: {fileID: 878431538328019696}
+  - component: {fileID: 8570499100027159563}
   m_Layer: 0
   m_Name: Church
   m_TagString: Untagged
@@ -82,3 +86,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9065572310769748522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9090882239427349072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.5926275, y: 6.022341, z: 20.82125}
+  m_Center: {x: -8.483213, y: -0.035251077, z: 10.292233}
+--- !u!65 &9043865684244301720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9090882239427349072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.5627184, y: 18.369032, z: 12.617458}
+  m_Center: {x: 0.18781945, y: 6.969761e-14, z: 6.1903315}
+--- !u!65 &878431538328019696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9090882239427349072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3009033, y: 7.860415, z: 12.617459}
+  m_Center: {x: -4.6750484, y: 0.10585471, z: 6.190331}
+--- !u!65 &8570499100027159563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9090882239427349072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.094149, y: 8.553762, z: 12.645136}
+  m_Center: {x: 6.4911914, y: -0.014145075, z: 6.2041874}

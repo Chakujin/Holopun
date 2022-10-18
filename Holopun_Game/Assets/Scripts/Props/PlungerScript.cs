@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlungerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //[SerializeField] Transform m_raycastPosition;
+    [SerializeField] float f_rangeRaycast;
+    public bool CompareDirection()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //Start raycast
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position,transform.forward , out hit, f_rangeRaycast))
+        {
+            if (hit.collider.tag == "ObjectDest")
+            {
+                return true;
+            }
+            Debug.Log(hit.transform.gameObject);
+            Debug.DrawRay(transform.position, transform.forward , Color.green);
+        }
+        return false;
     }
 }
