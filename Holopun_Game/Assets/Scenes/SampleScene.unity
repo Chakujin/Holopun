@@ -1734,7 +1734,7 @@ Transform:
   m_GameObject: {fileID: 509304992}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 2.314, y: 2.129, z: -1.783}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.5058071, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -3270,14 +3270,6 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8458496325062349034, guid: 7b30539e7bd57494aa2fd590ba67c242, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.40000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 8458496325062349034, guid: 7b30539e7bd57494aa2fd590ba67c242, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.40000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 8458496325062349034, guid: 7b30539e7bd57494aa2fd590ba67c242, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.86
       objectReference: {fileID: 0}
@@ -3320,10 +3312,6 @@ PrefabInstance:
     - target: {fileID: 9090882239427349072, guid: 7b30539e7bd57494aa2fd590ba67c242, type: 3}
       propertyPath: m_Name
       value: Church
-      objectReference: {fileID: 0}
-    - target: {fileID: 9090882239427349072, guid: 7b30539e7bd57494aa2fd590ba67c242, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b30539e7bd57494aa2fd590ba67c242, type: 3}
@@ -3432,10 +3420,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2749650938859845314, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
-      propertyPath: f_rangeRaycast
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7339611813113546480, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3482,7 +3466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7966967392772594762, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_Name
-      value: plunger
+      value: Plunger
       objectReference: {fileID: 0}
     - target: {fileID: 9033877781852638280, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_InteractionManager

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InteractionManager
   - Plunger
+  - Mesh
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8570499100027159563}
   m_Layer: 0
   m_Name: Church
-  m_TagString: Untagged
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 9090882239427349072}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.4, y: 0.40000004, z: 0.40000004}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,8 +97,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.5926275, y: 6.022341, z: 20.82125}
-  m_Center: {x: -8.483213, y: -0.035251077, z: 10.292233}
+  m_Size: {x: 5.8204327, y: 6.022341, z: 20.821249}
+  m_Center: {x: -8.097126, y: -0.035251077, z: 10.292233}
 --- !u!65 &9043865684244301720
 BoxCollider:
   m_ObjectHideFlags: 0
