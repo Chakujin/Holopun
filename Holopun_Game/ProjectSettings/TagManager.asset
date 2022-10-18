@@ -7,6 +7,7 @@ TagManager:
   - InteractionManager
   - Plunger
   - Mesh
+  - PlungerGameManager
   layers:
   - Default
   - TransparentFX

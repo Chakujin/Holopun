@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TargetCylinder : MonoBehaviour
 {
+    [SerializeField] private Renderer m_renderer;
     private bool b_hited = false;
     private void OnTriggerEnter(Collider other)
     {
@@ -13,21 +14,32 @@ public class TargetCylinder : MonoBehaviour
 
             if(myObject.GetComponent<PlungerScript>().CompareDirection() == true)
             {
-                //Reset positions to add fixed
-                myObject.transform.parent = transform;
-                myObject.transform.localPosition = Vector3.zero;
-                myObject.transform.localEulerAngles = transform.localEulerAngles;
-
-                //Ennable false movement
-                Rigidbody rb = myObject.GetComponent<Rigidbody>();
-                rb.isKinematic = true;
-                b_hited = true;
-                //Evento añadir puntos
+                PlungerInside(myObject);
             }
             else
             {
                 Debug.Log("Trigeado pero no colocado");
             }
         }
+    }
+
+    private void PlungerInside(GameObject plunger)
+    {
+        //Reset positions to add fixed
+        plunger.transform.parent = transform;
+        plunger.transform.localPosition = Vector3.zero;
+        plunger.transform.localEulerAngles = transform.localEulerAngles;
+
+        //Ennable false movement
+        Rigidbody rb = plunger.GetComponent<Rigidbody>();
+        rb.isKinematic = true;
+        b_hited = true;
+
+        //Change Alpha color to 100% alpha
+        Color color = m_renderer.material.color;
+        color.a = 0;
+        m_renderer.material.color = color;
+
+        //Evento añadir puntos
     }
 }

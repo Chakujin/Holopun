@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlungerScript : MonoBehaviour
@@ -12,7 +10,7 @@ public class PlungerScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(m_raycastPosition.position, m_raycastPosition.forward, out hit, f_rangeRaycast))
         {
-            if (hit.collider.tag == "ObjectDest")
+            if (hit.collider.tag == "Mesh")
             {
                 return true;
             }
