@@ -7,7 +7,7 @@ public class PlungerGameManagerPoints : MonoBehaviour
     [SerializeField] private Transform entryContainer;
     [SerializeField] private Transform entryTemplate;
     [SerializeField] private List<HighscoreEntry> highscoreEntryList; //List highscores enters
-    private List<Transform> highscoreEntryTransformList = new List<Transform>();
+    [SerializeField] private List<Transform> highscoreEntryTransformList = new List<Transform>();
 
     // Start is called before the first frame update
     void Awake()
@@ -28,7 +28,6 @@ public class PlungerGameManagerPoints : MonoBehaviour
     public void UpdateScoreborad()
     {
         entryTemplate.gameObject.SetActive(false);
-        //highscoreEntryList = new List<HighscoreEntry>();//
 
         //Sort entry list by score
         for (int i = 0; i < highscoreEntryList.Count; i++)
@@ -47,11 +46,13 @@ public class PlungerGameManagerPoints : MonoBehaviour
 
         foreach (HighscoreEntry highscoreEntry in highscoreEntryList)
         {
+            Debug.Log(highscoreEntry.score);
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
         }
     }
     private void CreateHighscoreEntryTransform(HighscoreEntry highcoreEntry, Transform container, List<Transform> transformList)
     {
+        //Borrar lista de transforms y generar nueva con los scores updateados
         float templateHeight = 0.35f; // space between templates
 
         Transform entryTransform = Instantiate(entryTemplate, container); //Instance template

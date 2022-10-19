@@ -21,8 +21,8 @@ public class TargetCylinder : MonoBehaviour
 
             if(myObject.GetComponent<PlungerScript>().CompareDirection() == true)
             {
-                PlungerInside(myObject);
                 AddPoints(myObject.GetComponent<PlungerScript>().highscoreEntry);//Get player ho has drop the plunger
+                PlungerInside(myObject);
             }
             else
             {
