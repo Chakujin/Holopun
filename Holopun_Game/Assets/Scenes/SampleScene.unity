@@ -1028,7 +1028,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23908
+  m_Name: pb_Mesh23868
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1192,7 +1192,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-25320
+  m_Name: pb_Mesh-1234
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2284,6 +2284,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6942298510817399672, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942298510817399672, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942298510817399672, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 7339611813113546480, guid: 59770114a96fc304ebd03caa7c8d3b7c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2406,10 +2418,6 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 4443003881832894501, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - target: {fileID: 4443003881832894497, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_Name
-      value: XR Origin_SmolHolo_Gura
-      objectReference: {fileID: 0}
     - target: {fileID: 4443003883371075292, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -2462,31 +2470,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gura_Ingame
       objectReference: {fileID: 0}
-    - target: {fileID: 8917487193294473032, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
---- !u!1 &3443420451668093395 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8917487193294473032, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-  m_PrefabInstance: {fileID: 3443420451668093394}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3443420451668093396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3443420451668093395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adb3fabcf6773cb41a44b89363b53468, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  playerName: Gobba
 --- !u!1001 &3746229774377959831
 PrefabInstance:
   m_ObjectHideFlags: 0

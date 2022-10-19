@@ -5,6 +5,7 @@ using UnityEngine;
 public class TargetCylinder : MonoBehaviour
 {
     private PlungerGameManagerPoints m_myManagerPoints;
+    [SerializeField] private int i_points;
     private void Awake()
     {
         m_myManagerPoints = GameObject.FindGameObjectWithTag("PlungerGameManager").GetComponent<PlungerGameManagerPoints>();
@@ -16,11 +17,12 @@ public class TargetCylinder : MonoBehaviour
     {
         if(other.tag == "Plunger" && b_hited == false)
         {
-            GameObject myObject = other.gameObject;
+            GameObject myObject = other.gameObject; // Take plunger enter
 
             if(myObject.GetComponent<PlungerScript>().CompareDirection() == true)
             {
                 PlungerInside(myObject);
+                AddPoints(myObject.GetComponent<PlungerScript>().highscoreEntry);//Get player ho has drop the plunger
             }
             else
             {
@@ -47,5 +49,9 @@ public class TargetCylinder : MonoBehaviour
         m_renderer.material.color = color;
 
         m_myManagerPoints.UpdateScoreborad(); //Updatea el scoreboard (Alomejor solo haverlo al final del juego)
+    }
+    private void AddPoints(HighscoreEntry playerHighscore)
+    {
+        playerHighscore.score = + i_points;
     }
 }

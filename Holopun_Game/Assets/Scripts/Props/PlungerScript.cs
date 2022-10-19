@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PlungerScript : MonoBehaviour
 {
     [SerializeField] Transform m_raycastPosition;
     [SerializeField] float f_rangeRaycast;
 
-    private HighscoreEntry m_highscoreEntry;
+    public HighscoreEntry highscoreEntry;
     public bool CompareDirection()
     {
         //Start raycast
@@ -22,8 +23,10 @@ public class PlungerScript : MonoBehaviour
         return false;
     }
 
-    public void OnTake()
+    //Catching the player who has Hover the plunger
+    public void OnHoverEntered(HoverEnterEventArgs args)
     {
-        //m_highscoreEntry = 
+        //Debug.Log(args.interactorObject.transform.root);
+        highscoreEntry = args.interactorObject.transform.root.GetComponent<HighscoreEntry>();
     }
 }
