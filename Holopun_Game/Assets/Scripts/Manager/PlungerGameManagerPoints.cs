@@ -27,6 +27,14 @@ public class PlungerGameManagerPoints : MonoBehaviour
     }
     public void UpdateScoreborad()
     {
+        //Remove scores form scoreboard transform list
+        foreach (Transform scoreboardEntry in highscoreEntryTransformList)
+        {
+            Destroy(scoreboardEntry.gameObject);
+        }
+        //Clean transfomr list
+        highscoreEntryTransformList.Clear();
+
         entryTemplate.gameObject.SetActive(false);
 
         //Sort entry list by score
@@ -52,7 +60,6 @@ public class PlungerGameManagerPoints : MonoBehaviour
     }
     private void CreateHighscoreEntryTransform(HighscoreEntry highcoreEntry, Transform container, List<Transform> transformList)
     {
-        //Borrar lista de transforms y generar nueva con los scores updateados
         float templateHeight = 0.35f; // space between templates
 
         Transform entryTransform = Instantiate(entryTemplate, container); //Instance template
@@ -60,7 +67,7 @@ public class PlungerGameManagerPoints : MonoBehaviour
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count); // Move template
         entryTransform.gameObject.SetActive(true);
 
-        //Generate temporaly random scores
+        //Generate transfomr on scoreboard and assing param text
         int rank = transformList.Count + 1;
         string rankString;
         switch (rank)

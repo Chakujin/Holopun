@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1064233234545845305}
   - component: {fileID: 4137455562575719324}
   - component: {fileID: 2202197134702993238}
+  - component: {fileID: 9220605749588201720}
   m_Layer: 0
   m_Name: RiverWallOpen
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: bea9a53a20873e949907e49a7da72445, type: 2}
-  - {fileID: 2100000, guid: 8ae33415866f5f54683bc62680dc86b1, type: 2}
+  - {fileID: 2100000, guid: b9f35b18b1b9ca1418e342d6f0e10761, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,3 +83,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9220605749588201720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400603558597459587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.107431, y: 10.9240675, z: 8.70108}
+  m_Center: {x: -0.30835032, y: -0.06762743, z: -4.1804247}
