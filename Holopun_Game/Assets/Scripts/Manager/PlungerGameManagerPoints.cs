@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -8,18 +7,28 @@ public class PlungerGameManagerPoints : MonoBehaviour
     [SerializeField] private Transform entryContainer;
     [SerializeField] private Transform entryTemplate;
     [SerializeField] private List<HighscoreEntry> highscoreEntryList; //List highscores enters
-    private List<Transform> highscoreEntryTransformList;
+    private List<Transform> highscoreEntryTransformList = new List<Transform>();
 
     // Start is called before the first frame update
     void Awake()
     {
+        FindPlayers();
+    }
+    private void FindPlayers()
+    {
+        List<GameObject> playerObjects = new List<GameObject>();
+        playerObjects.AddRange(GameObject.FindGameObjectsWithTag("Player"));
+
+        foreach (GameObject player in playerObjects)
+        {
+            highscoreEntryList.Add(player.GetComponent<HighscoreEntry>());
+        }
         UpdateScoreborad();
     }
     public void UpdateScoreborad()
     {
         entryTemplate.gameObject.SetActive(false);
-        highscoreEntryList = new List<HighscoreEntry>();//
-        highscoreEntryTransformList = new List<Transform>();
+        //highscoreEntryList = new List<HighscoreEntry>();//
 
         //Sort entry list by score
         for (int i = 0; i < highscoreEntryList.Count; i++)
@@ -71,21 +80,12 @@ public class PlungerGameManagerPoints : MonoBehaviour
 
         entryTransform.Find("Rank").GetComponent<TextMeshProUGUI>().text = rankString;
 
-        string name = highcoreEntry.name;
+        string name = highcoreEntry.playerName;
         entryTransform.Find("Name").GetComponent<TextMeshProUGUI>().text = name;
 
         int score = highcoreEntry.score;
         entryTransform.Find("Score").GetComponent<TextMeshProUGUI>().text = score.ToString();
 
         transformList.Add(entryTransform);
-    }
-    /*
-     * Respresents a single score entry
-     */
-    private class HighscoreEntry
-    {
-        public int score;
-        public string name;
-        
     }
 }

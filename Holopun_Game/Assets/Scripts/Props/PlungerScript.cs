@@ -4,6 +4,8 @@ public class PlungerScript : MonoBehaviour
 {
     [SerializeField] Transform m_raycastPosition;
     [SerializeField] float f_rangeRaycast;
+
+    private HighscoreEntry m_highscoreEntry;
     public bool CompareDirection()
     {
         //Start raycast
@@ -18,5 +20,10 @@ public class PlungerScript : MonoBehaviour
             Debug.DrawRay(m_raycastPosition.position, m_raycastPosition.forward, Color.green);
         }
         return false;
+    }
+
+    public void OnTake()
+    {
+        //m_highscoreEntry = 
     }
 }
