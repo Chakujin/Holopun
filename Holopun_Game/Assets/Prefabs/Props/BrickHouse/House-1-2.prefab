@@ -419,6 +419,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4667966102526166386}
+  - component: {fileID: 3129643894714685827}
+  - component: {fileID: 3438690545236483852}
+  - component: {fileID: 1387917175834307771}
   m_Layer: 0
   m_Name: House-1-2
   m_TagString: Mesh
@@ -446,6 +449,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3129643894714685827
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443764380792741832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.0599747, y: 9.877393, z: 17.556171}
+  m_Center: {x: 0.16695127, y: 0.16855775, z: 8.278054}
+--- !u!65 &3438690545236483852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443764380792741832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2460563, y: 5.6839457, z: 3.994746}
+  m_Center: {x: -3.4306474, y: 0.10132669, z: 1.4973712}
+--- !u!65 &1387917175834307771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443764380792741832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4104116, y: 2.352084, z: 17.005816}
+  m_Center: {x: -3.4160185, y: -0.075115815, z: 8.002873}
 --- !u!1 &5918660361849615631
 GameObject:
   m_ObjectHideFlags: 0
