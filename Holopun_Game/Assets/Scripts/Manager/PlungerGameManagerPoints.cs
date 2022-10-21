@@ -54,7 +54,7 @@ public class PlungerGameManagerPoints : MonoBehaviour
 
         foreach (HighscoreEntry highscoreEntry in highscoreEntryList)
         {
-            Debug.Log(highscoreEntry.score);
+           //Debug.Log(highscoreEntry.score);
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
         }
     }

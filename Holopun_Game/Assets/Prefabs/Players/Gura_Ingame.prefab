@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8792884816186973914}
   - component: {fileID: 3443420451668093396}
+  - component: {fileID: 5363664040235085208}
   m_Layer: 0
   m_Name: Gura_Ingame
   m_TagString: Player
@@ -47,6 +48,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   playerName: Gobba
+--- !u!114 &5363664040235085208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917487193294473032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e41e89608d66fd44b75f844a1f2440d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventButtonCanvas: {fileID: 3279264004350380116, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_canvasOptions: {fileID: 3554666849030564322}
 --- !u!1001 &4741589885055901059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,6 +214,11 @@ PrefabInstance:
 --- !u!4 &4443003881832894503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5830027499170426640, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+  m_PrefabInstance: {fileID: 7872524569567510327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3554666849030564322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6635040064345331413, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
   m_PrefabInstance: {fileID: 7872524569567510327}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4443003882291976605 stripped
