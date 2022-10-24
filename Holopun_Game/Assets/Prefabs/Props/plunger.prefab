@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 1328635559317713610}
   - component: {fileID: 9033877781852638280}
   - component: {fileID: 2749650938859845314}
-  - component: {fileID: 8544061787732437840}
   m_Layer: 0
   m_Name: Plunger
   m_TagString: Plunger
@@ -159,7 +158,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 7966967392772594762}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.00015
   m_Height: 0.0025
   m_Direction: 2
@@ -173,7 +172,7 @@ BoxCollider:
   m_GameObject: {fileID: 7966967392772594762}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.0016383597, y: 0.0017138986, z: 0.00067035056}
   m_Center: {x: 0.0000068671998, y: -1.4901161e-10, z: 0.00033482566}
@@ -335,17 +334,3 @@ MonoBehaviour:
   m_raycastPosition: {fileID: 6849512738393587836}
   f_rangeRaycast: 0.5
   highscoreEntry: {fileID: 0}
---- !u!64 &8544061787732437840
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7966967392772594762}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -714189961322388107, guid: 3fd08344cdae23a418dbb331c9016fbb, type: 3}
