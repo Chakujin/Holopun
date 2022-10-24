@@ -9679,10 +9679,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1289801401471560479, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1689264552409971861, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9757,10 +9753,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7352360301383056464, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635500868345422344, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_BlendShapeWeights.Array.data[67]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7812359070003810105, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
