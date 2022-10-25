@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1324556186691079495}
   - component: {fileID: 1324556186691079494}
   - component: {fileID: 1324556186691079493}
+  - component: {fileID: 1244878856378679297}
   m_Layer: 0
   m_Name: LeftBaseController
   m_TagString: Untagged
@@ -304,6 +305,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1331f31719980a4a856d6fcd57e2881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1244878856378679297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324556186691079499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myInteractor: {fileID: 0}
 --- !u!1 &1324556186748045188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,6 +2652,7 @@ GameObject:
   - component: {fileID: 1324556188021073689}
   - component: {fileID: 1324556188021073695}
   - component: {fileID: 1324556188021073694}
+  - component: {fileID: 3575452412233068147}
   m_Layer: 0
   m_Name: RightBaseController
   m_TagString: Untagged
@@ -2917,6 +2932,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.051116947
   m_Center: {x: -0.06, y: -0.010635074, z: 0.0013746396}
+--- !u!114 &3575452412233068147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324556188021073692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myInteractor: {fileID: 0}
 --- !u!1 &1324556188315341880
 GameObject:
   m_ObjectHideFlags: 0

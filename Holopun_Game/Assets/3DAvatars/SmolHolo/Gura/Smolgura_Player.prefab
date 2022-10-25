@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6103298220957665865}
   m_Layer: 7
-  m_Name: AttackObjects.L
+  m_Name: AttachObjects.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1596,7 +1596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750361820381394911}
   m_Layer: 7
-  m_Name: AttackObjects.R
+  m_Name: AttachObjects.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

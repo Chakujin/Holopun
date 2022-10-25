@@ -39,6 +39,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8362828196385101239}
     m_Modifications:
+    - target: {fileID: 1324556186691079495, guid: c053924b13f2fb44787044f9301b2745, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 6426224616542324109}
     - target: {fileID: 1324556187067191329, guid: c053924b13f2fb44787044f9301b2745, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -87,10 +91,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin_Hakos
       objectReference: {fileID: 0}
-    - target: {fileID: 1324556187067191335, guid: c053924b13f2fb44787044f9301b2745, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 1324556188021073695, guid: c053924b13f2fb44787044f9301b2745, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 7507589119246697967}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c053924b13f2fb44787044f9301b2745, type: 3}
 --- !u!4 &2177746102674597292 stripped
@@ -123,10 +127,6 @@ PrefabInstance:
     - target: {fileID: 8110706641160328653, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: m_Name
       value: Hakos_Ingame
-      objectReference: {fileID: 0}
-    - target: {fileID: 8110706641160328653, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8918486375157927799, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: m_RootOrder
@@ -172,10 +172,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8957216993885467596, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: b6d77fb36dc947e42945613d2f2f4ca2, type: 2}
     - target: {fileID: 8957216993885467633, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: head.vrTarget
       value: 
@@ -193,5 +189,15 @@ PrefabInstance:
 --- !u!4 &3468860127194814641 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8918486375157927799, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
+  m_PrefabInstance: {fileID: 5469351211973318598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6426224616542324109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1353754788313289291, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
+  m_PrefabInstance: {fileID: 5469351211973318598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7507589119246697967 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2582631274154562089, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
   m_PrefabInstance: {fileID: 5469351211973318598}
   m_PrefabAsset: {fileID: 0}
