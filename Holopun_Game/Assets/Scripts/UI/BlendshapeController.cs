@@ -5,10 +5,16 @@ using UnityEngine;
 public class BlendshapeController : MonoBehaviour
 {
     public SkinnedMeshRenderer myrenderer;
-    // Start is called before the first frame update
-    void Start()
+    private float f_time = 0;
+
+    public void SetCatMouth(float sliderValue)
     {
-        Debug.Log(myrenderer.sharedMesh.blendShapeCount);
-        myrenderer.SetBlendShapeWeight(1,100);
+        myrenderer.SetBlendShapeWeight(1, sliderValue);
     }
+
+    //private void Update()
+    //{
+    //    f_time += Time.deltaTime;
+    //    myrenderer.SetBlendShapeWeight(1, f_time);
+    //}
 }

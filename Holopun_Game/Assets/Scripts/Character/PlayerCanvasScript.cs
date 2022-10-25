@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class PlayerCanvasScript : MonoBehaviour
 {
     //Canvas
     public InputActionReference eventButtonCanvas = null;
     [SerializeField] private GameObject m_canvasOptions;
     private bool b_used = false;
-
 
     // Start is called before the first frame update
     void Start()
