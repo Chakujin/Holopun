@@ -7,6 +7,7 @@ public class PlungerScript : MonoBehaviour
     [SerializeField] float f_rangeRaycast;
 
     public HighscoreEntry highscoreEntry;
+    [SerializeField] private Collider[] myCollisions;
     public bool CompareDirection()
     {
         //Start raycast
@@ -28,5 +29,19 @@ public class PlungerScript : MonoBehaviour
     {
         //Debug.Log(args.interactorObject.transform.root);
         highscoreEntry = args.interactorObject.transform.root.GetComponent<HighscoreEntry>();
+        //Debug.Log("des");
+        foreach (Collider coll in myCollisions)
+        {
+            coll.enabled = false;
+        }
+    }
+
+    public void OnHoverExit()
+    {
+        //Debug.Log("Activo");
+        foreach (Collider coll in myCollisions)
+        {
+            coll.enabled = true;
+        }
     }
 }
