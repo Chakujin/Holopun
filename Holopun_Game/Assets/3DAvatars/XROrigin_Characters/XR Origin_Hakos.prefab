@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myInteractor: {fileID: 0}
+  myInteractor: {fileID: 1324556186691079495}
 --- !u!1 &1324556186748045188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,7 +2944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myInteractor: {fileID: 0}
+  myInteractor: {fileID: 1324556188021073695}
 --- !u!1 &1324556188315341880
 GameObject:
   m_ObjectHideFlags: 0
