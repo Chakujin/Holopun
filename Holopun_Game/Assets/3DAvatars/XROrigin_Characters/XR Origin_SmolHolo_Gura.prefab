@@ -1015,7 +1015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myInteractor: {fileID: 5830027499343770230}
+  myDirectInteractor: {fileID: 5830027499343770230}
+  myRayInteractor: {fileID: 0}
+  b_Ray: 0
 --- !u!1 &5830027499419151651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1031,7 @@ GameObject:
   - component: {fileID: 1720630988093285640}
   - component: {fileID: 5830027499419151676}
   - component: {fileID: 5830027499419151677}
+  - component: {fileID: 706064512455406877}
   m_Layer: 0
   m_Name: RightHandUIController
   m_TagString: Untagged
@@ -1440,7 +1443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.02
+  m_LineWidth: 0.0071
   m_OverrideInteractorLineLength: 1
   m_LineLength: 10
   m_WidthCurve:
@@ -1530,6 +1533,21 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
+--- !u!114 &706064512455406877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830027499419151651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myDirectInteractor: {fileID: 0}
+  myRayInteractor: {fileID: 1720630988093285640}
+  b_Ray: 1
 --- !u!1 &5830027499421677749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,6 +1623,7 @@ GameObject:
   - component: {fileID: 2039986377144984174}
   - component: {fileID: 7478606761972727769}
   - component: {fileID: 585667581923297998}
+  - component: {fileID: 8091372048540653997}
   m_Layer: 0
   m_Name: LeftUIController
   m_TagString: Untagged
@@ -2009,7 +2028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.02
+  m_LineWidth: 0.0071
   m_OverrideInteractorLineLength: 1
   m_LineLength: 10
   m_WidthCurve:
@@ -2099,6 +2118,21 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
+--- !u!114 &8091372048540653997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830027500039219695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myDirectInteractor: {fileID: 0}
+  myRayInteractor: {fileID: 2039986377144984174}
+  b_Ray: 1
 --- !u!1 &5830027500162045997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,7 +2437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myInteractor: {fileID: 5830027500162045998}
+  myDirectInteractor: {fileID: 5830027500162045998}
+  myRayInteractor: {fileID: 0}
+  b_Ray: 0
 --- !u!1 &7050248439197906670
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,6 +2571,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5830027499170426640}
     m_Modifications:
+    - target: {fileID: 1971468997281010400, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2353866856252175463, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
       propertyPath: m_Name
       value: OptionsCanvas
@@ -2623,6 +2663,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2901658389609372714, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901658389609372714, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901658389609372714, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747011644328627971, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5018109611684203274, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2634,6 +2690,10 @@ PrefabInstance:
     - target: {fileID: 5018109611684203274, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532368101405827298, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7084668041294353316, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2647,10 +2707,83 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5830027499008616103}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5531840972689278409, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+--- !u!1 &8287941022364559136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133313729666827666, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+  m_PrefabInstance: {fileID: 8988895306425836210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7504664317931242986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1484803353025668952, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+  m_PrefabInstance: {fileID: 8988895306425836210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6176282021612690678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2956744416354319940, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+  m_PrefabInstance: {fileID: 8988895306425836210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &6414323999697611384 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2718688831804868810, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
   m_PrefabInstance: {fileID: 8988895306425836210}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1555313258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6176282021612690678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
+--- !u!114 &8087047128506211388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504664317931242986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
+--- !u!114 &4178798068025214243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8287941022364559136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
