@@ -2,6 +2,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerCanvasScript : MonoBehaviour
 {
+    //Controllers
+    [SerializeField] private GameObject m_leftBaseController;
+    [SerializeField] private GameObject m_leftUiController;
+
+    [SerializeField] private GameObject m_rightBaseController;
+    [SerializeField] private GameObject m_rightUIController;
+
     //Canvas
     public InputActionReference eventButtonCanvas = null;
     [SerializeField] private GameObject m_canvasOptions;
@@ -17,13 +24,29 @@ public class PlayerCanvasScript : MonoBehaviour
     private void UseCanvas(InputAction.CallbackContext context)
     {
         //Add some dotween
-        if(b_used == false)
+        if(b_used == false) //Activate UI
         {
+            //Controllers change
+            m_leftBaseController.SetActive(false);
+            m_leftUiController.SetActive(true);
+
+            m_rightBaseController.SetActive(false);
+            m_rightUIController.SetActive(true);
+
+            //Canvas
             m_canvasOptions.SetActive(true);
             b_used = true;
         }
-        else
+        else //Desactivate UI
         {
+            //Controllers change
+            m_leftBaseController.SetActive(true);
+            m_leftUiController.SetActive(false);
+
+            m_rightBaseController.SetActive(true);
+            m_rightUIController.SetActive(false);
+
+            //Canvas
             m_canvasOptions.SetActive(false);
             b_used = false;
         }

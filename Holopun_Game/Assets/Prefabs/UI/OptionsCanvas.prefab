@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7731956156068999422}
   - component: {fileID: 4299768824324690061}
   - component: {fileID: 7964620673839541666}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 3822456990250241511}
   - component: {fileID: 4149842585046624758}
   - component: {fileID: 8531210672659342838}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Eyes dead (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 8838750872318723801}
   - component: {fileID: 8320884152008964887}
   - component: {fileID: 6294936107842339509}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Options  (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,11 +241,11 @@ RectTransform:
   m_Father: {fileID: 2026414658497359326}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -4.5}
-  m_SizeDelta: {x: 0, y: 9}
-  m_Pivot: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 13, y: 8}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &8320884152008964887
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2210843214158186703}
   - component: {fileID: 2631032733195436715}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider Eyex excited
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 7084668041294353316}
   - component: {fileID: 3073366159246969139}
   - component: {fileID: 7368686963263147551}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.607129, g: 0.41574696, b: 0.7264151, a: 1}
+  m_Color: {r: 0.2283137, g: 0.38707158, b: 0.6981132, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -517,7 +517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4668451674449229975}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 2854399475817627355}
   - component: {fileID: 4116161708923026428}
   - component: {fileID: 6007742285510113297}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: V sad mouth (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +689,7 @@ GameObject:
   - component: {fileID: 1952131595321932784}
   - component: {fileID: 8387286236184318344}
   - component: {fileID: 4617901640374109082}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cat mouth (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 2174482828593306428}
   - component: {fileID: 7708008110440831750}
   - component: {fileID: 5835212379350762470}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 5795337034611809178}
   - component: {fileID: 554838426975220078}
   - component: {fileID: 3039517409085684014}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.860763, g: 0.73193306, b: 0.9056604, a: 1}
+  m_Color: {r: 0.73333335, g: 0.83995146, b: 0.90588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1030,7 +1030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 527840997942151127}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 1823913384675591560}
   - component: {fileID: 6057814646070480564}
   - component: {fileID: 5270574214366842107}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1194,7 +1194,7 @@ GameObject:
   - component: {fileID: 8008945234953765804}
   - component: {fileID: 5593013763318210557}
   - component: {fileID: 4501473843579576732}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 1132617526038867213}
   - component: {fileID: 2788595724035271739}
   - component: {fileID: 6926599399763178936}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Brow Sad (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1401,7 +1401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8377864156074070944}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1439,7 @@ GameObject:
   - component: {fileID: 344267063297935091}
   - component: {fileID: 5070255364060254066}
   - component: {fileID: 4825921118474097536}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1513,7 +1513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 912450926657496894}
   - component: {fileID: 4841855056381081791}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider Eyes dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1604,7 +1604,7 @@ GameObject:
   - component: {fileID: 1701675606787717071}
   - component: {fileID: 925102507526367753}
   - component: {fileID: 4471995567213156679}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CanvasFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1708,7 +1708,7 @@ GameObject:
   - component: {fileID: 931114329066377428}
   - component: {fileID: 1700872784503878847}
   - component: {fileID: 7142461240238629792}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1783,7 +1783,7 @@ GameObject:
   - component: {fileID: 6876588386653306352}
   - component: {fileID: 4068415921665897661}
   - component: {fileID: 1932120155574165468}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1858,7 +1858,7 @@ GameObject:
   - component: {fileID: 2712222430635985992}
   - component: {fileID: 150582141243586811}
   - component: {fileID: 7400522564667946306}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1933,7 +1933,7 @@ GameObject:
   - component: {fileID: 9107140378827564071}
   - component: {fileID: 3699136972599096328}
   - component: {fileID: 3292710643586532463}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2006,7 +2006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4003971211045715796}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2045,7 +2045,7 @@ GameObject:
   - component: {fileID: 8327230128473286435}
   - component: {fileID: 5532368101405827298}
   - component: {fileID: 793619936011453148}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CanvasOption
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2146,7 +2146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1624650170031088768}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2182,7 +2182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3988835162303862278}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2218,7 +2218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6741790209154282919}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2254,7 +2254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6100004852254617533}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2292,7 +2292,7 @@ GameObject:
   - component: {fileID: 4116540823122684387}
   - component: {fileID: 1378423991805751132}
   - component: {fileID: 237358788537722164}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2367,7 +2367,7 @@ GameObject:
   - component: {fileID: 6996904792304149347}
   - component: {fileID: 2067590814888219188}
   - component: {fileID: 1192465875489299308}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: V mouth (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2501,7 +2501,7 @@ GameObject:
   - component: {fileID: 1300799260041740265}
   - component: {fileID: 3441528790903615815}
   - component: {fileID: 8255945922298623263}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2576,7 +2576,7 @@ GameObject:
   - component: {fileID: 8147148922607650250}
   - component: {fileID: 8218733795758776402}
   - component: {fileID: 6716985973627919198}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2649,7 +2649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3635024857922639176}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2687,7 +2687,7 @@ GameObject:
   - component: {fileID: 6814495480268115910}
   - component: {fileID: 4299422209145477411}
   - component: {fileID: 1933784122074091018}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2760,7 +2760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 280466673454031632}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2796,7 +2796,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5002698775511027985}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2836,7 +2836,8 @@ GameObject:
   - component: {fileID: 1971468997281010400}
   - component: {fileID: 5531840972689278409}
   - component: {fileID: 1031573278859699744}
-  m_Layer: 0
+  - component: {fileID: 4531772549441897880}
+  m_Layer: 5
   m_Name: OptionsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2941,6 +2942,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_settingsCanvas: {fileID: 1484803353025668952}
   m_faceCanvas: {fileID: 1133313729666827666}
+--- !u!114 &4531772549441897880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353866856252175463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &2376441705956582216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,7 +2972,7 @@ GameObject:
   - component: {fileID: 9049201612019192508}
   - component: {fileID: 1715392348765733010}
   - component: {fileID: 8835191424937694231}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3027,7 +3047,7 @@ GameObject:
   - component: {fileID: 472687660841115920}
   - component: {fileID: 80255557452839151}
   - component: {fileID: 7340323231507185948}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3102,7 +3122,7 @@ GameObject:
   - component: {fileID: 241036518993823103}
   - component: {fileID: 7429373299589482194}
   - component: {fileID: 2154321437143165450}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SliderAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3218,7 +3238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379852821634602754}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3256,7 +3276,7 @@ GameObject:
   - component: {fileID: 1846228529559639175}
   - component: {fileID: 6518492287448523940}
   - component: {fileID: 1294998353009627312}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3331,7 +3351,7 @@ GameObject:
   - component: {fileID: 2042798652141151983}
   - component: {fileID: 6118825764695868958}
   - component: {fileID: 7236756731550625755}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3407,7 +3427,7 @@ GameObject:
   - component: {fileID: 5000978744718103642}
   - component: {fileID: 3747011644328627971}
   - component: {fileID: 1203168543977722978}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CanvasTypeChose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3507,7 +3527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5176901244307594678}
   - component: {fileID: 6003061663043641754}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider Brow Sad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3598,7 +3618,7 @@ GameObject:
   - component: {fileID: 5864195920635737839}
   - component: {fileID: 2844523588565262399}
   - component: {fileID: 6656538408491773383}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: mouth purse (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3732,7 +3752,7 @@ GameObject:
   - component: {fileID: 297221982490913989}
   - component: {fileID: 5195821090179753626}
   - component: {fileID: 5138424272807341390}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Blush Lines(TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3864,7 +3884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3610386890076580123}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3901,7 +3921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8497135444601853148}
   - component: {fileID: 7880663149692807038}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider Eyes heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3992,7 +4012,7 @@ GameObject:
   - component: {fileID: 7201816425156853888}
   - component: {fileID: 5318397385652813461}
   - component: {fileID: 7980736738682470623}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4066,7 +4086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6105452549580353987}
   - component: {fileID: 4287167429758624462}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider Eyes angry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4155,7 +4175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7019784899178578259}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4193,7 +4213,7 @@ GameObject:
   - component: {fileID: 6394176556417109247}
   - component: {fileID: 8863599983934791700}
   - component: {fileID: 7276567541822857076}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Eyes heart (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4325,7 +4345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1152442366544357330}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4363,7 +4383,7 @@ GameObject:
   - component: {fileID: 3797605708803407925}
   - component: {fileID: 2087218851267736336}
   - component: {fileID: 4333806970643566947}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Set graphics(TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4497,7 +4517,7 @@ GameObject:
   - component: {fileID: 6881651428734651630}
   - component: {fileID: 1662482066443622330}
   - component: {fileID: 5495262711043199880}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4572,7 +4592,7 @@ GameObject:
   - component: {fileID: 4085903492640832726}
   - component: {fileID: 7299504695492398974}
   - component: {fileID: 247309998095390549}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Eyex excited (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4706,7 +4726,7 @@ GameObject:
   - component: {fileID: 6460824218219517432}
   - component: {fileID: 8668233001746235700}
   - component: {fileID: 3600445796720574835}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4779,7 +4799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4718136492609998055}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4816,7 +4836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2330172053175016383}
   - component: {fileID: 230475829632220688}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider V mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4907,7 +4927,7 @@ GameObject:
   - component: {fileID: 2943276343451282140}
   - component: {fileID: 1681024006397355819}
   - component: {fileID: 356546771014992046}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4982,7 +5002,7 @@ GameObject:
   - component: {fileID: 2573631993952592738}
   - component: {fileID: 4381203630670821098}
   - component: {fileID: 6225001293999921391}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5056,7 +5076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6324498121087082222}
   - component: {fileID: 3295802768102762604}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider Brow Angry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5147,7 +5167,7 @@ GameObject:
   - component: {fileID: 666551383334331665}
   - component: {fileID: 1759562850600967532}
   - component: {fileID: 523846744090392194}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5222,7 +5242,7 @@ GameObject:
   - component: {fileID: 8644377425657323989}
   - component: {fileID: 351122263204484882}
   - component: {fileID: 5424009832096145344}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5296,7 +5316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2366222173452978191}
   - component: {fileID: 379122351068688277}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider mouth purse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5387,7 +5407,7 @@ GameObject:
   - component: {fileID: 7198415411095318783}
   - component: {fileID: 1326361167398814119}
   - component: {fileID: 2216311837597581232}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5462,7 +5482,7 @@ GameObject:
   - component: {fileID: 3554289508377305304}
   - component: {fileID: 6813265292032496889}
   - component: {fileID: 9195050353983304287}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5535,7 +5555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7844890333817539149}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5573,7 +5593,7 @@ GameObject:
   - component: {fileID: 8308371037793805723}
   - component: {fileID: 3449486781851979368}
   - component: {fileID: 2954024825117154900}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Eyes angry (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5705,7 +5725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2204930182792195661}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5743,7 +5763,7 @@ GameObject:
   - component: {fileID: 2738522343007645374}
   - component: {fileID: 6808173869812511136}
   - component: {fileID: 1735959055897019698}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5818,7 +5838,7 @@ GameObject:
   - component: {fileID: 7777402174039913500}
   - component: {fileID: 3962988933642239667}
   - component: {fileID: 3093467179248282199}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5893,7 +5913,7 @@ GameObject:
   - component: {fileID: 5018109611684203274}
   - component: {fileID: 493438543405365909}
   - component: {fileID: 8075082718510649505}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5947,7 +5967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a0a864791eb7afd4d89a7f25dc1cea4a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a871d26368a938046b7f57fc6a23b83b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5968,7 +5988,7 @@ GameObject:
   - component: {fileID: 2731798881372629221}
   - component: {fileID: 3368439546693463943}
   - component: {fileID: 3127941299097348801}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6043,7 +6063,7 @@ GameObject:
   - component: {fileID: 3980676729949293288}
   - component: {fileID: 5019618540881120912}
   - component: {fileID: 248990233713655808}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6118,7 +6138,7 @@ GameObject:
   - component: {fileID: 5258941315220023959}
   - component: {fileID: 4116928103605781908}
   - component: {fileID: 2975675300154096455}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6192,7 +6212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9151919284366927357}
   - component: {fileID: 284710105464882758}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider Mouth Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6266,7 +6286,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7777402174039913500}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -6283,7 +6303,7 @@ GameObject:
   - component: {fileID: 2369501357683601110}
   - component: {fileID: 8132962290040183927}
   - component: {fileID: 8965251159713502955}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6356,7 +6376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2326769249309550735}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6396,7 +6416,7 @@ GameObject:
   - component: {fileID: 869567108317212439}
   - component: {fileID: 511988160449191441}
   - component: {fileID: 4736138062386791899}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6561,7 +6581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5982347713825534283}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6599,7 +6619,7 @@ GameObject:
   - component: {fileID: 4037454317793462314}
   - component: {fileID: 8356861301882200477}
   - component: {fileID: 5818498701585728664}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6673,7 +6693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8342193127425484824}
   - component: {fileID: 6594177392897437155}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SliderBlush Lines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6764,7 +6784,7 @@ GameObject:
   - component: {fileID: 5310273678128918235}
   - component: {fileID: 2572326552225703022}
   - component: {fileID: 1283121890871667099}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6839,7 +6859,7 @@ GameObject:
   - component: {fileID: 9047864335571837776}
   - component: {fileID: 503724570835576046}
   - component: {fileID: 8313971415428526124}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6912,7 +6932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5615558995059736441}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6948,7 +6968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3535753359134268720}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6986,7 +7006,7 @@ GameObject:
   - component: {fileID: 1026288097142243490}
   - component: {fileID: 4779432297562417046}
   - component: {fileID: 6530476936030753994}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7061,7 +7081,7 @@ GameObject:
   - component: {fileID: 6972140205112159965}
   - component: {fileID: 3535496666330701678}
   - component: {fileID: 373354319199856312}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7134,7 +7154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9214181537349255259}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7172,7 +7192,7 @@ GameObject:
   - component: {fileID: 748356263652486922}
   - component: {fileID: 4431594737002591929}
   - component: {fileID: 1795395309864493869}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7248,7 +7268,7 @@ GameObject:
   - component: {fileID: 4752775394115078252}
   - component: {fileID: 7399658741627761937}
   - component: {fileID: 5388772673164465196}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7337,7 +7357,7 @@ GameObject:
   - component: {fileID: 2929125496244186042}
   - component: {fileID: 2344608943469659947}
   - component: {fileID: 8559728858784088083}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7412,7 +7432,7 @@ GameObject:
   - component: {fileID: 6848003199860093291}
   - component: {fileID: 8925389688422806197}
   - component: {fileID: 2055103127335319285}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7487,7 +7507,7 @@ GameObject:
   - component: {fileID: 3033200679948040888}
   - component: {fileID: 804110522882834254}
   - component: {fileID: 8563749352803855280}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Face Changes (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7622,7 +7642,7 @@ GameObject:
   - component: {fileID: 7979462776428633933}
   - component: {fileID: 654425958742799848}
   - component: {fileID: 4136478108092029434}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7729,7 +7749,7 @@ GameObject:
   - component: {fileID: 4799532737698493644}
   - component: {fileID: 5840634701604055620}
   - component: {fileID: 8287218412116623748}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7861,7 +7881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3137870924029694198}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7898,7 +7918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1741159320409278665}
   - component: {fileID: 6494595045761844556}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider V sad mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7987,7 +8007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5210526031968054323}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8025,7 +8045,7 @@ GameObject:
   - component: {fileID: 3310915109017019798}
   - component: {fileID: 5230008068267786569}
   - component: {fileID: 6994150170406366564}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8100,7 +8120,7 @@ GameObject:
   - component: {fileID: 4651740253094083969}
   - component: {fileID: 35065027215524520}
   - component: {fileID: 7596686876703244334}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Brow Angry (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8232,7 +8252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5847200244633258639}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8269,7 +8289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631970238304505337}
   - component: {fileID: 8161927075161774475}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8357,7 +8377,7 @@ GameObject:
   - component: {fileID: 3604272091525249661}
   - component: {fileID: 3885087243678000920}
   - component: {fileID: 997442169406084875}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Sound (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

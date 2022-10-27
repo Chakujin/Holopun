@@ -3690,6 +3690,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446979698152508016, guid: 6c873eaf221ab2143b22f326a03a6bad, type: 3}
   m_PrefabInstance: {fileID: 804742364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &832267169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832267172}
+  - component: {fileID: 832267171}
+  - component: {fileID: 832267170}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &832267170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832267169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ClickSpeed: 0.3
+  m_MoveDeadzone: 0.6
+  m_RepeatDelay: 0.5
+  m_RepeatRate: 0.1
+  m_TrackedDeviceDragThresholdMultiplier: 1.4
+  m_MaxTrackedDeviceRaycastDistance: 1000
+  m_EnableXRInput: 1
+  m_EnableMouseInput: 1
+  m_EnableTouchInput: 1
+--- !u!114 &832267171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832267169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &832267172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832267169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3005607, y: 0.30175802, z: 0.016006565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &850435246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12038,11 +12106,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4443003881612907016, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 4443003881832894501, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - target: {fileID: 4443003883371075292, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+    - target: {fileID: 4443003881688911169, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690812492}
@@ -12058,6 +12122,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8146923419419008345, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 690812492}
     - target: {fileID: 8336136287786536481, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -12110,6 +12178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8836128056345057855, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 690812492}
     - target: {fileID: 8917487193294473032, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_Name
       value: Gura_Ingame

@@ -729,6 +729,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Activate/Desactivate UI",
+                    "type": "Button",
+                    "id": "e09204b2-8550-4a27-986c-90dd67a07605",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -900,7 +909,7 @@
                 {
                     "name": "",
                     "id": "92bb5b8f-bf48-4dab-af05-50a865773895",
-                    "path": "<XRController>{RightHand}/primaryButton",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -1081,6 +1090,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c5894f9-de99-4e4e-916c-cfd923e739d5",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Activate/Desactivate UI",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
