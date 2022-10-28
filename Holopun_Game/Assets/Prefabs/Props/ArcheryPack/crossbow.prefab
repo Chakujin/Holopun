@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 3210208045032377093}
   - component: {fileID: 4795763325941572748}
   - component: {fileID: 4139585852521791411}
+  - component: {fileID: 7044514532528316132}
+  - component: {fileID: 3824594191129777668}
+  - component: {fileID: 7211292233956005642}
   m_Layer: 0
   m_Name: crossbow
   m_TagString: Untagged
@@ -233,6 +236,55 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3082765854986325582, guid: 096bc5a11414baa45af24b2b39eddc18, type: 3}
+--- !u!114 &7044514532528316132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635040755767836738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9fe8505b14d70b40894464187aba365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CrossbowInicialState: {fileID: 3824594191129777668}
+  CrossbowEmptyState: {fileID: 3824594191129777668}
+  CrossbowChargedState: {fileID: 7211292233956005642}
+  _stateList:
+  - {fileID: 3824594191129777668}
+  - {fileID: 7211292233956005642}
+  arrow: {fileID: 0}
+--- !u!114 &3824594191129777668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635040755767836738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f183c693c33e74da4576fbb29f69aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  v_sizeTrigger: {x: 0.04, y: 0.05, z: 0.3}
+  m_posTrigger: {fileID: 2424572489534317471}
+  m_arrowLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &7211292233956005642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635040755767836738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794da53045736f34cb70caad2efcefd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_buttonShot: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &2135153167007736444
 GameObject:
   m_ObjectHideFlags: 0
