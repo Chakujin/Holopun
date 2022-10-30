@@ -1033,6 +1033,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8686458857457674322, guid: 83b661f21ef04934b8c30e6e125a7306, type: 3}
   m_PrefabInstance: {fileID: 203136762}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &218162433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2177746102202032983, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+  m_PrefabInstance: {fileID: 656122162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &227907414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1628,6 +1639,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5001424075906212236, guid: 7c1c95b11b3679946bb213103e87c4a3, type: 3}
   m_PrefabInstance: {fileID: 386812305}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &394414075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2177746101582172818, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+  m_PrefabInstance: {fileID: 656122162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &397297120 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2177746102986860419, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+  m_PrefabInstance: {fileID: 656122162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &398165020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2344,6 +2377,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3514483730408496766, guid: 663fcc53885cae349b52e957174f0955, type: 3}
   m_PrefabInstance: {fileID: 470777207}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &471376765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2177746102911121610, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+  m_PrefabInstance: {fileID: 656122162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &488739340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3277,6 +3321,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2098570663082997132, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: myRayInteractor
+      value: 
+      objectReference: {fileID: 218162433}
+    - target: {fileID: 2098570663082997132, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: myDirectInteractor
+      value: 
+      objectReference: {fileID: 471376765}
     - target: {fileID: 3150476341261325759, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_Name
       value: Hakos_Ingame
@@ -3285,6 +3337,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4451706359958838270, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: myRayInteractor
+      value: 
+      objectReference: {fileID: 397297120}
+    - target: {fileID: 4451706359958838270, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: myDirectInteractor
+      value: 
+      objectReference: {fileID: 394414075}
     - target: {fileID: 8362828196385101239, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9441,6 +9501,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690812492}
+    - target: {fileID: 7211292233956005642, guid: 65b7f2d135a132349b575c2967826207, type: 3}
+      propertyPath: m_buttonShot
+      value: 
+      objectReference: {fileID: -6395602842196007441, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 8128027421609578115, guid: 65b7f2d135a132349b575c2967826207, type: 3}
       propertyPath: m_RootOrder
       value: 10

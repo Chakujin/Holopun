@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,7 +10,7 @@ public class CrossbowChargedState : MonoBehaviour
     private GameObject m_arrow;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         m_machineState = GetComponent<CrossbowMachineState>();
         m_emptyState = m_machineState.CrossbowEmptyState;
@@ -22,14 +20,16 @@ public class CrossbowChargedState : MonoBehaviour
 
     private void OnEnable()
     {
-        m_arrow = m_machineState.arrow;
+        if (m_machineState.arrow != null)
+        {
+            m_arrow = m_machineState.arrow;
+        }
     }
 
     private void ShotArrow(InputAction.CallbackContext context)
     {
         m_arrow.transform.parent = null;
-        m_arrow.GetComponent<BoxCollider>().enabled = true;
-        m_arrow.GetComponent<Rigidbody>().AddForce(m_arrow.transform.forward * 20,ForceMode.Impulse);
+        m_arrow.GetComponent<ArrowScript>().ActiveCollisions();
 
         m_machineState.ChangeState(m_emptyState);
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CrossbowEmptyState : MonoBehaviour
@@ -30,8 +28,11 @@ public class CrossbowEmptyState : MonoBehaviour
 
     private void DetectArrow(GameObject arrow)
     {
-        arrow.GetComponent<BoxCollider>().enabled = false;
+        arrow.GetComponent<ArrowScript>().DesactiveCollisions();
         arrow.transform.SetParent(m_posTrigger);
+
+        arrow.transform.localPosition = new Vector3(0,0,0.025f); //Edit Local position
+        arrow.transform.localEulerAngles = new Vector3(0, 0, 90); //Edit Local rotation
 
         m_machineState.arrow = arrow;
         m_machineState.ChangeState(m_chargedState);//Next state

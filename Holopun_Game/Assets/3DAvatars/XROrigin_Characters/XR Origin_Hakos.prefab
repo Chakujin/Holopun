@@ -317,7 +317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myInteractor: {fileID: 1324556186691079495}
+  myDirectInteractor: {fileID: 1324556186691079495}
+  myRayInteractor: {fileID: 1324556188481279706}
+  b_Ray: 0
 --- !u!1 &1324556186748045188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,7 +2946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ef15361b2aa348a74e57807ca53ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myInteractor: {fileID: 1324556188021073695}
+  myDirectInteractor: {fileID: 1324556188021073695}
+  myRayInteractor: {fileID: 1324556186749719054}
+  b_Ray: 0
 --- !u!1 &1324556188315341880
 GameObject:
   m_ObjectHideFlags: 0
