@@ -9,6 +9,14 @@ public class BlendshapeController : MonoBehaviour
 
     public void SetCatMouth(float sliderValue)
     {
+        Debug.Log("PAso Slider");
+        Debug.Log(sliderValue);
+        Debug.Log(myrenderer.sharedMesh.blendShapeCount);
         myrenderer.SetBlendShapeWeight(indexBlendshape, sliderValue);
+    }
+
+    public void DebugSlider()
+    {
+        Debug.Log("a");
     }
 }
