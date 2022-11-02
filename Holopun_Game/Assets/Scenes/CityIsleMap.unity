@@ -317,6 +317,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446979698152508016, guid: 6c873eaf221ab2143b22f326a03a6bad, type: 3}
   m_PrefabInstance: {fileID: 11522703}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &14759717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7858489921056330316, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+  m_PrefabInstance: {fileID: 3443420451668093394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &14759719 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7635500868345422344, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+  m_PrefabInstance: {fileID: 3443420451668093394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &14759720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14759717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1559f6725c39f2b49b3650dd71a44d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myrenderer: {fileID: 14759719}
 --- !u!1001 &30080310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3690,6 +3713,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446979698152508016, guid: 6c873eaf221ab2143b22f326a03a6bad, type: 3}
   m_PrefabInstance: {fileID: 804742364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &825084933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5107087735210980126, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+  m_PrefabInstance: {fileID: 3443420451668093394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &825084936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825084933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 14759720}
+  numBlendShapeEdit: 0
 --- !u!1 &832267169
 GameObject:
   m_ObjectHideFlags: 0
@@ -12106,6 +12148,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1300789945486138307, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 825084936}
+    - target: {fileID: 1300789945486138307, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeBlendshapeValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300789945486138307, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BlendShapeSlider, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4443003881688911169, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -12186,7 +12240,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gura_Ingame
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 14759720, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+    - {fileID: 825084936, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
 --- !u!1001 &3746229774377959831
 PrefabInstance:

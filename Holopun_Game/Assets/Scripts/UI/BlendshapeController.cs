@@ -5,18 +5,16 @@ using UnityEngine;
 public class BlendshapeController : MonoBehaviour
 {
     public SkinnedMeshRenderer myrenderer;
-    public int indexBlendshape;
+    public Dictionary<int ,float> indexBlendshape;
 
-    public void SetCatMouth(float sliderValue)
+    private void Update()
     {
-        Debug.Log("PAso Slider");
-        Debug.Log(sliderValue);
-        Debug.Log(myrenderer.sharedMesh.blendShapeCount);
-        myrenderer.SetBlendShapeWeight(indexBlendshape, sliderValue);
-    }
-
-    public void DebugSlider()
-    {
-        Debug.Log("a");
+        if(indexBlendshape != null)
+        {
+            foreach (KeyValuePair<int, float> kvp in indexBlendshape)
+            {
+                myrenderer.SetBlendShapeWeight(kvp.Key, kvp.Value);
+            }
+        }
     }
 }
