@@ -1,11 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BlendshapeController : MonoBehaviour
 {
     public SkinnedMeshRenderer myrenderer;
-    public Dictionary<int ,float> indexBlendshape;
+    public Dictionary<int ,float> indexBlendshape = new Dictionary<int, float>();
 
     private void Update()
     {
@@ -13,7 +12,7 @@ public class BlendshapeController : MonoBehaviour
         {
             foreach (KeyValuePair<int, float> kvp in indexBlendshape)
             {
-                myrenderer.SetBlendShapeWeight(kvp.Key, kvp.Value);
+                myrenderer.SetBlendShapeWeight(kvp.Key, kvp.Value); //Update BalndShapes values
             }
         }
     }

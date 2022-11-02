@@ -353,6 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2210843214158186703}
   - component: {fileID: 2631032733195436715}
+  - component: {fileID: 209926690855258336}
   m_Layer: 5
   m_Name: Slider Eyex excited
   m_TagString: Untagged
@@ -427,12 +428,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 931114329066377428}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &209926690855258336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307988041376365492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &396871591581431749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 912450926657496894}
   - component: {fileID: 4841855056381081791}
+  - component: {fileID: 5025882715949245720}
   m_Layer: 5
   m_Name: Slider Eyes dead
   m_TagString: Untagged
@@ -1587,12 +1615,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8008945234953765804}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5025882715949245720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110240805543208867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &1133313729666827666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,6 +1658,7 @@ GameObject:
   - component: {fileID: 1701675606787717071}
   - component: {fileID: 925102507526367753}
   - component: {fileID: 4471995567213156679}
+  - component: {fileID: 4178798068025214243}
   m_Layer: 5
   m_Name: CanvasFace
   m_TagString: Untagged
@@ -1697,6 +1752,25 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
+--- !u!114 &4178798068025214243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133313729666827666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &1153300583272206035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,7 +2118,7 @@ GameObject:
   - component: {fileID: 2026414658497359326}
   - component: {fileID: 8327230128473286435}
   - component: {fileID: 5532368101405827298}
-  - component: {fileID: 793619936011453148}
+  - component: {fileID: 8087047128506211388}
   m_Layer: 5
   m_Name: CanvasOption
   m_TagString: Untagged
@@ -2119,8 +2193,8 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!114 &793619936011453148
+  m_PresetInfoIsWorld: 1
+--- !u!114 &8087047128506211388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2129,14 +2203,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1484803353025668952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &1635310564904787839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,7 +2910,6 @@ GameObject:
   - component: {fileID: 2718688831804868810}
   - component: {fileID: 8594772125110241652}
   - component: {fileID: 1971468997281010400}
-  - component: {fileID: 5531840972689278409}
   - component: {fileID: 1031573278859699744}
   - component: {fileID: 4531772549441897880}
   m_Layer: 5
@@ -2910,24 +2985,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!114 &5531840972689278409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2353866856252175463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1031573278859699744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,9 +3231,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.5410538, g: 0.990566, b: 0.1557493, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_SelectedColor: {r: 0, g: 0.39492464, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3426,7 +3484,7 @@ GameObject:
   - component: {fileID: 1829795661776605765}
   - component: {fileID: 5000978744718103642}
   - component: {fileID: 3747011644328627971}
-  - component: {fileID: 1203168543977722978}
+  - component: {fileID: 1555313258}
   m_Layer: 5
   m_Name: CanvasTypeChose
   m_TagString: Untagged
@@ -3499,8 +3557,8 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!114 &1203168543977722978
+  m_PresetInfoIsWorld: 1
+--- !u!114 &1555313258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3509,14 +3567,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2956744416354319940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &3059106771652209255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3527,6 +3587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5176901244307594678}
   - component: {fileID: 6003061663043641754}
+  - component: {fileID: 7463501643673048759}
   m_Layer: 5
   m_Name: Slider Brow Sad
   m_TagString: Untagged
@@ -3601,12 +3662,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2731798881372629221}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7463501643673048759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059106771652209255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &3105045929393035450
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,6 +4008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8497135444601853148}
   - component: {fileID: 7880663149692807038}
+  - component: {fileID: 8080375790144487169}
   m_Layer: 5
   m_Name: Slider Eyes heart
   m_TagString: Untagged
@@ -3995,12 +4083,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6881651428734651630}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8080375790144487169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3395891274850886447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &3483760272442349485
 GameObject:
   m_ObjectHideFlags: 0
@@ -4086,6 +4200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6105452549580353987}
   - component: {fileID: 4287167429758624462}
+  - component: {fileID: 4135029705189938279}
   m_Layer: 5
   m_Name: Slider Eyes angry
   m_TagString: Untagged
@@ -4160,12 +4275,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 748356263652486922}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4135029705189938279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3570250524139047352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &3903226277620500693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4836,6 +4977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2330172053175016383}
   - component: {fileID: 230475829632220688}
+  - component: {fileID: 2583104715919867242}
   m_Layer: 5
   m_Name: Slider V mouth
   m_TagString: Untagged
@@ -4910,12 +5052,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3554289508377305304}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2583104715919867242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4865850553630087034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &4869923934659146599
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,6 +5244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6324498121087082222}
   - component: {fileID: 3295802768102762604}
+  - component: {fileID: 6301075237238665869}
   m_Layer: 5
   m_Name: Slider Brow Angry
   m_TagString: Untagged
@@ -5150,12 +5319,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6972140205112159965}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6301075237238665869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5136091566723954579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &5393571622122240503
 GameObject:
   m_ObjectHideFlags: 0
@@ -5316,6 +5511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2366222173452978191}
   - component: {fileID: 379122351068688277}
+  - component: {fileID: 2462610393968571038}
   m_Layer: 5
   m_Name: Slider mouth purse
   m_TagString: Untagged
@@ -5390,12 +5586,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 9107140378827564071}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2462610393968571038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5678193392977135664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &5852135370065889382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,6 +6434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9151919284366927357}
   - component: {fileID: 284710105464882758}
+  - component: {fileID: 825084936}
   m_Layer: 5
   m_Name: Slider Mouth Cat
   m_TagString: Untagged
@@ -6291,7 +6514,33 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 825084936}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &825084936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6277506581041655451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &6566960036127854953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6693,6 +6942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8342193127425484824}
   - component: {fileID: 6594177392897437155}
+  - component: {fileID: 485434133}
   m_Layer: 5
   m_Name: SliderBlush Lines
   m_TagString: Untagged
@@ -6767,12 +7017,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3310915109017019798}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 485434133}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &485434133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6915966004467764835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 1
 --- !u!1 &7045541979112008826
 GameObject:
   m_ObjectHideFlags: 0
@@ -7918,6 +8194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1741159320409278665}
   - component: {fileID: 6494595045761844556}
+  - component: {fileID: 8312669535795546762}
   m_Layer: 5
   m_Name: Slider V sad mouth
   m_TagString: Untagged
@@ -7992,12 +8269,38 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5258941315220023959}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6301075237238665869}
+        m_TargetAssemblyTypeName: BlendShapeSlider, Assembly-CSharp
+        m_MethodName: ChangeBlendshapeValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8312669535795546762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8677470302031389097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5f944b5c7f1c4895c7b94602cddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  numBlendShapeEdit: 0
 --- !u!1 &8684322369507203345
 GameObject:
   m_ObjectHideFlags: 0
@@ -8608,6 +8911,18 @@ PrefabInstance:
     - target: {fileID: 2798759577469608067, guid: c996fd272fe74104f85efe41552eb389, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
