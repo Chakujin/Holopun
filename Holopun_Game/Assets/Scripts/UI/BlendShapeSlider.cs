@@ -3,7 +3,7 @@ using UnityEngine;
 public class BlendShapeSlider : MonoBehaviour
 {
     [SerializeField] private BlendshapeController controller;
-    private int i_numBlendShapeEdit;
+    [SerializeField] private int i_numBlendShapeEdit;
     [SerializeField] private string NameBlendShape;
 
     private void Awake()
@@ -17,7 +17,7 @@ public class BlendShapeSlider : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Error Name BlendShape Or Blendshape not exist");
+                //Debug.LogError("Error Name BlendShape Or Blendshape not exist" + "  " + NameBlendShape);
             }
         }
     }

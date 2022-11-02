@@ -12106,18 +12106,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1296521869599887757, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: NameBlendShape
-      value: mouthCat
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296521869599887757, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: numBlendShapeEdit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4316203504045500221, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.17999983
-      objectReference: {fileID: 0}
     - target: {fileID: 4443003881688911169, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -12198,17 +12186,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gura_Ingame
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5084495046866497288, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 8533623064314121010, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 1375819947093398885, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 7051908304243614340, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 2926416574193846754, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 6071325598641633437, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 7107422536293750543, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 3734285490120388379, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 3613896572085018863, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-    - {fileID: 1296521868991544976, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
 --- !u!1001 &3746229774377959831
 PrefabInstance:
