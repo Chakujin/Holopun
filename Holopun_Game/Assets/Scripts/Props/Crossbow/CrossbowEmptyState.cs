@@ -5,7 +5,7 @@ public class CrossbowEmptyState : MonoBehaviour
     private CrossbowMachineState m_machineState;
     private MonoBehaviour m_chargedState;
 
-    [SerializeField] private Vector3 v_sizeTrigger;
+    [SerializeField] private float v_sizeTrigger;
     [SerializeField] private Transform m_posTrigger;
     [SerializeField] private LayerMask m_arrowLayer;
 
@@ -18,7 +18,7 @@ public class CrossbowEmptyState : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Collider[] detectObject = Physics.OverlapBox(m_posTrigger.position, v_sizeTrigger, m_posTrigger.localRotation, m_arrowLayer);
+        Collider[] detectObject = Physics.OverlapSphere(m_posTrigger.position, v_sizeTrigger, m_arrowLayer);
 
         foreach (Collider arrow in detectObject)//Detect arrow orverlap
         {
@@ -43,6 +43,6 @@ public class CrossbowEmptyState : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawCube(m_posTrigger.position, v_sizeTrigger);
+        Gizmos.DrawWireSphere(m_posTrigger.position, v_sizeTrigger);
     }
 }
