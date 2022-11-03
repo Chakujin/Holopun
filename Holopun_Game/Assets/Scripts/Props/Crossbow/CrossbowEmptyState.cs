@@ -22,7 +22,10 @@ public class CrossbowEmptyState : MonoBehaviour
 
         foreach (Collider arrow in detectObject)//Detect arrow orverlap
         {
-            DetectArrow(arrow.gameObject);
+            if (arrow.GetComponent<ArrowScript>().shoted == false)
+            {
+                DetectArrow(arrow.gameObject);
+            }
         }
     }
 
