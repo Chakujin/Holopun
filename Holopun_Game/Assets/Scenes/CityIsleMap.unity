@@ -12106,34 +12106,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1835759066351448759, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835759066351448759, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443003881688911169, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690812492}
-    - target: {fileID: 6079230436851193487, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6079230436851193487, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6079230436851193487, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8146923419419008345, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690812492}
-    - target: {fileID: 8336136287786536481, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8336136287786536481, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8792884816186973914, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12176,6 +12164,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8792884816186973914, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820244091987635185, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820244091987635185, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820244091987635185, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8836128056345057855, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}

@@ -6,7 +6,6 @@ public class PlayerCanvasSettings : MonoBehaviour
     [SerializeField] private GameObject m_faceCanvas;
     public void PressSettings()
     {
-        Debug.Log("Press");
         m_settingsCanvas.SetActive(true);
         m_faceCanvas.SetActive(false);
     }
