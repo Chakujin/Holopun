@@ -6,24 +6,24 @@ public class CollisionObjectsGrab : MonoBehaviour
     [SerializeField] private List<Collider> myCollisions;
     [SerializeField] private Rigidbody myRb;
     //Catching the player who has Hover the plunger
-    public void OnHoverEntered()
+    public void OnHoverEntered() //XR Grab event
     {
-        //Debug.Log("des");
-        foreach (Collider coll in myCollisions)
+        foreach (Collider coll in myCollisions) //enable false all collisions
         {
             coll.enabled = false;
         }
+        //Use gravity false
         myRb.useGravity = false;
         myRb.isKinematic = true;
     }
 
-    public void OnSelectExit()
+    public void OnSelectExit() //XR Grab event
     {
-        //Debug.Log("Activo");
-        foreach (Collider coll in myCollisions)
+        foreach (Collider coll in myCollisions) //enbale true all collisions
         {
             coll.enabled = true;
         }
+        //Use gravity true
         myRb.useGravity = true;
         myRb.isKinematic = false;
     }

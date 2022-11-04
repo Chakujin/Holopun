@@ -6,7 +6,7 @@ public class ArrowPoolObject : MonoBehaviour
 {
     [SerializeField] private int i_amount;
     [SerializeField] private GameObject ArrowPref;
-    private List<GameObject> arrowsList = new List<GameObject>();
+    public List<GameObject> arrowsList = new List<GameObject>();
 
     public Vector3 v_arrowStartPosition;
     public Vector3 v_arrowStartRotation;
@@ -37,6 +37,7 @@ public class ArrowPoolObject : MonoBehaviour
 
     public GameObject RequestArrow()
     {
+        Debug.Log("Request Arrow");
         for (int i = 0; i<arrowsList.Count; i++)
         {
             if (arrowsList[i].activeSelf)
