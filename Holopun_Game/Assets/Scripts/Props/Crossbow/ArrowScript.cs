@@ -26,7 +26,7 @@ public class ArrowScript : MonoBehaviour
 
     public void DesactiveCollisions() //Called when grab arrow
     {
-        m_arrowPool.RequestArrow();    //Request Arrow
+        m_arrowPool.RequestArrow();    //Request Arrow no va
         transform.parent = null;
 
         myColl.enabled = false;
@@ -44,14 +44,11 @@ public class ArrowScript : MonoBehaviour
 
         shoted = true;
 
-        Vector3 myforward = new Vector3(0,1,0);
-
-        rb.AddForce(myforward * i_forceImpulse, ForceMode.Impulse);
+        rb.AddForce(transform.right * i_forceImpulse, ForceMode.Acceleration);
     }
 
     public void DropArrow()
     {
-        Debug.Log("Drop Arrow");
         myColl.isTrigger = false;
         myColl.enabled = true;
         rb.useGravity = true;

@@ -218,7 +218,7 @@ MonoBehaviour:
   rb: {fileID: 2669257546757865636}
   myColl: {fileID: 1953258636207589081}
   shoted: 0
-  i_forceImpulse: 10
+  i_forceImpulse: 500
 --- !u!1 &6452316314838723302
 GameObject:
   m_ObjectHideFlags: 0
