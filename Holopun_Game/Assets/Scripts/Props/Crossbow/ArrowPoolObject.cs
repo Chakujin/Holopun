@@ -38,9 +38,9 @@ public class ArrowPoolObject : MonoBehaviour
     public GameObject RequestArrow()
     {
         Debug.Log("Request Arrow");
-        for (int i = 0; i<arrowsList.Count; i++)
+        for (int i = 0; i < arrowsList.Count; i++)
         {
-            if (arrowsList[i].activeSelf)
+            if (!arrowsList[i].activeSelf)
             {
                 arrowsList[i].SetActive(true);
                 return arrowsList[i];

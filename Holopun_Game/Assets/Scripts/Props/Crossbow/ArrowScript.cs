@@ -57,12 +57,18 @@ public class ArrowScript : MonoBehaviour
 
     private void CollisionWithSomething()
     {
-        gameObject.SetActive(false);
         transform.parent = startParentPos; //Return to pool
 
         //Reset position
         transform.position = m_arrowPool.v_arrowStartPosition;
         transform.eulerAngles = m_arrowPool.v_arrowStartRotation;
+
+        //Active trigger
+        myColl.isTrigger = true;
+        rb.isKinematic = true;
+        rb.useGravity = false;
+
+        gameObject.SetActive(false);
 
         shoted = false;   //Enable bool
     }
