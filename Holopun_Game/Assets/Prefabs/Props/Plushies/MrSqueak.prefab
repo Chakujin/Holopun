@@ -269,3 +269,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCollisions:
   - {fileID: 3430078588743414857}
+  myRb: {fileID: 2076488281922587285}

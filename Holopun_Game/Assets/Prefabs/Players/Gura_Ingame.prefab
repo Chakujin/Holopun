@@ -252,30 +252,6 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4741589885062130347}
-    - target: {fileID: 7194483449758040153, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
-      propertyPath: m_Name
-      value: Sound (TMP)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281586217796469906, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
-      propertyPath: m_settingsCanvas
-      value: 
-      objectReference: {fileID: 7681582343540506341}
-    - target: {fileID: 8615229405715921254, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
-      propertyPath: m_qualitylevels.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8615229405715921254, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
-      propertyPath: m_qualitylevels.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: a31e9f9f9c9d4b9429ed0d1234e22103, type: 2}
-    - target: {fileID: 8615229405715921254, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
-      propertyPath: m_qualitylevels.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: d847b876476d3d6468f5dfcd34266f96, type: 2}
-    - target: {fileID: 8615229405715921254, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
-      propertyPath: m_qualitylevels.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 19ba41d7c0026c3459d37c2fe90c55a0, type: 2}
     - target: {fileID: 8988895306172985018, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
       propertyPath: controller
       value: 
@@ -298,11 +274,6 @@ Transform:
 --- !u!1 &3554666849030564322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6635040064345331413, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
-  m_PrefabInstance: {fileID: 7872524569567510327}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7681582343540506341 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 565946208057541074, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
   m_PrefabInstance: {fileID: 7872524569567510327}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4443003882291976605 stripped

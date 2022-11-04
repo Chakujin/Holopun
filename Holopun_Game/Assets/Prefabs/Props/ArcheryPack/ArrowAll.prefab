@@ -217,7 +217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2669257546757865636}
   myColl: {fileID: 1953258636207589081}
-  startParentPos: {fileID: 0}
+  shoted: 0
+  i_forceImpulse: 10
 --- !u!1 &6452316314838723302
 GameObject:
   m_ObjectHideFlags: 0

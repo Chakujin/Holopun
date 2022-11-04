@@ -10,7 +10,8 @@ public class ArrowScript : MonoBehaviour
     public bool shoted = false;
     private ArrowPoolObject m_arrowPool;
     
-    public Transform startParentPos;
+    private Transform startParentPos;
+    [SerializeField] private int i_forceImpulse;
 
     private void Start()
     {
@@ -42,7 +43,10 @@ public class ArrowScript : MonoBehaviour
         rb.isKinematic = false;
 
         shoted = true;
-        rb.AddForce(transform.forward * 20, ForceMode.Impulse);
+
+        Vector3 myforward = new Vector3(0,1,0);
+
+        rb.AddForce(myforward * i_forceImpulse, ForceMode.Impulse);
     }
 
     public void DropArrow()
@@ -72,6 +76,7 @@ public class ArrowScript : MonoBehaviour
         {
             collision.gameObject.GetComponent<IHiteable>();//Use interface
         }
-        //CollisionWithSomething();
+        CollisionWithSomething();
+        Debug.Log(collision.gameObject);
     }
 }

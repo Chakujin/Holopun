@@ -3450,6 +3450,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2177746102674597203, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_Height
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177746102674597203, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_Center.y
+      value: 0.79
+      objectReference: {fileID: 0}
     - target: {fileID: 3150476341261325759, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_Name
       value: Hakos_Ingame
