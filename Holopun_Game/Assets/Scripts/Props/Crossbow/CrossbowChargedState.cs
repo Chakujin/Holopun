@@ -28,9 +28,13 @@ public class CrossbowChargedState : MonoBehaviour
 
     private void ShotArrow(InputAction.CallbackContext context)
     {
-        m_arrow.transform.parent = null;
-        m_arrow.GetComponent<ArrowScript>().ActiveCollisions();
+        if (m_arrow != null)
+        {
+            m_arrow.transform.parent = null;
+            m_arrow.GetComponent<ArrowScript>().ActiveCollisions();
 
-        m_machineState.ChangeState(m_emptyState);
+            m_machineState.ChangeState(m_emptyState);
+            m_arrow = null;
+        }
     }
 }

@@ -1139,9 +1139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_agent: {fileID: 1735170665057949405}
   m_players: []
-  m_mesh: {fileID: 0}
-  m_collider: {fileID: 0}
-  m_rb: {fileID: 0}
+  m_mesh: {fileID: 4132786282353224570}
+  m_collider: {fileID: 1005165701277609792}
+  m_rb: {fileID: 8115831590142710059}
 --- !u!1 &5068825332285222657
 GameObject:
   m_ObjectHideFlags: 0
