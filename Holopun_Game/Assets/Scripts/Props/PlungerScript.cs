@@ -29,7 +29,9 @@ public class PlungerScript : MonoBehaviour
     {
         //Debug.Log(args.interactorObject.transform.root);
         highscoreEntry = args.interactorObject.transform.root.GetComponent<HighscoreEntry>();
-        //Debug.Log("des");
+
+        transform.parent = null; //Unparent from the pool objects 
+
         foreach (Collider coll in myCollisions)
         {
             coll.enabled = false;
