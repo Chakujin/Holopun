@@ -22,7 +22,7 @@ public class PlungerPool : MonoBehaviour
             GameObject plunger = Instantiate(PlungerPref);
             plungersList.Add(plunger);
             plunger.transform.parent = transform;
-            plunger.transform.position = Vector3.zero;
+            plunger.transform.localPosition = Vector3.zero;
             plunger.transform.localEulerAngles = Vector3.zero;
 
             plunger.SetActive(false);
