@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7650234368361709880}
   - component: {fileID: 5071744736456930167}
+  - component: {fileID: 2941545419933587055}
   m_Layer: 0
   m_Name: CrossbowGameManager
   m_TagString: CrossbowGameManager
@@ -41,5 +42,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f64d30b9ea20acf4db284c6c57b5b33f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i_MaxRounds: 0
+--- !u!114 &2941545419933587055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3840631705582218464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6b7dc7e6d974a43971a323e33403c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
