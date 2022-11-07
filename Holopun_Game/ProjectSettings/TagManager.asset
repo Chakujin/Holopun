@@ -8,6 +8,7 @@ TagManager:
   - Plunger
   - Mesh
   - PlungerGameManager
+  - CrossbowGameManager
   layers:
   - Default
   - TransparentFX

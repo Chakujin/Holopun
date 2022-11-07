@@ -11,6 +11,8 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
     [SerializeField] private BoxCollider m_collider;
     [SerializeField] private Rigidbody m_rb;
+
+    [SerializeField]private int i_dmg;
     
     //Voids
     private void Start()
@@ -19,6 +21,16 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         int i = Random.Range(0,m_players.Count);//Take random num
         m_agent.destination = m_players[i].transform.position;//Find Player
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            gameObject.GetComponent<PlayerCorsbowGame>().TakeDamage(i_dmg);
+            StartCoroutine(Die());
+        }
+    }
+
     public void Hited()//IHiteable Interface
     {
         Debug.Log("Enemy Hited");
