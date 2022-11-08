@@ -22,6 +22,8 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         m_players.AddRange(GameObject.FindGameObjectsWithTag("Player")); //Get players
         m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("CrossbowGameManager").GetComponent<EnemiesSpawnedManager>();
 
+        m_agent.speed = CrossbowGameManager.enemySpeed;
+
         while (b_findPlayer == false)
         {
             int i = Random.Range(0, m_players.Count);//Take random num
@@ -35,7 +37,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player") //Attack player
         {
             gameObject.GetComponent<PlayerCorsbowGame>().TakeDamage(i_dmg);
             StartCoroutine(Die());

@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f10161c0f316d5242b777245558fdd7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 5014094213397231201, guid: 650b3076c05b950479935df2f7b59bb6, type: 3}
+  enemiesSpawn: 10
+  color: {r: 1, g: 0, b: 0, a: 1}

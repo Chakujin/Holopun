@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +18,10 @@ public class CrossbowGameManager : MonoBehaviour
     //Rounds
     [SerializeField] private int i_MaxRounds;
     private int i_CurrentRound = 0;
+    [SerializeField] private GameObject m_ObjectStartRounds;
+
+    //Enemies Stats
+    [HideInInspector] public static float enemySpeed = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +37,15 @@ public class CrossbowGameManager : MonoBehaviour
             i_CurrentRound++; //Update current round
             if (i_CurrentRound < i_MaxRounds)//If is not the last start round
             {
+                enemySpeed = enemySpeed + (0.25f * i_CurrentRound);
                 StartGameCallback.Invoke();
             }
         }
+    }
+
+    public void EndRoundCrossbowGame()
+    {
+        m_ObjectStartRounds.SetActive(true);
     }
 
     public void UpdatePlayersAlive()

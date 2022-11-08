@@ -1142,6 +1142,7 @@ MonoBehaviour:
   m_mesh: {fileID: 4132786282353224570}
   m_collider: {fileID: 1005165701277609792}
   m_rb: {fileID: 8115831590142710059}
+  i_dmg: 1
 --- !u!1 &5068825332285222657
 GameObject:
   m_ObjectHideFlags: 0
