@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerCorsbowGame : MonoBehaviour
 {
-    public bool Alive = true;
-    public int totalKilled;
+    public bool Alive = true; // Used by enemy for track  the player
+    public int totalKilled; //Used by countPoints manager
 
     [SerializeField] private int i_hp;
     private int i_maxHp;
@@ -14,6 +14,10 @@ public class PlayerCorsbowGame : MonoBehaviour
     private CrossbowGameManager m_crossbowGameManager;
 
     [SerializeField] private GameObject m_playerMesh;
+
+    //Delegates
+    public delegate void PlayerDie();
+    public event PlayerDie PlayerDieCallback;
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +40,16 @@ public class PlayerCorsbowGame : MonoBehaviour
 
     private void DiePlayer()
     {
+        if (PlayerDieCallback != null)
+        {
+            PlayerDieCallback.Invoke(); //Send call to enemyes for change the target follows
+        }
+
         Alive = false;
+
         m_crossbowGameManager.UpdatePlayersAlive(); //Send manager rest one player
         m_playerMesh.SetActive(false);
+        
         foreach (Collider col in controllersCol) // Enable false grab colliders
         {
             col.enabled = false;

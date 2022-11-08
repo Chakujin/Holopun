@@ -14,6 +14,7 @@ public class CrossbowGameManager : MonoBehaviour
     //Players
     private List<GameObject> playersList = new List<GameObject>();
     private int i_playersTotal;
+    [HideInInspector] public int totalPlayersDied = 0;
 
     //Rounds
     [SerializeField] private int i_MaxRounds;
@@ -46,6 +47,15 @@ public class CrossbowGameManager : MonoBehaviour
     public void EndRoundCrossbowGame()
     {
         m_ObjectStartRounds.SetActive(true);
+    }
+
+    public void UpdatePlayersDied()
+    {
+        totalPlayersDied++;
+        if(totalPlayersDied == i_playersTotal)
+        {
+            GameFinish();
+        }
     }
 
     public void UpdatePlayersAlive()

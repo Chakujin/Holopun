@@ -6,7 +6,9 @@ using UnityEngine.AI;
 public class SimpleEnemy : MonoBehaviour,IHiteable
 {
     [SerializeField] private NavMeshAgent m_agent;
-    [SerializeField] private List<GameObject> m_players; //If dont serializable null ref error
+    [SerializeField] private List<GameObject> m_playersList; //If dont serializable null ref error
+    private GameObject m_selectedPlayer;
+
     private EnemiesSpawnedManager m_enemiesSpawnManager;
     [SerializeField] private GameObject m_mesh;
 
@@ -19,20 +21,14 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     //Voids
     private void Start()
     {
-        m_players.AddRange(GameObject.FindGameObjectsWithTag("Player")); //Get players
+        m_playersList.AddRange(GameObject.FindGameObjectsWithTag("Player")); //Get players
         m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("CrossbowGameManager").GetComponent<EnemiesSpawnedManager>();
 
         m_agent.speed = CrossbowGameManager.enemySpeed;
 
-        while (b_findPlayer == false)
-        {
-            int i = Random.Range(0, m_players.Count);//Take random num
-            if (m_players[i].GetComponent<PlayerCorsbowGame>().Alive == true)
-            {
-                m_agent.destination = m_players[i].transform.position;//Find Player
-                b_findPlayer = true;
-            }
-        }
+        CrossbowGameManager.FinishGameCallback += FinishGame;
+
+        FindPlayer();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -44,11 +40,43 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         }
     }
 
+    //FindPlayer
+    private void FindPlayer()
+    {
+        while (b_findPlayer == false)
+        {
+            int i = Random.Range(0, m_playersList.Count);//Take random num
+            if (m_playersList[i].GetComponent<PlayerCorsbowGame>().Alive == true)
+            {
+                m_selectedPlayer = m_playersList[i];
+                m_agent.destination = m_selectedPlayer.transform.position;//Find Player
+
+                m_selectedPlayer.GetComponent<PlayerCorsbowGame>().PlayerDieCallback += PlayerFindedDie; // Subscribe to the event current player
+
+                b_findPlayer = true;
+            }
+        }
+    }
+
+    private void PlayerFindedDie()
+    {
+        m_selectedPlayer.GetComponent<PlayerCorsbowGame>().PlayerDieCallback -= PlayerFindedDie; //Unsubscrube the event 
+        
+        b_findPlayer = false;
+        FindPlayer(); //Find new player
+    }
+
+    //Hits
     public void Hited()//IHiteable Interface
     {
         Debug.Log("Enemy Hited");
         m_enemiesSpawnManager.UpdateEnemiesKilled(); // Update total enemies killed manager
         StartCoroutine(Die());
+    }
+
+    private void FinishGame()
+    {
+        Destroy(this.gameObject);
     }
 
     private IEnumerator Die()
@@ -63,6 +91,6 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         //FX
         //Audio
         yield return new WaitForSeconds(1f);
-        Destroy(this);
+        Destroy(this.gameObject);
     }
 }
