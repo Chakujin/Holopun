@@ -602,7 +602,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170171480
 GameObject:
@@ -3468,18 +3468,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hakos_Ingame
       objectReference: {fileID: 0}
-    - target: {fileID: 3440441201154602380, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 63
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440441201373712964, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440441201827998622, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8362828196385101239, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3524,46 +3512,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9096049756590839883, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
---- !u!1 &656122163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3150476341261325759, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-  m_PrefabInstance: {fileID: 656122162}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &656122164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656122163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e3c1c53f9f9e542a4c0618327cdc27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Alive: 1
-  totalKilled: 0
-  i_hp: 10
-  controllersCol:
-  - {fileID: 656122166}
-  - {fileID: 656122165}
-  m_playerMesh: {fileID: 1121012908}
---- !u!135 &656122165 stripped
-SphereCollider:
-  m_CorrespondingSourceObject: {fileID: 3440441200554806020, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-  m_PrefabInstance: {fileID: 656122162}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &656122166 stripped
-SphereCollider:
-  m_CorrespondingSourceObject: {fileID: 3440441201893712220, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-  m_PrefabInstance: {fileID: 656122162}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &675054345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5880,11 +5830,6 @@ Transform:
   m_Father: {fileID: 675712907}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &1121012908 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9096049756590839883, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-  m_PrefabInstance: {fileID: 656122162}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1145444333
 GameObject:
   m_ObjectHideFlags: 0
@@ -6259,6 +6204,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4381796124000987579, guid: a4b9f9071300ca9418774008dc4ef28e, type: 3}
   m_PrefabInstance: {fileID: 1322190894}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1332211506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332211508}
+  - component: {fileID: 1332211507}
+  m_Layer: 0
+  m_Name: CrossbowManagerPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1332211507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332211506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b3272a83e63c042ad889286def6159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryContainer: {fileID: 905734564131215707}
+  entryTemplate: {fileID: 905734564131215706}
+  highscoreEntryList: []
+  highscoreEntryTransformList: []
+--- !u!4 &1332211508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332211506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1345521610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9537,6 +9529,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 001c98934a6952940a0fb60f251770a9, type: 3}
+--- !u!224 &905734564131215706 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1986894764368581310, guid: 001c98934a6952940a0fb60f251770a9, type: 3}
+  m_PrefabInstance: {fileID: 905734564131215705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &905734564131215707 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5571649253724204562, guid: 001c98934a6952940a0fb60f251770a9, type: 3}
+  m_PrefabInstance: {fileID: 905734564131215705}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1249828015528247212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9735,6 +9737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossbowGameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5071744736456930167, guid: 9ebc0086338841b4fa2145d6b307fc0f, type: 3}
+      propertyPath: m_Points
+      value: 
+      objectReference: {fileID: 1332211507}
     - target: {fileID: 5071744736456930167, guid: 9ebc0086338841b4fa2145d6b307fc0f, type: 3}
       propertyPath: i_MaxRounds
       value: 3

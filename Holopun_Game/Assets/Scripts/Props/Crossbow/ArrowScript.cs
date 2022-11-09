@@ -13,6 +13,8 @@ public class ArrowScript : MonoBehaviour
     private Transform startParentPos;
     [SerializeField] private int i_forceImpulse;
 
+    [HideInInspector] public GameObject playerShot;
+
     private void Start()
     {
         myGrab = GetComponent<XRGrabInteractable>();
@@ -77,7 +79,7 @@ public class ArrowScript : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<IHiteable>() != null)//If have Ihitable interface
         {
-            collision.gameObject.GetComponent<IHiteable>();//Use interface
+            collision.gameObject.GetComponent<IHiteable>().Hited(playerShot);//Use interface
         }
         CollisionWithSomething();
         Debug.Log(collision.gameObject);

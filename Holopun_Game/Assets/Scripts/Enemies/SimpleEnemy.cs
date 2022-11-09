@@ -67,9 +67,11 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     }
 
     //Hits
-    public void Hited()//IHiteable Interface
+    public void Hited(GameObject playerHitMe)//IHiteable Interface
     {
         Debug.Log("Enemy Hited");
+        playerHitMe.GetComponentInParent<HighscoreEntry>().score++; // Get highscore player and update
+
         m_enemiesSpawnManager.UpdateEnemiesKilled(); // Update total enemies killed manager
         StartCoroutine(Die());
     }

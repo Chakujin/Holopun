@@ -17,7 +17,7 @@ public class EnemyStartRound : MonoBehaviour,IHiteable
         }
     }
 
-    public void Hited()
+    public void Hited(GameObject player)
     {
         StartCoroutine(StartRound());
     }

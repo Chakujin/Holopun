@@ -1,6 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class CrossbowMachineState : MonoBehaviour
 {
@@ -11,9 +11,11 @@ public class CrossbowMachineState : MonoBehaviour
     public MonoBehaviour CrossbowEmptyState;
     public MonoBehaviour CrossbowChargedState;
     
-    [SerializeField]
-    private List<MonoBehaviour> _stateList;
-    public GameObject arrow;
+    [SerializeField] private List<MonoBehaviour> _stateList;
+    [SerializeField] private XRGrabInteractable m_myInteractable;
+    
+    [HideInInspector] public GameObject arrow;
+    public GameObject playerGrab;
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +37,10 @@ public class CrossbowMachineState : MonoBehaviour
         }
         CrossbowActualState = newState;
         CrossbowActualState.enabled = true;
+    }
+
+    public void FindPlayerGrabMe()
+    {
+        playerGrab = m_myInteractable.gameObject;
     }
 }

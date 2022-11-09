@@ -20,6 +20,7 @@ public class CrossbowGameManager : MonoBehaviour
     [SerializeField] private int i_MaxRounds;
     private int i_CurrentRound = 0;
     [SerializeField] private GameObject m_ObjectStartRounds;
+    [SerializeField] private PlungerGameManagerPoints m_Points;
 
     //Enemies Stats
     [HideInInspector] public static float enemySpeed = 1;
@@ -46,6 +47,7 @@ public class CrossbowGameManager : MonoBehaviour
 
     public void EndRoundCrossbowGame()
     {
+        m_Points.UpdateScoreborad();
         m_ObjectStartRounds.SetActive(true);
     }
 
@@ -73,6 +75,14 @@ public class CrossbowGameManager : MonoBehaviour
         {
             FinishGameCallback.Invoke();
         }
+        //Reset rounds
+        i_CurrentRound = 0;
         i_playersTotal = playersList.Count;
+
+        //Reset points
+        foreach (GameObject player in playersList)
+        {
+            player.GetComponent<HighscoreEntry>().score = 0;
+        }
     }
 }

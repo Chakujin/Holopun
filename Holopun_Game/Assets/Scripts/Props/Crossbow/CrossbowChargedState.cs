@@ -30,6 +30,10 @@ public class CrossbowChargedState : MonoBehaviour
     {
         if (m_arrow != null)
         {
+            //Take currentPlayer
+            m_arrow.GetComponent<ArrowScript>().playerShot = m_machineState.playerGrab;
+
+            //Shot Arrow
             m_arrow.transform.parent = null;
             m_arrow.GetComponent<ArrowScript>().ActiveCollisions();
 
