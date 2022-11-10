@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Rendering;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
 public class ScreenshotHandler : MonoBehaviour {
@@ -22,12 +19,6 @@ public class ScreenshotHandler : MonoBehaviour {
             resWidth = m_camera.targetTexture.width;
             resHeight = m_camera.targetTexture.height;
         }
-        //m_camera.gameObject.SetActive(false);
-    }
-
-    private void Start()
-    {
-        TakePhoto();
     }
 
     public void TakePhoto()
