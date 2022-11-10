@@ -1,32 +1,56 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Rendering;
 
+[RequireComponent(typeof(Camera))]
 public class ScreenshotHandler : MonoBehaviour {
 
-    [SerializeField] private Camera myCamera;
-    [SerializeField] private int i_width;
-    [SerializeField] private int i_height;
-    private bool takeScreenshotOnNextFrame;
+    [SerializeField] private Camera m_camera;
 
-    private void OnPostRender() {
-        if (takeScreenshotOnNextFrame) {
-            takeScreenshotOnNextFrame = false;
-            RenderTexture renderTexture = myCamera.targetTexture;
+    private int resWidth = 256;
+    private int resHeight = 256;
 
-            Texture2D renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
-            Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
-            renderResult.ReadPixels(rect, 0, 0);
-
-            byte[] byteArray = renderResult.EncodeToPNG();
-            System.IO.File.WriteAllBytes(Application.dataPath + "/CameraScreenshot.png", byteArray);
-            Debug.Log("Saved CameraScreenshot.png");
-
-            RenderTexture.ReleaseTemporary(renderTexture);
-            myCamera.targetTexture = null;
+    private void Awake()
+    {
+        if (m_camera.targetTexture == null)
+        {
+            m_camera.targetTexture = new RenderTexture(resWidth,resHeight,24);
         }
+        else
+        {
+            resWidth = m_camera.targetTexture.width;
+            resHeight = m_camera.targetTexture.height;
+        }
+        //m_camera.gameObject.SetActive(false);
     }
 
-    public void TakeScreenshot() {
-        myCamera.targetTexture = RenderTexture.GetTemporary(i_width, i_height, 16);
-        takeScreenshotOnNextFrame = true;
+    private void Start()
+    {
+        TakePhoto();
+    }
+
+    public void TakePhoto()
+    {
+        Texture2D screenshotTexture = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
+        m_camera.Render();
+        RenderTexture.active = m_camera.targetTexture;
+        screenshotTexture.ReadPixels(new Rect(0,0,resWidth,resHeight), 0, 0);
+
+        byte[] byteArray = screenshotTexture.EncodeToPNG();
+
+        string fileName = SnapshotName();
+
+        System.IO.File.WriteAllBytes(fileName, byteArray);
+        Debug.Log("Photo");
+    }
+
+    private string SnapshotName()
+    {
+        return string.Format("{0}/Snapshots/snap_{1}x{2}_{3}.png",
+            Application.dataPath,
+            resWidth,
+            resHeight,
+            System.DateTime.Now.ToString("yyyy-MM,dd_HH-mm-ss"));
     }
 }

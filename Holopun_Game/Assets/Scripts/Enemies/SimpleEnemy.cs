@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.VFX;
 
 public class SimpleEnemy : MonoBehaviour,IHiteable
 {
@@ -17,7 +18,9 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
     [SerializeField]private int i_dmg;
     private bool b_findPlayer = false;
-    
+
+    [SerializeField] private VisualEffect m_explosionVFX;
+
     //Voids
     private void Start()
     {
@@ -90,7 +93,9 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         m_agent.velocity = Vector3.zero;
 
         m_mesh.SetActive(false);
+
         //FX
+        m_explosionVFX.Play();
         //Audio
         yield return new WaitForSeconds(1f);
         Destroy(this.gameObject);

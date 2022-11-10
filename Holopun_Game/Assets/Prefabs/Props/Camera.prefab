@@ -98,7 +98,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -496,6 +496,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e382b21e7fb2614caa602f4fedec19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCamera: {fileID: 287288166}
-  i_width: 0
-  i_height: 0
+  m_camera: {fileID: 287288166}
