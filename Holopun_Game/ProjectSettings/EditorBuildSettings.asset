@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 4e68a29cc08846f41ab2aace631ef2f0
+  - enabled: 1
     path: Assets/Scenes/CityIsleMap.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/TownDesertMap.unity
+    guid: 9662c9eab8c075d44bcfebb240632690
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 76a786bbe37bb314089bbc5943a69fe6, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 400cbd30d3dcf014fbf4fb74e0d390da, type: 2}

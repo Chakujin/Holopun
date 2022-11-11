@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b099fae91fd165a429ebbd5bcc16dd7f, type: 3}
-  m_Name: SmolAme
+  m_Name: SmolIna
   m_EditorClassIdentifier: 
-  playerIngame: {fileID: 8917487193294473032, guid: 0660c3d76d39da54abcb580de93d55d8, type: 3}
-  characterSelect: {fileID: 6949798831988691754, guid: a31cfdb0bb66c094099a9f05eae242e3, type: 3}
-  playerName: Ame
+  playerIngame: {fileID: 8917487193294473032, guid: b9df9d6bbfa7cc34c855fbf098889b8b, type: 3}
+  characterSelect: {fileID: 6949798831988691754, guid: 8d9848380cf7fc34681183966e79d48c, type: 3}
+  playerName: Ina

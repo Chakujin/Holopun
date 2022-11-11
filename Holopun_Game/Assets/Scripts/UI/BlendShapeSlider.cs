@@ -3,7 +3,7 @@ using UnityEngine;
 public class BlendShapeSlider : MonoBehaviour
 {
     [SerializeField] private BlendshapeController controller;
-    [SerializeField] private int i_numBlendShapeEdit;
+    private int i_numBlendShapeEdit;
     [SerializeField] private string NameBlendShape;
 
     private void Awake()
@@ -14,10 +14,6 @@ public class BlendShapeSlider : MonoBehaviour
             {
                 i_numBlendShapeEdit = controller.myrenderer.sharedMesh.GetBlendShapeIndex(NameBlendShape); // Get the num index on the List
                controller.indexBlendshape.Add(i_numBlendShapeEdit, 0); // Create and add shape and hes value to a dicctionary
-            }
-            else
-            {
-                //Debug.LogError("Error Name BlendShape Or Blendshape not exist" + "  " + NameBlendShape);
             }
         }
     }

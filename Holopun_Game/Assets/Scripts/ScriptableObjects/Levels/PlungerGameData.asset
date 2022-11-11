@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: PlungerGameData
   m_EditorClassIdentifier: 
   levelName: Plunger Game
-  sceneLoad: 3
+  sceneLoad: 1
   bgImage: {fileID: 0}
   characters:
   - {fileID: 11400000, guid: 96f104e6a18fdd74f8ae7aed9edc9bd0, type: 2}
+  - {fileID: 11400000, guid: f80ae89bbcfee0b4ea44f65123c71993, type: 2}
+  - {fileID: 11400000, guid: 0231c0ee0b63b8048b43f0732f2b5b00, type: 2}
