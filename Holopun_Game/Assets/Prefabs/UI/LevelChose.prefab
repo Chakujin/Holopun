@@ -52,6 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0969f141aa10f46915a31060140522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelData: {fileID: 0}
+  s_levelName: {fileID: 2611993222210796765}
+  bgImage: {fileID: 368216410565673099}
 --- !u!1 &3459899456351131604
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +175,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 486317233807724401}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 156215613298207485}
+        m_TargetAssemblyTypeName: LevelDisplay, Assembly-CSharp
+        m_MethodName: PressSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5407233306379400791
 GameObject:
   m_ObjectHideFlags: 0

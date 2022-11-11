@@ -4,4 +4,7 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
     public string levelName;
+    public int sceneLoad;
+    public Sprite bgImage;
+    public CharacterData[] characters;
 }

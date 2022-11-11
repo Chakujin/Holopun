@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b099fae91fd165a429ebbd5bcc16dd7f, type: 3}
+  m_Name: SmolGura
+  m_EditorClassIdentifier: 
+  playerIngame: {fileID: 8917487193294473032, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+  characterSelect: {fileID: 6949798831988691754, guid: 819fcad49c9b09040ac284a1d6943297, type: 3}
+  playerName: Gura

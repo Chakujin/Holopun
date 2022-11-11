@@ -9,6 +9,8 @@ TagManager:
   - Mesh
   - PlungerGameManager
   - CrossbowGameManager
+  - SelectedPlayer
+  - CharacterDisplay
   layers:
   - Default
   - TransparentFX
