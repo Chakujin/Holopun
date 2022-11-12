@@ -767,6 +767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmolAme_Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8350051605603841303, guid: bdaeefa4887dcba4080077f7cce2b0ee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdaeefa4887dcba4080077f7cce2b0ee, type: 3}
 --- !u!4 &2901380104613965152 stripped

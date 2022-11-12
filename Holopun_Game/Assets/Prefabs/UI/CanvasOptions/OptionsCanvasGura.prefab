@@ -19,6 +19,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 806577369828711380, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_qualitylevels.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 806577369828711380, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_qualitylevels.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 19ba41d7c0026c3459d37c2fe90c55a0, type: 2}
+    - target: {fileID: 806577369828711380, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_qualitylevels.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: d847b876476d3d6468f5dfcd34266f96, type: 2}
+    - target: {fileID: 806577369828711380, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_qualitylevels.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: a31e9f9f9c9d4b9429ed0d1234e22103, type: 2}
     - target: {fileID: 931114329066377428, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

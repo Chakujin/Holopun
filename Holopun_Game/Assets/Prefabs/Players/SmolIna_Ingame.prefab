@@ -77,6 +77,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmolIna_Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3940238441732649538, guid: ee8ee4d5d3fcfd1428a0bbf531325a75, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4145641466381177760, guid: ee8ee4d5d3fcfd1428a0bbf531325a75, type: 3}
       propertyPath: m_RootOrder
       value: 0

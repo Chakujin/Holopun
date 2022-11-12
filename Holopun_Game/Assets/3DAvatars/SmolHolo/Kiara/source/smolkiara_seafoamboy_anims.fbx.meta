@@ -27,7 +27,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SmolkiaraHead
-    second: {fileID: 2100000, guid: 6b671b966b058f840a05730aad426838, type: 2}
+    second: {fileID: 2100000, guid: 1686af4acb54233439f6d769ea85c78f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

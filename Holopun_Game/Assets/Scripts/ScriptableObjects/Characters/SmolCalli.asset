@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b099fae91fd165a429ebbd5bcc16dd7f, type: 3}
+  m_Name: SmolCalli
+  m_EditorClassIdentifier: 
+  playerIngame: {fileID: 8917487193294473032, guid: 8031c5852b1a14e42bc9245a6fea054e, type: 3}
+  characterSelect: {fileID: 6949798831988691754, guid: 7a14780f92af898439cc66bcf49a18f5, type: 3}
+  playerName: Calli
