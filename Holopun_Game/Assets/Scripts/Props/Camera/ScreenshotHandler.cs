@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Camera))]
 public class ScreenshotHandler : MonoBehaviour {
 
     [SerializeField] private Camera m_camera;
