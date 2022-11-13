@@ -27,31 +27,37 @@ public class CharacterDisplay : MonoBehaviour
 
     public void PressRigth()
     {
-        Debug.Log("Press Rigth");
-        i_currentSelected++;//Update current num
-        if (i_currentSelected > characterData.Count)//If is bigger than max length list retur 0
+        if (characterData != null)
         {
-            i_currentSelected = 0;
-            UpdateCharacter();
-        }
-        else
-        {
-            UpdateCharacter();
+            Debug.Log("Press Rigth");
+            i_currentSelected++;//Update current num
+            if (i_currentSelected > characterData.Count)//If is bigger than max length list retur 0
+            {
+                i_currentSelected = 0;
+                UpdateCharacter();
+            }
+            else
+            {
+                UpdateCharacter();
+            }
         }
     }
 
     public void PressLeft()
     {
-        Debug.Log("Press Left");
-        i_currentSelected--;//Update current num
-        if (i_currentSelected > 0)//If current num is -1 go to max num list
+        if (characterData != null)
         {
-            i_currentSelected = characterData.Count; //Take max num list
-            UpdateCharacter();
-        }
-        else
-        {
-            UpdateCharacter();
+            Debug.Log("Press Left");
+            i_currentSelected--;//Update current num
+            if (i_currentSelected > 0)//If current num is -1 go to max num list
+            {
+                i_currentSelected = characterData.Count; //Take max num list
+                UpdateCharacter();
+            }
+            else
+            {
+                UpdateCharacter();
+            }
         }
     }
 

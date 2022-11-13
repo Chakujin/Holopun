@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6863439504608344126}
   - component: {fileID: 156215613298207485}
-  m_Layer: 0
+  - component: {fileID: 5673580623387615486}
+  m_Layer: 5
   m_Name: LevelChose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,6 +56,25 @@ MonoBehaviour:
   levelData: {fileID: 0}
   s_levelName: {fileID: 2611993222210796765}
   bgImage: {fileID: 368216410565673099}
+--- !u!114 &5673580623387615486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107361535198373989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &3459899456351131604
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,7 +87,7 @@ GameObject:
   - component: {fileID: 1596427354297437663}
   - component: {fileID: 486317233807724401}
   - component: {fileID: 4215348391167818978}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +219,7 @@ GameObject:
   - component: {fileID: 4994092270015100117}
   - component: {fileID: 2920015790737532077}
   - component: {fileID: 4084189588607537046}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ImageLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +294,7 @@ GameObject:
   - component: {fileID: 64236641274674952}
   - component: {fileID: 2399913689947724678}
   - component: {fileID: 368216410565673099}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +369,7 @@ GameObject:
   - component: {fileID: 2256288774588557512}
   - component: {fileID: 9191520884949112719}
   - component: {fileID: 3189566913454532701}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +448,7 @@ GameObject:
   - component: {fileID: 6103845119302870272}
   - component: {fileID: 62439589654159218}
   - component: {fileID: 2611993222210796765}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterSpawnRotation : MonoBehaviour
@@ -10,6 +8,7 @@ public class CharacterSpawnRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Controll speed via slider
         transform.localEulerAngles = new Vector3(0,transform.localEulerAngles.y + i_speed * Time.deltaTime,0);
     }
 }

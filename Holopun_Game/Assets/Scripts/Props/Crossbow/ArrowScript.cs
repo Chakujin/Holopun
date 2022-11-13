@@ -28,7 +28,7 @@ public class ArrowScript : MonoBehaviour
 
     public void DesactiveCollisions() //Called when grab arrow
     {
-        m_arrowPool.RequestArrow();    //Request Arrow no va
+        m_arrowPool.RequestArrow();
         transform.parent = null;
 
         myColl.enabled = false;
@@ -57,24 +57,6 @@ public class ArrowScript : MonoBehaviour
         rb.isKinematic = false;
     }
 
-    private void CollisionWithSomething()
-    {
-        transform.parent = startParentPos; //Return to pool
-
-        //Reset position
-        transform.position = m_arrowPool.v_arrowStartPosition;
-        transform.eulerAngles = m_arrowPool.v_arrowStartRotation;
-
-        //Active trigger
-        myColl.isTrigger = true;
-        rb.isKinematic = true;
-        rb.useGravity = false;
-
-        gameObject.SetActive(false);
-
-        shoted = false;   //Enable bool
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<IHiteable>() != null)//If have Ihitable interface
@@ -83,5 +65,23 @@ public class ArrowScript : MonoBehaviour
         }
         CollisionWithSomething();
         Debug.Log(collision.gameObject);
+    }
+
+    private void CollisionWithSomething()
+    {
+        transform.parent = startParentPos; //Return to pool
+
+        //Active trigger
+        myColl.isTrigger = true;
+        rb.isKinematic = true;
+        rb.useGravity = false;
+
+        //Reset position
+        transform.localPosition = m_arrowPool.v_arrowStartPosition;
+        transform.localEulerAngles = m_arrowPool.v_arrowStartRotation;
+
+        gameObject.SetActive(false);
+
+        shoted = false;   //Enable bool
     }
 }
