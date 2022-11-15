@@ -33,6 +33,10 @@ public class CrossbowEmptyState : MonoBehaviour
     {
         Debug.Log("Detecto flecha");
         arrow.GetComponent<ArrowScript>().DesactiveCollisions();
+
+        arrow.GetComponent<ArrowScript>().arrowCharged = true;
+        arrow.GetComponent<ArrowScript>().ChangeArrowChargedCallback += m_machineState.DesatachArrow;
+
         arrow.transform.SetParent(m_posTrigger);
 
         arrow.transform.localPosition = new Vector3(0,0,0.025f); //Edit Local position

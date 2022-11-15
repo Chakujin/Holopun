@@ -14,8 +14,6 @@ public class CrossbowChargedState : MonoBehaviour
     {
         m_machineState = GetComponent<CrossbowMachineState>();
         m_emptyState = m_machineState.CrossbowEmptyState;
-
-        m_buttonShot.action.performed += ShotArrow; //Add event to a void
     }
 
     private void OnEnable()
@@ -26,7 +24,7 @@ public class CrossbowChargedState : MonoBehaviour
         }
     }
 
-    private void ShotArrow(InputAction.CallbackContext context)
+    public void ShotArrow()
     {
         if (m_arrow != null)
         {

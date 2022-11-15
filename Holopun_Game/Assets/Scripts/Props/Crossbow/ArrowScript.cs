@@ -15,6 +15,12 @@ public class ArrowScript : MonoBehaviour
 
     [HideInInspector] public GameObject playerShot;
 
+    [HideInInspector]public bool arrowCharged = false;
+
+    //Event
+    public delegate void ChangeArrowCharged();
+    public event ChangeArrowCharged ChangeArrowChargedCallback;
+
     private void Start()
     {
         myGrab = GetComponent<XRGrabInteractable>();
@@ -26,11 +32,24 @@ public class ArrowScript : MonoBehaviour
         startParentPos = transform.parent;
     }
 
-    public void DesactiveCollisions() //Called when grab arrow
+    public void DesactiveCollisions() //Called when grab arrow (event) and charge crossbow
     {
-        m_arrowPool.RequestArrow();
+        if (arrowCharged == true)
+        {
+            if(ChangeArrowChargedCallback != null)
+            {
+                ChangeArrowChargedCallback.Invoke(); //Send messaje to crossbow quit arrow and change machine state
+            }
+            arrowCharged = false;
+        }
+        else //Is not charged
+        {
+            Debug.Log("Flechita");
+            m_arrowPool.RequestArrow();
+        }
         transform.parent = null;
 
+        //Collisions and Physics
         myColl.enabled = false;
         myColl.isTrigger = true;
         rb.useGravity = false;
@@ -47,6 +66,7 @@ public class ArrowScript : MonoBehaviour
         shoted = true;
 
         rb.AddForce(transform.right * i_forceImpulse, ForceMode.Acceleration);
+        ChangeArrowChargedCallback.Invoke();
     }
 
     public void DropArrow()

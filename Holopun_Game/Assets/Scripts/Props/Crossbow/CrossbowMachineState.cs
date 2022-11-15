@@ -43,4 +43,10 @@ public class CrossbowMachineState : MonoBehaviour
     {
         playerGrab = m_myInteractable.gameObject;
     }
+
+    public void DesatachArrow()
+    {
+        arrow.GetComponent<ArrowScript>().ChangeArrowChargedCallback -= DesatachArrow;
+        ChangeState(CrossbowEmptyState);
+    }
 }
