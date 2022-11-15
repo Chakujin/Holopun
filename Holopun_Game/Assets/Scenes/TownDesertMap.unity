@@ -4191,6 +4191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boitan_Round Start
       objectReference: {fileID: 0}
+    - target: {fileID: 2095773063982237851, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2594276833512849567, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
       propertyPath: m_gameManager
       value: 
@@ -9823,11 +9827,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6931725351214837498, guid: 454b428912d441846b9a566a01e64bde, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.685
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 6931725351214837498, guid: 454b428912d441846b9a566a01e64bde, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.904
+      value: 8.97
       objectReference: {fileID: 0}
     - target: {fileID: 6931725351214837498, guid: 454b428912d441846b9a566a01e64bde, type: 3}
       propertyPath: m_LocalRotation.w

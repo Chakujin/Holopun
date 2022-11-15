@@ -15,7 +15,7 @@ public class CrossbowMachineState : MonoBehaviour
     [SerializeField] private XRGrabInteractable m_myInteractable;
     
     [HideInInspector] public GameObject arrow;
-    public GameObject playerGrab;
+    [HideInInspector] public GameObject playerGrab;
 
     // Start is called before the first frame update
     void Start()

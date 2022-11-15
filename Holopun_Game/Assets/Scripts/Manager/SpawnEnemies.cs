@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class SpawnEnemies : MonoBehaviour
@@ -17,18 +18,19 @@ public class SpawnEnemies : MonoBehaviour
 
     private void StartSpawnEnemies()
     {
+        StartCoroutine(Spawn());
+    }
+
+    private IEnumerator Spawn()
+    {
         for (int i = 0; i < enemiesSpawn; i++)
         {
-            int randomPosX = Random.Range(0,3);
-            int randomPosY = Random.Range(0, 3);
-            int randomPosZ = Random.Range(0, 3);
-
-            Vector3 positionSpawn = new Vector3(transform.localPosition.x + randomPosX, transform.localPosition.y + randomPosY, transform.localPosition.z + randomPosZ);
-
-            Instantiate(enemyPrefab,positionSpawn,transform.localRotation);
+            Instantiate(enemyPrefab, transform.localPosition, transform.localRotation);
+            m_enemiesSpawnManager.UpdateEnemiesSpawned(enemiesSpawn); //Update total enemies have spawned
+            yield return new WaitForSeconds(1f);
         }
-        m_enemiesSpawnManager.UpdateEnemiesSpawned(enemiesSpawn); //Update total enemies have spawned
     }
+
 
     public Color color = Color.red;
     private void OnDrawGizmos()

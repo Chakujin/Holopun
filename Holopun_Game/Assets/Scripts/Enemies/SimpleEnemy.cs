@@ -14,7 +14,6 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     [SerializeField] private GameObject m_mesh;
 
     [SerializeField] private BoxCollider m_collider;
-    [SerializeField] private Rigidbody m_rb;
 
     [SerializeField]private int i_dmg;
     private bool b_findPlayer = false;
@@ -88,8 +87,6 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     {
         //Make Static mesh
         m_collider.enabled = false;
-        m_rb.isKinematic = true;
-        m_rb.useGravity = false;
         m_agent.velocity = Vector3.zero;
 
         m_mesh.SetActive(false);
