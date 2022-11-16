@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCanvasSettings : MonoBehaviour
 {
@@ -13,5 +14,10 @@ public class PlayerCanvasSettings : MonoBehaviour
     {
         m_settingsCanvas.SetActive(false);
         m_faceCanvas.SetActive(true);
+    }
+
+    public void PressQuit()
+    {
+        SceneManager.LoadScene(0);
     }
 }

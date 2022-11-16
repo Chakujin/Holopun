@@ -5,6 +5,7 @@ public class ArrowScript : MonoBehaviour
 {
     private XRGrabInteractable myGrab;
 
+    [SerializeField] private GameObject m_Trail;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private BoxCollider myColl;
     public bool shoted = false;
@@ -15,7 +16,7 @@ public class ArrowScript : MonoBehaviour
 
     [HideInInspector] public GameObject playerShot;
 
-    [HideInInspector]public bool arrowCharged = false;
+    [HideInInspector] public bool arrowCharged = false;
 
     //Event
     public delegate void ChangeArrowCharged();
@@ -64,6 +65,7 @@ public class ArrowScript : MonoBehaviour
         rb.isKinematic = false;
 
         shoted = true;
+        m_Trail.SetActive(true); //Active trail FX
 
         rb.AddForce(transform.right * i_forceImpulse, ForceMode.Acceleration);
         ChangeArrowChargedCallback.Invoke();
@@ -103,5 +105,6 @@ public class ArrowScript : MonoBehaviour
         gameObject.SetActive(false);
 
         shoted = false;   //Enable bool
+        m_Trail.SetActive(false); //Desactive trail FX
     }
 }

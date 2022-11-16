@@ -3,6 +3,7 @@
 public class ScreenshotHandler : MonoBehaviour {
 
     [SerializeField] private Camera m_camera;
+    [SerializeField] private AudioSource m_audioSnap;
 
     private int resWidth = 256;
     private int resHeight = 256;
@@ -22,6 +23,8 @@ public class ScreenshotHandler : MonoBehaviour {
 
     public void TakePhoto()
     {
+        m_audioSnap.Play();
+
         Texture2D screenshotTexture = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
         m_camera.Render();
         RenderTexture.active = m_camera.targetTexture;
@@ -32,7 +35,7 @@ public class ScreenshotHandler : MonoBehaviour {
         string fileName = SnapshotName();
 
         System.IO.File.WriteAllBytes(fileName, byteArray);
-        Debug.Log("Photo");
+        //Debug.Log("Photo");
     }
 
     private string SnapshotName()
