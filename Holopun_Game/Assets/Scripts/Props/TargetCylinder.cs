@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetCylinder : MonoBehaviour
 {
     private PlungerGameManagerPoints m_myManagerPoints;
+    [SerializeField] private ParticleSystem m_particleSystem;
     [SerializeField] private int i_points;
     private void Awake()
     {
@@ -23,10 +22,6 @@ public class TargetCylinder : MonoBehaviour
             {
                 AddPoints(myObject.GetComponent<PlungerScript>().highscoreEntry);//Get player ho has drop the plunger
                 PlungerInside(myObject);
-            }
-            else
-            {
-                Debug.Log("Trigeado pero no colocado");
             }
         }
     }
@@ -49,6 +44,7 @@ public class TargetCylinder : MonoBehaviour
         m_renderer.material.color = color;
 
         m_myManagerPoints.UpdateScoreborad(); //Updatea el scoreboard (Alomejor solo haverlo al final del juego)
+        m_particleSystem.Play();
     }
     private void AddPoints(HighscoreEntry playerHighscore)
     {
