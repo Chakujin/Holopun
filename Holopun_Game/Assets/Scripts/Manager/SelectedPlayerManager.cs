@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,8 +5,7 @@ public class SelectedPlayerManager : MonoBehaviour
 {
     public static SelectedPlayerManager instance;
     private int levelLoad;
-    private GameObject playerSpawn;
-
+    [HideInInspector] public GameObject playerSpawn;
 
     void Awake()
     {

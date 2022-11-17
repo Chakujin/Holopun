@@ -4,9 +4,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PlungerScript : MonoBehaviour
 {
     [SerializeField] Transform m_raycastPosition;
+    
+    [Range(0,1),Min(0.1f)]
     [SerializeField] float f_rangeRaycast;
 
-    public HighscoreEntry highscoreEntry;
+    [HideInInspector]public HighscoreEntry highscoreEntry;
     [SerializeField] private Collider[] myCollisions;
     public bool CompareDirection()
     {
@@ -25,8 +27,9 @@ public class PlungerScript : MonoBehaviour
     }
 
     //Catching the player who has Hover the plunger
-    public void OnHoverEntered(HoverEnterEventArgs args)
+    public void OnGrabPlunger(SelectEnterEventArgs args)
     {
+        Debug.Log("Agarro");
         //Debug.Log(args.interactorObject.transform.root);
         highscoreEntry = args.interactorObject.transform.root.GetComponent<HighscoreEntry>();
 
@@ -40,7 +43,7 @@ public class PlungerScript : MonoBehaviour
 
     public void OnHoverExit()
     {
-        //Debug.Log("Activo");
+        Debug.Log("Suelto");
         foreach (Collider coll in myCollisions)
         {
             coll.enabled = true;

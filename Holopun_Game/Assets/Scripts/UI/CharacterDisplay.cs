@@ -31,7 +31,7 @@ public class CharacterDisplay : MonoBehaviour
         {
             Debug.Log("Press Rigth");
             i_currentSelected++;//Update current num
-            if (i_currentSelected > characterData.Count)//If is bigger than max length list retur 0
+            if (i_currentSelected > characterData.Count -1)//If is bigger than max length list retur 0
             {
                 i_currentSelected = 0;
                 UpdateCharacter();
@@ -47,11 +47,10 @@ public class CharacterDisplay : MonoBehaviour
     {
         if (characterData != null)
         {
-            Debug.Log("Press Left");
             i_currentSelected--;//Update current num
-            if (i_currentSelected > 0)//If current num is -1 go to max num list
+            if (i_currentSelected < 0)//If current num is -1 go to max num list
             {
-                i_currentSelected = characterData.Count; //Take max num list
+                i_currentSelected = characterData.Count -1; //Take max num list
                 UpdateCharacter();
             }
             else
