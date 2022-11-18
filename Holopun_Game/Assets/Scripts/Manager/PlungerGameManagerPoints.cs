@@ -21,7 +21,7 @@ public class PlungerGameManagerPoints : MonoBehaviour
 
         foreach (GameObject player in playerObjects)
         {
-            highscoreEntryList.Add(player.GetComponent<HighscoreEntry>());
+            highscoreEntryList.Add(player.GetComponentInParent<HighscoreEntry>());
         }
         UpdateScoreborad();
     }

@@ -86,7 +86,7 @@ public class ArrowScript : MonoBehaviour
             collision.gameObject.GetComponent<IHiteable>().Hited(playerShot);//Use interface
         }
         CollisionWithSomething();
-        Debug.Log(collision.gameObject);
+        //Debug.Log(collision.gameObject);
     }
 
     private void CollisionWithSomething()

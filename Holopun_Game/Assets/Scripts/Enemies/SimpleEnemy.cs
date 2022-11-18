@@ -24,7 +24,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     private void Start()
     {
         m_playersList.AddRange(GameObject.FindGameObjectsWithTag("Player")); //Get players
-        m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("CrossbowGameManager").GetComponent<EnemiesSpawnedManager>();
+        m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("EnemiesManager").GetComponent<EnemiesSpawnedManager>();
 
         m_agent.speed = CrossbowGameManager.enemySpeed;
 
@@ -53,11 +53,11 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         if (b_findPlayer == false)
         {
             int i = Random.Range(0, m_playersList.Count);//Take random num
-            if (m_playersList[i].GetComponent<PlayerCorsbowGame>().Alive == true)
+            if (m_playersList[i].GetComponentInParent<PlayerCorsbowGame>().Alive == true) //Inparent get script
             {
                 m_selectedPlayer = m_playersList[i];
 
-                m_selectedPlayer.GetComponent<PlayerCorsbowGame>().PlayerDieCallback += PlayerFindedDie; // Subscribe to the event current player
+                m_selectedPlayer.GetComponentInParent<PlayerCorsbowGame>().PlayerDieCallback += PlayerFindedDie; // Subscribe to the event current player
 
                 b_findPlayer = true;
             }

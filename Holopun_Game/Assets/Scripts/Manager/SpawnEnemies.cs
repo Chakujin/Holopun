@@ -12,7 +12,7 @@ public class SpawnEnemies : MonoBehaviour
     void Start()
     {
         CrossbowGameManager.StartGameCallback += StartSpawnEnemies;
-        m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("CrossbowGameManager").GetComponent<EnemiesSpawnedManager>();
+        m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("EnemiesManager").GetComponent<EnemiesSpawnedManager>();
         StartSpawnEnemies();
     }
 

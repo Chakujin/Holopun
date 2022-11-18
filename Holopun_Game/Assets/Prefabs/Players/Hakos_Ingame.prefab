@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1049312504132608611}
   m_Layer: 0
   m_Name: Hakos_Ingame
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,6 +124,10 @@ PrefabInstance:
     - target: {fileID: 526771822375324763, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
       propertyPath: m_Name
       value: XR Origin_Pixel_Hakos
+      objectReference: {fileID: 0}
+    - target: {fileID: 526771822375324763, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 526771822375324765, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
       propertyPath: m_RootOrder
