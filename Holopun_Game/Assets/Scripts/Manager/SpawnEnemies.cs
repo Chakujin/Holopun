@@ -13,7 +13,6 @@ public class SpawnEnemies : MonoBehaviour
     {
         CrossbowGameManager.StartGameCallback += StartSpawnEnemies;
         m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("EnemiesManager").GetComponent<EnemiesSpawnedManager>();
-        StartSpawnEnemies();
     }
 
 
@@ -27,9 +26,9 @@ public class SpawnEnemies : MonoBehaviour
         for (int i = 0; i < enemiesSpawn; i++)
         {
             Instantiate(enemyPrefab, transform.localPosition, transform.localRotation);
-            m_enemiesSpawnManager.UpdateEnemiesSpawned(enemiesSpawn); //Update total enemies have spawned
             yield return new WaitForSeconds(1f);
         }
+        m_enemiesSpawnManager.UpdateEnemiesSpawned(enemiesSpawn); //Update total enemies have spawned
     }
 
 

@@ -41,7 +41,6 @@ public class CrossbowMachineState : MonoBehaviour
 
     public void FindPlayerGrabMe(SelectEnterEventArgs args)
     {
-        Debug.Log("Busco Player");
         playerGrab = args.interactorObject.transform.root.gameObject;
     }
 

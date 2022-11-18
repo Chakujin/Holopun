@@ -45,7 +45,7 @@ public class ArrowScript : MonoBehaviour
         }
         else //Is not charged
         {
-            Debug.Log("Flechita");
+            //Debug.Log("Flechita");
             m_arrowPool.RequestArrow();
         }
         transform.parent = null;
