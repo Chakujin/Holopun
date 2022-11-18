@@ -31,7 +31,7 @@ public class CrossbowEmptyState : MonoBehaviour
 
     private void DetectArrow(GameObject arrow)
     {
-        Debug.Log("Detecto flecha");
+        //Debug.Log("Detecto flecha");
         arrow.GetComponent<ArrowScript>().DesactiveCollisions();
 
         arrow.GetComponent<ArrowScript>().arrowCharged = true;

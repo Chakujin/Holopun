@@ -14,7 +14,7 @@ public class ArrowScript : MonoBehaviour
     private Transform startParentPos;
     [SerializeField] private int i_forceImpulse;
 
-    [HideInInspector] public GameObject playerShot;
+    public GameObject playerShot;
 
     [HideInInspector] public bool arrowCharged = false;
 

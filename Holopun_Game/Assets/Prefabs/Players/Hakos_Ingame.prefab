@@ -93,6 +93,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8362828196385101239}
     m_Modifications:
+    - target: {fileID: 526771821219478368, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 526771821219478371, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
       propertyPath: m_AttachTransform
       value: 
@@ -104,6 +108,10 @@ PrefabInstance:
     - target: {fileID: 526771821693421034, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 526771822028837175, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 526771822028837179, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
       propertyPath: m_AttachTransform

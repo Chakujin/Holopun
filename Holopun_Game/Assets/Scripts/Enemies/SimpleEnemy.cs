@@ -42,22 +42,27 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         }
     }
 
+    private void Update()
+    {
+        FindPlayer();
+    }
+
     //FindPlayer
     private void FindPlayer()
     {
-        while (b_findPlayer == false)
+        if (b_findPlayer == false)
         {
             int i = Random.Range(0, m_playersList.Count);//Take random num
             if (m_playersList[i].GetComponent<PlayerCorsbowGame>().Alive == true)
             {
                 m_selectedPlayer = m_playersList[i];
-                m_agent.destination = m_selectedPlayer.transform.position;//Find Player
 
                 m_selectedPlayer.GetComponent<PlayerCorsbowGame>().PlayerDieCallback += PlayerFindedDie; // Subscribe to the event current player
 
                 b_findPlayer = true;
             }
         }
+        m_agent.destination = m_selectedPlayer.transform.position; //Find Player
     }
 
     private void PlayerFindedDie()
@@ -72,7 +77,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     public void Hited(GameObject playerHitMe)//IHiteable Interface
     {
         Debug.Log("Enemy Hited");
-        playerHitMe.GetComponentInParent<HighscoreEntry>().score++; // Get highscore player and update
+        playerHitMe.GetComponent<HighscoreEntry>().score++; // Get highscore player and update
 
         m_enemiesSpawnManager.UpdateEnemiesKilled(); // Update total enemies killed manager
         StartCoroutine(Die());

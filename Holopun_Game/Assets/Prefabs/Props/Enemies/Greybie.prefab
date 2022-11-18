@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_mesh: {fileID: 4132786282353224570}
   m_collider: {fileID: 1005165701277609792}
   i_dmg: 1
-  m_explosionVFX: {fileID: 0}
+  m_explosionVFX: {fileID: 4720994407062998736}
 --- !u!195 &1735170665057949405
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2025,6 +2025,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1765679522340028615, guid: bd94fd4f76cd81f47a977178e50cb781, type: 3}
+      propertyPath: m_InitialEventName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765679522340028615, guid: bd94fd4f76cd81f47a977178e50cb781, type: 3}
       propertyPath: m_InitialEventNameOverriden
       value: 1
       objectReference: {fileID: 0}
@@ -2097,5 +2101,10 @@ PrefabInstance:
 --- !u!4 &2543847477777465712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8811623075476524903, guid: bd94fd4f76cd81f47a977178e50cb781, type: 3}
+  m_PrefabInstance: {fileID: 6414431324011679255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!2083052967 &4720994407062998736 stripped
+VisualEffect:
+  m_CorrespondingSourceObject: {fileID: 1765679522340028615, guid: bd94fd4f76cd81f47a977178e50cb781, type: 3}
   m_PrefabInstance: {fileID: 6414431324011679255}
   m_PrefabAsset: {fileID: 0}

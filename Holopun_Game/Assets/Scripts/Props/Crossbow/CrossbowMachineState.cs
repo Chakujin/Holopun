@@ -39,9 +39,10 @@ public class CrossbowMachineState : MonoBehaviour
         CrossbowActualState.enabled = true;
     }
 
-    public void FindPlayerGrabMe()
+    public void FindPlayerGrabMe(SelectEnterEventArgs args)
     {
-        playerGrab = m_myInteractable.gameObject;
+        Debug.Log("Busco Player");
+        playerGrab = args.interactorObject.transform.root.gameObject;
     }
 
     public void DesatachArrow()
