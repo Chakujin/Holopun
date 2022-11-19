@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   i_amount: 5
   ArrowPref: {fileID: 3415877790101420633, guid: 4691c7bbe35c2ab45a933e27ad4af0e7, type: 3}
+  arrowsList: []
   v_arrowStartPosition: {x: 0.195, y: 0.1, z: 0}
   v_arrowStartRotation: {x: 35, y: -90, z: 0}
 --- !u!1 &880010172
@@ -1621,6 +1622,7 @@ GameObject:
   - component: {fileID: 8918486375157927799}
   - component: {fileID: 8957216993885467596}
   - component: {fileID: 8957216993885467633}
+  - component: {fileID: 3297994553960099204}
   - component: {fileID: 8957216993885467598}
   - component: {fileID: 8957216993885467599}
   m_Layer: 7
@@ -1696,6 +1698,26 @@ MonoBehaviour:
   turnSmoothness: 5
   IKHead: {fileID: 8957216994261597471}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
+--- !u!114 &3297994553960099204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110706641160328653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af8a20ae594fc84188079e0787bbb3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 8957216993885467596}
+  f_leftFootPosisitionWeight: 0
+  f_rigthFootPosisitionWeight: 0
+  f_leftFootRotationWeight: 0
+  f_rigthFootRotationWeight: 0
+  f_footOffset: {x: 0, y: 0, z: 0}
+  v_raycastLeftOffset: {x: 0, y: 0, z: 0}
+  v_raycastRightOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &8957216993885467598
 MonoBehaviour:
   m_ObjectHideFlags: 0
