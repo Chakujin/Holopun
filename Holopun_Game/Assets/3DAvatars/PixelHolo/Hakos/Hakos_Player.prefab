@@ -1231,13 +1231,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5797052407036126963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.00225, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8721950362900878122}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &5850087204821913604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,6 +1623,7 @@ GameObject:
   - component: {fileID: 8957216993885467596}
   - component: {fileID: 8957216993885467633}
   - component: {fileID: 3297994553960099204}
+  - component: {fileID: 8119636587822789072}
   - component: {fileID: 8957216993885467598}
   - component: {fileID: 8957216993885467599}
   m_Layer: 7
@@ -1658,11 +1659,11 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8110706641160328653}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: e1660b5ecb3fd2144a800ad520146b65, type: 3}
   m_Controller: {fileID: 9100000, guid: b6d77fb36dc947e42945613d2f2f4ca2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1711,13 +1712,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8957216993885467596}
-  f_leftFootPosisitionWeight: 0
-  f_rigthFootPosisitionWeight: 0
+  f_leftFootPosisitionWeight: 1
+  f_rigthFootPosisitionWeight: 1
   f_leftFootRotationWeight: 0
   f_rigthFootRotationWeight: 0
   f_footOffset: {x: 0, y: 0, z: 0}
   v_raycastLeftOffset: {x: 0, y: 0, z: 0}
   v_raycastRightOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &8119636587822789072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110706641160328653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f40d4e7f98c8d4280a5bc13cd67dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animator: {fileID: 8957216993885467596}
 --- !u!114 &8957216993885467598
 MonoBehaviour:
   m_ObjectHideFlags: 0
