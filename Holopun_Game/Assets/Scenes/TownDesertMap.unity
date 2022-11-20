@@ -3623,10 +3623,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hakos_Ingame
       objectReference: {fileID: 0}
+    - target: {fileID: 4010847534349493257, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4010847534349493258, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: e1660b5ecb3fd2144a800ad520146b65, type: 3}
+    - target: {fileID: 4010847534349493258, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469351212718912632, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_SettingsGUIToggle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469351212718912632, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_SourceObjectsGUIToggle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6164172907018478827, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3638,6 +3654,30 @@ PrefabInstance:
     - target: {fileID: 6164172907018478827, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027659047116857514, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000000056936567
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027659047116857514, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00022686689
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027659047116857514, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.02388081
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359969628198763074, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: f_footOffset.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359969628198763074, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: v_raycastLeftOffset.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359969628198763074, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: v_raycastRightOffset.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8243761738406840371, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_AnchorMax.y
