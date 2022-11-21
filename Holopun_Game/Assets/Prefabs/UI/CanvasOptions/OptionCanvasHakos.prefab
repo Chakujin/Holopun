@@ -207,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.627451
       objectReference: {fileID: 0}
+    - target: {fileID: 1971468997281010400, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2055103127335319285, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
       propertyPath: m_Color.b
       value: 0.20328668
@@ -745,13 +749,13 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 8a30cacb1d7b1224fb43f6dd23694a27, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
---- !u!1 &7816363845445327822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8891334592205677408, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
-  m_PrefabInstance: {fileID: 1665505257577674926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2224163969372329095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 702774218816711721, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
+  m_PrefabInstance: {fileID: 1665505257577674926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7816363845445327822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8891334592205677408, guid: 02fd67ca712b0fe4e92ef51b34ddfbf2, type: 3}
   m_PrefabInstance: {fileID: 1665505257577674926}
   m_PrefabAsset: {fileID: 0}
