@@ -356,11 +356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3297994553960099204, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: v_raycastLeftOffset.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3297994553960099204, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: v_raycastRightOffset.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8110706641160328653, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: m_Name

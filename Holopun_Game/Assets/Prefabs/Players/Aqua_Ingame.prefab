@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4281199902057885034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1915103, y: 0.00000023841858, z: -0.709278}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -154,6 +154,10 @@ PrefabInstance:
       propertyPath: rightHand.vrTarget
       value: 
       objectReference: {fileID: 4571076800805843922}
+    - target: {fileID: 7603599200638352042, guid: 04209f45883603f42a17a6bb5330d9f4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04209f45883603f42a17a6bb5330d9f4, type: 3}
 --- !u!1 &1202138928362849475 stripped
@@ -164,6 +168,16 @@ GameObject:
 --- !u!4 &2374101527448592484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4183831694369732273, guid: 04209f45883603f42a17a6bb5330d9f4, type: 3}
+  m_PrefabInstance: {fileID: 1944838161379399381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3119297797584587480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3581642433463884813, guid: 04209f45883603f42a17a6bb5330d9f4, type: 3}
+  m_PrefabInstance: {fileID: 1944838161379399381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7789415722264544017 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8567223443409294788, guid: 04209f45883603f42a17a6bb5330d9f4, type: 3}
   m_PrefabInstance: {fileID: 1944838161379399381}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8278835501621631842
@@ -181,6 +195,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5587822714355411122, guid: 7da8988a85b39644d8095250c46a1e0a, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 7789415722264544017}
+    - target: {fileID: 5587822715173946090, guid: 7da8988a85b39644d8095250c46a1e0a, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 3119297797584587480}
     - target: {fileID: 5587822715381112714, guid: 7da8988a85b39644d8095250c46a1e0a, type: 3}
       propertyPath: m_Name
       value: XR Origin_Pixel_Aqua
