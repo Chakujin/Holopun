@@ -11353,18 +11353,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2611567714939947232, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2611567714939947234, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: b5fede217833a88419855a694b92d700, type: 2}
-    - target: {fileID: 2611567714939947234, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
-      propertyPath: m_WarningMessage
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4048734000684972375, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
       propertyPath: m_Name
       value: Korone_Ingame
@@ -11375,11 +11363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4335177116543692091, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335177116651737298, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
-      propertyPath: m_CameraYOffset
-      value: 1.8
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5052133937763354627, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11459,6 +11443,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465271063398545759, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481578772419286698, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
+      propertyPath: f_footOffset.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481578772419286698, guid: 01c7cd5efea7b0f47b27397123d273ed, type: 3}
+      propertyPath: f_rigthFootRotationWeight
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
