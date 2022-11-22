@@ -130,6 +130,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 526771822375324764, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 526771822375324765, guid: b03204e4552cb214bb89f63391cf1478, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OllieMask
+  m_Mask: 01000000000000000000000001000000010000000000000000000000000000000000000001000000010000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 1
+  - m_Path: Armature/base
+    m_Weight: 1
+  - m_Path: Armature/base/hip
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_L
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_L/elbow_L
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_L/elbow_L/hand_L
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_L/elbow_L/hand_L/weapon
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_L/elbow_L/hand_L/weapon/weapon_end
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_R
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_R/elbow_R
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_R/elbow_R/hand_R
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/arm_R/elbow_R/hand_R/hand_R_end
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/neck
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/neck/head
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/neck/head/eye_L
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/neck/head/eye_L/eye_L_end
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/neck/head/eye_R
+    m_Weight: 1
+  - m_Path: Armature/base/hip/spine/chest/neck/head/eye_R/eye_R_end
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_L
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_L/leg_L
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_L/leg_L/feet_L
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_L/leg_L/feet_L/feet_L_end
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_R
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_R/leg_R
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_R/leg_R/feet_R
+    m_Weight: 1
+  - m_Path: Armature/base/hip/thigh_R/leg_R/feet_R/feet_R_end
+    m_Weight: 1
+  - m_Path: body
+    m_Weight: 1
