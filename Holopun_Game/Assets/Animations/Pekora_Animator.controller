@@ -59,7 +59,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Korone_Animator
+  m_Name: Pekora_Animator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isWalking
@@ -78,7 +78,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: New Layer
     m_StateMachine: {fileID: -7631292140372550997}
-    m_Mask: {fileID: 31900000, guid: 5c1ba4255a5fdbc44985963ce0955a30, type: 2}
+    m_Mask: {fileID: 31900000, guid: de508313347c6c141b0d65c53339cef2, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0

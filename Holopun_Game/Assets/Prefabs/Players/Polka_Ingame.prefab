@@ -150,6 +150,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin_Pixel_Polka
       objectReference: {fileID: 0}
+    - target: {fileID: 6598525974023445565, guid: baee06e3472ebef4f97d34db265cda72, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 3584766984855887721}
+    - target: {fileID: 6598525974815782501, guid: baee06e3472ebef4f97d34db265cda72, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 6685876913969692893}
     - target: {fileID: 7096236593211093970, guid: baee06e3472ebef4f97d34db265cda72, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -288,9 +296,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ec04d2052ee32448438863a16d6236, type: 3}
+--- !u!4 &3584766984855887721 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7860639549783542286, guid: 96ec04d2052ee32448438863a16d6236, type: 3}
+  m_PrefabInstance: {fileID: 6676934518284096871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6515331036236266032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 486995274874400599, guid: 96ec04d2052ee32448438863a16d6236, type: 3}
+  m_PrefabInstance: {fileID: 6676934518284096871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6685876913969692893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 27088877419763130, guid: 96ec04d2052ee32448438863a16d6236, type: 3}
   m_PrefabInstance: {fileID: 6676934518284096871}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &8918001845357817740 stripped
