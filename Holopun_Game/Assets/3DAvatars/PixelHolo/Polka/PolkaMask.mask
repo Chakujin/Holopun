@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PolkaMask
+  m_Mask: 01000000000000000000000001000000010000000000000000000000000000000000000001000000010000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: armature
+    m_Weight: 1
+  - m_Path: armature/Hips
+    m_Weight: 1
+  - m_Path: armature/Hips/Bone
+    m_Weight: 1
+  - m_Path: armature/Hips/Bone/Bone_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Left leg
+    m_Weight: 1
+  - m_Path: armature/Hips/Left leg/Left knee
+    m_Weight: 1
+  - m_Path: armature/Hips/Left leg/Left knee/Left ankle
+    m_Weight: 1
+  - m_Path: armature/Hips/Left leg/Left knee/Left ankle/Base_L
+    m_Weight: 1
+  - m_Path: armature/Hips/Left leg/Left knee/Left ankle/Base_L/Base_L_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Right leg
+    m_Weight: 1
+  - m_Path: armature/Hips/Right leg/Right knee
+    m_Weight: 1
+  - m_Path: armature/Hips/Right leg/Right knee/Right ankle
+    m_Weight: 1
+  - m_Path: armature/Hips/Right leg/Right knee/Right ankle/Base_R
+    m_Weight: 1
+  - m_Path: armature/Hips/Right leg/Right knee/Right ankle/Base_R/Base_R_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/bubs
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/bubs/bubs_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder/Left arm
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left wrist
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left wrist/Hand_L
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left wrist/Hand_L/Hand_L_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left wrist/Hand_L.001
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left wrist/Hand_L.001/Hand_L.001_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/ear_L.001
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/ear_L.001/ear_L.001_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/ear_R.001
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/ear_R.001/ear_R.001_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/Eye_L
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/Eye_L/Eye_L_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/Eye_R
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/Eye_R/Eye_R_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/head thing
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Neck/Head/head thing/head thing_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder/Right arm
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Hand_R
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Hand_R/Hand_R_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Hand_R.001
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Hand_R.001/Hand_R.001_end
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/tail
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/tail/tail.001
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/tail/tail.001/tail.002
+    m_Weight: 1
+  - m_Path: armature/Hips/Spine/tail/tail.001/tail.002/tail.002_end
+    m_Weight: 1
+  - m_Path: porubody
+    m_Weight: 1
