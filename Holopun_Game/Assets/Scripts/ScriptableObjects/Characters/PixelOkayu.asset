@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b099fae91fd165a429ebbd5bcc16dd7f, type: 3}
+  m_Name: PixelOkayu
+  m_EditorClassIdentifier: 
+  playerIngame: {fileID: 408629366646464619, guid: d8695c8365d33894b98294fee36a0a86, type: 3}
+  characterSelect: {fileID: 1866030245426630216, guid: ad20a006688fadf42bae9e80e5e23052, type: 3}
+  playerName: Okayu

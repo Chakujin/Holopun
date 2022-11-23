@@ -11576,10 +11576,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4994584336317443157, guid: 0dba6d6795f47ce4a97048850ff7d826, type: 3}
-      propertyPath: m_WarningMessage
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6431574448577322464, guid: 0dba6d6795f47ce4a97048850ff7d826, type: 3}
       propertyPath: m_Name
       value: Peko_Ingame

@@ -17,3 +17,6 @@ MonoBehaviour:
   bgImage: {fileID: 0}
   characters:
   - {fileID: 11400000, guid: 053267db52ecd9b47bd67f5993d2e29f, type: 2}
+  - {fileID: 11400000, guid: 5203448d484636e4692625c625a88c1d, type: 2}
+  - {fileID: 11400000, guid: a46b8403cda53664695193697619ea3f, type: 2}
+  - {fileID: 11400000, guid: 6df5fe99e7c09274283b4e768ac1bb3e, type: 2}
