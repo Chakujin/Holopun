@@ -17,6 +17,6 @@ public class CanvasAnimation : MonoBehaviour
         Vector3 safeScale = canvasTransform.localScale;
 
         canvasTransform.localScale = Vector3.zero;
-        canvasTransform.DOScale(safeScale, 3).SetEase(Ease.OutElastic);
+        canvasTransform.DOScale(safeScale, 3).SetEase(Ease.OutCubic);
     }
 }

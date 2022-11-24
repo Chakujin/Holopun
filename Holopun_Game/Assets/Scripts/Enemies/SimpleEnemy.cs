@@ -37,7 +37,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     {
         if (collision.gameObject.tag == "Player") //Attack player
         {
-            gameObject.GetComponent<PlayerCorsbowGame>().TakeDamage(i_dmg);
+            gameObject.GetComponent<PlayerCorsbowGame>().TakeDamage(i_dmg); //Collision with the player
             StartCoroutine(Die());
         }
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCorsbowGame : MonoBehaviour
@@ -8,7 +6,7 @@ public class PlayerCorsbowGame : MonoBehaviour
     public int totalKilled; //Used by countPoints manager
 
     [SerializeField] private int i_hp;
-    private int i_maxHp;
+    private const int i_maxHp = 3;
 
     [SerializeField] private Collider[] controllersCol;
     private CrossbowGameManager m_crossbowGameManager;
@@ -25,7 +23,7 @@ public class PlayerCorsbowGame : MonoBehaviour
         CrossbowGameManager.FinishGameCallback += RevivePlayer; // Subscribe to finish game event
         m_crossbowGameManager = GameObject.FindGameObjectWithTag("CrossbowGameManager").GetComponent<CrossbowGameManager>();
 
-        i_maxHp = i_hp;
+        i_hp = i_maxHp;
     }
     
     public void TakeDamage(int dmg)
@@ -45,10 +43,10 @@ public class PlayerCorsbowGame : MonoBehaviour
             PlayerDieCallback.Invoke(); //Send call to enemyes for change the target follows
         }
 
-        Alive = false;
+        Alive = false; //Used by enemy to find players alive
 
         m_crossbowGameManager.UpdatePlayersAlive(); //Send manager rest one player
-        m_playerMesh.SetActive(false);
+        m_playerMesh.SetActive(false); //Desactive mesh player
         
         foreach (Collider col in controllersCol) // Enable false grab colliders
         {
@@ -56,7 +54,7 @@ public class PlayerCorsbowGame : MonoBehaviour
         }
     }
 
-    private void RevivePlayer()
+    private void RevivePlayer()//Event Delegate
     {
         i_hp = i_maxHp;
         m_playerMesh.SetActive(true);

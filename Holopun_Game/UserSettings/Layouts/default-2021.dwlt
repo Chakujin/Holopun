@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 147
+  controlID: 124
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 79
+  controlID: 157
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 146
+  controlID: 123
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 67
+  controlID: 112
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 68
+  controlID: 113
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1502,7 +1502,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 159796
+  m_LastSelectedObjectID: -155262
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1659,36 +1659,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Players
+    - Assets/Prefabs/Props/Enemies
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/Players
+  - Assets/Prefabs/Props/Enemies
   m_LastFoldersGridSize: 16
   m_LastProjectPath: F:\Copia Seguridad\Tokio\ProyectoFinal\Holopun\HolopunOk\Holopun\Holopun_Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 106.99994}
-    m_SelectedIDs: 228d0000
-    m_LastClickedID: 36130
-    m_ExpandedIDs: 00000000b68c0000b88c0000ba8c0000be8c0000c08c0000c28c0000c48c0000c68c0000c88c0000ca8c0000cc8c0000fe8c0000028d0000268d0000308d0000368d0000da610100aafe030000ca9a3b
+    scrollPos: {x: 0, y: 242.99994}
+    m_SelectedIDs: b2c50100
+    m_LastClickedID: 116146
+    m_ExpandedIDs: 00000000688a01006a8a01007c8a0100868a01009e8a0100a08a010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Audio
+      m_OriginalName: Audio
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 100976
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -1702,7 +1702,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b68c0000b88c0000ba8c0000bc8c0000be8c0000c08c0000c28c0000c48c0000c68c0000c88c0000ca8c0000cc8c0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1730,18 +1730,18 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000f2440100ccad06004603070064b207001e450100448d000020f30000e66101008a7f0000
+    m_ExpandedInstanceIDs: c6230000f2440100ccad06004603070064b207001e450100448d000020f30000e66101008a7f000090f40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: OptionCanvasOkayu
-      m_OriginalName: OptionCanvasOkayu
+      m_Name: CanvasAnimation
+      m_OriginalName: CanvasAnimation
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 279126
+      m_UserData: 34858
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -1830,23 +1830,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: f494f9ff30b1f9ff9ebdf9ff1414fafff2a1fcfff8adfdff7e16fefffceeffff14fbffff1c020400b002040004030400380304005c030400
+      m_SelectedIDs: 82a1fdff
+      m_LastClickedID: -155262
+      m_ExpandedIDs: 9aa2fdff56a4fdffc600fffff202fffff08a01000a8b0100208b0100d88b01000c8c0100308c0100568c01006a8c0100f2d70100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: armature
-        m_OriginalName: armature
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -396754
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -2149,7 +2149,7 @@ MonoBehaviour:
       index: 14
       layout: 4
   m_WindowGUID: 77c456193357d7f4cb3382148e44944f
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -2158,9 +2158,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.9555435, y: 0.60954535, z: -7.6684446}
+    m_Target: {x: -1.1915102, y: 1.3614404, z: -3.1590002}
     speed: 2
-    m_Value: {x: -0.848513, y: 0.8871269, z: -2.3182564}
+    m_Value: {x: -1.1915102, y: 1.3614404, z: -3.1590002}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2207,13 +2207,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.19162548, y: -0.021724923, z: 0.00402648, w: 0.9814769}
+    m_Target: {x: 0.00058117614, y: -0.9036105, z: 0.00062279694, w: 0.4289467}
     speed: 2
-    m_Value: {x: -0.10856931, y: 0.024093801, z: -0.0024386987, w: -0.9937939}
+    m_Value: {x: 0.0005810285, y: -0.90338105, z: 0.0006226388, w: 0.42883778}
   m_Size:
-    m_Target: 3.7176168
+    m_Target: 0.71310234
     speed: 2
-    m_Value: 0.41140726
+    m_Value: 0.71310234
   m_Ortho:
     m_Target: 0
     speed: 2

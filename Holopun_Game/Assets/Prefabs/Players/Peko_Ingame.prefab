@@ -86,7 +86,7 @@ MonoBehaviour:
   m_rightBaseController: {fileID: 6721570096360801113}
   m_rightUIController: {fileID: 6721570095483631191}
   eventButtonCanvas: {fileID: 3552889706214631285, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_canvasOptions: {fileID: 3430865990847431934}
+  m_canvasOptions: {fileID: 601162726052530182}
 --- !u!1001 &5057295597089363486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -172,9 +172,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11ef5c2d3a963bd47b350a3436833c5d, type: 3}
---- !u!1 &3430865990847431934 stripped
+--- !u!1 &601162726052530182 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7616710661988848352, guid: 11ef5c2d3a963bd47b350a3436833c5d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5654513275404656152, guid: 11ef5c2d3a963bd47b350a3436833c5d, type: 3}
   m_PrefabInstance: {fileID: 5057295597089363486}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6721570095089941982 stripped
