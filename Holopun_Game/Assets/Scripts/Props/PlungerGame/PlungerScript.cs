@@ -4,12 +4,19 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PlungerScript : MonoBehaviour
 {
     [SerializeField] Transform m_raycastPosition;
+    private GameObject m_mySpawn;
     
     [Range(0,1),Min(0.1f)]
     [SerializeField] float f_rangeRaycast;
 
-    [HideInInspector]public HighscoreEntry highscoreEntry;
+    [HideInInspector] public HighscoreEntry highscoreEntry; //Player ho take the plunger
     [SerializeField] private Collider[] myCollisions;
+
+    private void Start()
+    {
+        m_mySpawn = transform.parent.gameObject; //Get parent
+    }
+
     public bool CompareDirection()
     {
         //Start raycast
@@ -48,5 +55,25 @@ public class PlungerScript : MonoBehaviour
         {
             coll.enabled = true;
         }
+    }
+
+    public void ReturnSpawn()
+    {
+        //Take Parent
+        transform.parent = m_mySpawn.transform;
+       
+        //Reset position
+        transform.localPosition = Vector3.zero;
+        transform.localEulerAngles = Vector3.zero;
+
+        //Active collisions
+        foreach (Collider coll in myCollisions)
+        {
+            coll.enabled = true;
+        }
+        
+        //Turn off gameobject
+        gameObject.SetActive(false);
+
     }
 }

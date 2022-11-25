@@ -12,6 +12,7 @@ TagManager:
   - SelectedPlayer
   - CharacterDisplay
   - EnemiesManager
+  - PlungerSpawn
   layers:
   - Default
   - TransparentFX
