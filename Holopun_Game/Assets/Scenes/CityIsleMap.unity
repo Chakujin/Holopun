@@ -14085,6 +14085,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690812492}
+    - target: {fileID: 4443003881832894502, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 5383418710859413709, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

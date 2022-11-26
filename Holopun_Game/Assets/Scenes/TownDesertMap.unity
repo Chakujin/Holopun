@@ -3402,6 +3402,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3440441201576459322, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6164172907018478827, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

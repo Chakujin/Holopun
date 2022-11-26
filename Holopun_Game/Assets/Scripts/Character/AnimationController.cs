@@ -14,7 +14,13 @@ public class AnimationController : MonoBehaviour
         move.action.canceled += StopAnimation;
     }
 
-    private void StopAnimation(InputAction.CallbackContext obj)
+    private void OnDisable()
+    {
+        move.action.started -= AnimateLegs;
+        move.action.canceled -= StopAnimation;
+    }
+
+    private void AnimateLegs(InputAction.CallbackContext obj)
     {
         bool isMovingForward = move.action.ReadValue<Vector2>().y > 0;
 
@@ -30,7 +36,7 @@ public class AnimationController : MonoBehaviour
         }
     }
 
-    private void AnimateLegs(InputAction.CallbackContext obj)
+    private void StopAnimation(InputAction.CallbackContext obj)
     {
         animator.SetBool("isWalking", false);
         animator.SetFloat("animSpeed", 0);
