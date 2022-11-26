@@ -1604,6 +1604,7 @@ GameObject:
   - component: {fileID: 1128417688116064496}
   - component: {fileID: 1128417688116064499}
   - component: {fileID: 1128417688116064498}
+  - component: {fileID: 5846565788521904923}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -1725,6 +1726,114 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5846565788521904923}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!82 &5846565788521904923
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128417688116064500}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 4c67a7a89995c5643a0779f9a2c3cbe2, type: 2}
+  m_audioClip: {fileID: 8300000, guid: d6ebf5a486550d4419dfc72feb8fd26d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1133313729666827666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,7 +3313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_settingsCanvas: {fileID: 8891334592205677408}
   m_faceCanvas: {fileID: 1133313729666827666}
-  m_exitCanvas: {fileID: 0}
+  m_exitCanvas: {fileID: 702774218816711721}
 --- !u!114 &4531772549441897880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3632,7 +3741,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1555313258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5366,7 +5475,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2785484204687631615}
   - component: {fileID: 4287111787443205280}
-  - component: {fileID: 1089973982192476600}
   m_Layer: 5
   m_Name: Slider Sound
   m_TagString: Untagged
@@ -5448,7 +5556,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1089973982192476600}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SetVolumeScript, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -5460,21 +5568,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1089973982192476600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4699292791597399103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8394f2085beda7d4e9efabeeba1394eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainVolumeSlider: {fileID: 4287111787443205280}
-  audioMixer: {fileID: 24100000, guid: 4c67a7a89995c5643a0779f9a2c3cbe2, type: 2}
-  exposedParametrer: MasterVolume
 --- !u!1 &4708426010767006461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9737,18 +9830,6 @@ PrefabInstance:
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 2798759577469608067, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608067, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608067, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608067, guid: c996fd272fe74104f85efe41552eb389, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -9797,45 +9878,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.78431374
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.78431374
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.78431374
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1031573278859699744}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressSettings
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerCanvasSettings, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798759577469608068, guid: c996fd272fe74104f85efe41552eb389, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c996fd272fe74104f85efe41552eb389, type: 3}
 --- !u!224 &2901658389609372717 stripped
@@ -9851,33 +9896,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 3974983091316685706}
     m_Modifications:
     - target: {fileID: 1254981150814795611, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795611, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795611, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1031573278859699744}
-    - target: {fileID: 1254981150814795611, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795611, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressFace
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795611, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerCanvasSettings, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795611, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1254981150814795612, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9913,18 +9934,6 @@ PrefabInstance:
     - target: {fileID: 1254981150814795612, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
       propertyPath: m_SizeDelta.y
       value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795612, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795612, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254981150814795612, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1254981150814795612, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9977,10 +9986,6 @@ PrefabInstance:
     - target: {fileID: 1254981150814795613, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
       propertyPath: m_Name
       value: Face Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 5660806801171454859, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54438c6f0e116ac4eb3b7f02368e4ccc, type: 3}

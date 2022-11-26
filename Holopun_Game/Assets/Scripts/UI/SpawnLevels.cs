@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class SpawnLevels : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class SpawnLevels : MonoBehaviour
             LevelDisplay myData = currentIns.GetComponent<LevelDisplay>(); // Get script
 
             myData.levelData = data; //Pass data
+
+            //Animate spawn level
+            currentIns.transform.localScale = Vector3.zero; //Put 0
+            currentIns.transform.DOScale(1, 0.5f).SetEase(Ease.InCubic).SetDelay(1f);
         }
     }
 }
