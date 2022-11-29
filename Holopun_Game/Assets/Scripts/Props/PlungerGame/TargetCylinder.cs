@@ -4,6 +4,7 @@ public class TargetCylinder : MonoBehaviour
 {
     private PlungerGameManagerPoints m_myManagerPoints;
 
+    [SerializeField] private AudioSource m_audio;
     [SerializeField] private ParticleSystem m_particleSystem;
     [SerializeField] private int i_points;
     [SerializeField] private Renderer m_renderer;
@@ -57,7 +58,9 @@ public class TargetCylinder : MonoBehaviour
         m_renderer.material.color = color;
 
         m_myManagerPoints.UpdateScoreborad(); //Updatea el scoreboard (Alomejor solo haverlo al final del juego)
-        m_particleSystem.Play();
+        
+        m_particleSystem.Play();// FX
+        m_audio.Play();
     }
     private void AddPoints(HighscoreEntry playerHighscore)
     {

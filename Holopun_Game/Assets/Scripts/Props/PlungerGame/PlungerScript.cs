@@ -11,6 +11,7 @@ public class PlungerScript : MonoBehaviour
 
     [HideInInspector] public HighscoreEntry highscoreEntry; //Player ho take the plunger
     [SerializeField] private Collider[] myCollisions;
+    [SerializeField] private AudioSource m_audioHit;
 
     private void Start()
     {
@@ -75,5 +76,10 @@ public class PlungerScript : MonoBehaviour
         //Turn off gameobject
         gameObject.SetActive(false);
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        m_audioHit.Play();
     }
 }
