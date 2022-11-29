@@ -9,6 +9,8 @@ public class CrossbowEmptyState : MonoBehaviour
     [SerializeField] private Transform m_posTrigger;
     [SerializeField] private LayerMask m_arrowLayer;
 
+    [SerializeField] private AudioSource m_audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,9 @@ public class CrossbowEmptyState : MonoBehaviour
         arrow.transform.localEulerAngles = new Vector3(0, 0, 90); //Edit Local rotation
 
         m_machineState.arrow = arrow;
+
+        m_audioSource.Play();//Audio Reload
+
         m_machineState.ChangeState(m_chargedState);//Next state
     }
 

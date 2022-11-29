@@ -19,6 +19,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     private bool b_findPlayer = false;
 
     [SerializeField] private VisualEffect m_explosionVFX;
+    [SerializeField] private AudioSource m_audioSource;
 
     //Voids
     private void Start()
@@ -98,6 +99,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
         //FX
         m_explosionVFX.Play();
+        m_audioSource.Play();
         //Audio
         yield return new WaitForSeconds(1f);
         Destroy(this.gameObject);

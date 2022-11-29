@@ -6,6 +6,7 @@ public class CrossbowChargedState : MonoBehaviour
     private CrossbowMachineState m_machineState;
     private MonoBehaviour m_emptyState;
 
+    [SerializeField] private AudioSource m_audioSource;
     [SerializeField] private InputActionReference m_buttonShot;
     private GameObject m_arrow;
 
@@ -34,6 +35,8 @@ public class CrossbowChargedState : MonoBehaviour
             //Shot Arrow
             m_arrow.transform.parent = null;
             m_arrow.GetComponent<ArrowScript>().ActiveCollisions();
+
+            m_audioSource.Play();
 
             m_machineState.ChangeState(m_emptyState);
             m_arrow = null;
