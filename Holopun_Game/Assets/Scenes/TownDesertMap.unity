@@ -3398,14 +3398,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hakos_Ingame
       objectReference: {fileID: 0}
-    - target: {fileID: 3150476341261325759, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440441201576459322, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
-      propertyPath: m_RequestedTrackingOriginMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6164172907018478827, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4470,41 +4462,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 713580216, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 943bbe9bef724664e9d2cedd09a70c12, type: 2}
-    - target: {fileID: 713580216, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.13427073
-      objectReference: {fileID: 0}
-    - target: {fileID: 713580216, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.13427073
-      objectReference: {fileID: 0}
-    - target: {fileID: 713580216, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.6886792
-      objectReference: {fileID: 0}
-    - target: {fileID: 713580216, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_lineSpacing
-      value: 25.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 713580216, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2199045243428213581, guid: 943bbe9bef724664e9d2cedd09a70c12, type: 2}
-    - target: {fileID: 713580216, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4280427184
-      objectReference: {fileID: 0}
     - target: {fileID: 2095773063982237851, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
       propertyPath: m_Name
       value: Boitan_Round Start
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095773063982237851, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2594276833512849567, guid: 765f8f69ec52d50459471e1cbba4f19e, type: 3}
       propertyPath: m_gameManager

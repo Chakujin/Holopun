@@ -23,7 +23,7 @@ public class ScreenshotHandler : MonoBehaviour {
 
     public void TakePhoto()
     {
-        //m_audioSnap.Play();
+        m_audioSnap.Play();
 
         Texture2D screenshotTexture = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
         m_camera.Render();

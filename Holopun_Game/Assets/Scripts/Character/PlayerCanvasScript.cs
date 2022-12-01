@@ -14,6 +14,8 @@ public class PlayerCanvasScript : MonoBehaviour
     [SerializeField] private GameObject m_canvasOptions;
     private bool b_used = false;
 
+    [SerializeField] private AudioSource m_audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class PlayerCanvasScript : MonoBehaviour
             //Canvas
             m_canvasOptions.SetActive(true);
             b_used = true;
+            m_audioSource.Play();
         }
         else //Desactivate UI
         {
@@ -49,6 +52,7 @@ public class PlayerCanvasScript : MonoBehaviour
             //Canvas
             m_canvasOptions.SetActive(false);
             b_used = false;
+            m_audioSource.Play();
         }
     }
 }

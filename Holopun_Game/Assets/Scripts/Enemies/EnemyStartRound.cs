@@ -1,11 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class EnemyStartRound : MonoBehaviour,IHiteable
 {
     [SerializeField] private GameObject m_mesh;
     [SerializeField] private Collider[] m_collisions;
     [SerializeField] private CrossbowGameManager m_gameManager;
+    [SerializeField] private AudioSource m_audioSource;
+    [SerializeField] private VisualEffect m_explosionVFX;
 
     // Start is called before the first frame update
     private void OnEnable()
@@ -30,8 +33,8 @@ public class EnemyStartRound : MonoBehaviour,IHiteable
         {
             collider.enabled = false;
         }
-        //FX
-        //Sound
+        m_explosionVFX.Play();  //FX
+        m_audioSource.Play();   //Sound
         yield return new WaitForSeconds(1f);
         m_gameManager.StartRoundCrossbowGame();
         this.gameObject.SetActive(false);
