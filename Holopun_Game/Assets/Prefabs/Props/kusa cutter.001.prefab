@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 2039089970850442477}
   - component: {fileID: 6670556828703223775}
   - component: {fileID: 7053143998818488856}
+  - component: {fileID: 408726653111403236}
   m_Layer: 0
   m_Name: kusa cutter.001
   m_TagString: Untagged
@@ -305,3 +306,15 @@ MonoBehaviour:
   - {fileID: 855682256365593313}
   - {fileID: 4119366445172012508}
   myRb: {fileID: 2039089970850442477}
+--- !u!114 &408726653111403236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3961507539646633523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd47919b22fb2b8429dd765611fd85c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
