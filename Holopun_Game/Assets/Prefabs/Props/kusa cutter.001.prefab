@@ -31,6 +31,37 @@ Transform:
   m_Father: {fileID: 6569616478426042444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1564646546269846773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6055361001552596055}
+  m_Layer: 0
+  m_Name: BoxPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6055361001552596055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564646546269846773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0064, y: -0.0121, z: -0.00138}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6569616478426042444}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3961507539646633523
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,15 +93,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3961507539646633523}
-  m_LocalRotation: {x: 1, y: -1.110223e-16, z: 1.110223e-16, w: 0.0000000754979}
+  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: -0.9, y: 1.355, z: -3.05}
   m_LocalScale: {x: 33.709, y: 33.709, z: 33.709}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4206130608529496603}
+  - {fileID: 6055361001552596055}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
 --- !u!33 &872218239157413188
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -204,16 +236,22 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8368283400566818099, guid: 6983afd67c168dc449ffd4f6512590d8, type: 3}
-        m_TargetAssemblyTypeName: ScreenshotHandler, Assembly-CSharp
-        m_MethodName: TakePhoto
+      - m_Target: {fileID: 408726653111403236}
+        m_TargetAssemblyTypeName: CutterMoriScript, Assembly-CSharp
+        m_MethodName: FindPlayerGrabMe
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7053143998818488856}
+        m_TargetAssemblyTypeName: CollisionObjectsGrab, Assembly-CSharp
+        m_MethodName: OnHoverEntered
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -223,6 +261,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 408726653111403236}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7053143998818488856}
+        m_TargetAssemblyTypeName: CollisionObjectsGrab, Assembly-CSharp
+        m_MethodName: OnSelectExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -318,3 +386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd47919b22fb2b8429dd765611fd85c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_positionBox: {fileID: 6055361001552596055}
+  v_size: {x: 1, y: 0.7, z: -0.05}
+  m_interactableLayer:
+    serializedVersion: 2
+    m_Bits: 512

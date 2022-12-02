@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 522478698448640930}
   - component: {fileID: 7858394105010761435}
   - component: {fileID: 6145754646060696613}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boitan
   m_TagString: Untagged
   m_Icon: {fileID: 0}

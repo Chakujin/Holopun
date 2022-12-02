@@ -1083,7 +1083,7 @@ GameObject:
   - component: {fileID: 1005165701277609792}
   - component: {fileID: 5597993810059338502}
   - component: {fileID: 3701917396588397842}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Greybie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
