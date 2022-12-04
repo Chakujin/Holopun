@@ -7,7 +7,6 @@ public class CrossbowChargedState : MonoBehaviour
     private MonoBehaviour m_emptyState;
 
     [SerializeField] private AudioSource m_audioSource;
-    [SerializeField] private InputActionReference m_buttonShot;
     private GameObject m_arrow;
 
     // Start is called before the first frame update
