@@ -23,6 +23,7 @@ public class PlayerRunScript : MonoBehaviour
     void Start()
     {
         eventButtonRun.action.performed += RunPlayer;
+        m_runSlider.gameObject.SetActive(false);
         f_currentSped = m_continusMove.moveSpeed;
         
         //Slider
@@ -62,8 +63,9 @@ public class PlayerRunScript : MonoBehaviour
         m_runSlider.value = f_currentStamina; //Update Slider
     }
 
-    private void RunPlayer(InputAction.CallbackContext context)
+    private void RunPlayer(InputAction.CallbackContext context) //Called via input 
     {
+        m_runSlider.gameObject.SetActive(true);
         if (b_run == false)
         {
             m_continusMove.moveSpeed = f_runSpeed;
