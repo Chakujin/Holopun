@@ -234,6 +234,17 @@ PrefabInstance:
       objectReference: {fileID: 4443003883025983259}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 480a94ebca65c634c99b5815df1dc1da, type: 3}
+--- !u!114 &1217233846097462746 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2989472488184272329, guid: 480a94ebca65c634c99b5815df1dc1da, type: 3}
+  m_PrefabInstance: {fileID: 4150285688731734035}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1559f6725c39f2b49b3650dd71a44d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2775148211577942235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2241535048393679048, guid: 480a94ebca65c634c99b5815df1dc1da, type: 3}
@@ -256,6 +267,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8792884816186973914}
     m_Modifications:
+    - target: {fileID: 540833109660568194, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 2075891533276523643, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 2106267696094274447, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 4326323668106040837, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 4531746312712977904, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 4531746313036075757, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 5602328008834700399, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 5674744141052125668, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 6444739514542016594, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
     - target: {fileID: 6912626464439521913, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
       propertyPath: m_AttachTransform
       value: 
@@ -312,6 +359,10 @@ PrefabInstance:
       propertyPath: m_AttachTransform
       value: 
       objectReference: {fileID: 3771527754108387685}
+    - target: {fileID: 8889114941897866237, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1217233846097462746}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
 --- !u!1 &4443003881612907028 stripped
