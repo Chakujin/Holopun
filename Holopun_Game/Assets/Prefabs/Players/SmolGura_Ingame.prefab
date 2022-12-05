@@ -244,6 +244,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7606095117336785123, guid: f4bce42553be78944bc8219dd12978c0, type: 3}
   m_PrefabInstance: {fileID: 4741589885055901059}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4741589885062130347 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 14759720, guid: f4bce42553be78944bc8219dd12978c0, type: 3}
+  m_PrefabInstance: {fileID: 4741589885055901059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1559f6725c39f2b49b3650dd71a44d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5450570481508723292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 750361820381394911, guid: f4bce42553be78944bc8219dd12978c0, type: 3}
@@ -264,6 +275,34 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 961624559932642103, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 1130877703112841183, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 1130877703871903938, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 3199991471806916285, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 3286884856141769033, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 3950568215785394096, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 5336249836439125711, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
     - target: {fileID: 5830027499170426640, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -332,6 +371,18 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7503560428055924064, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 9001894803483431261, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 9192671196634997974, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 4741589885062130347}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
 --- !u!1 &4443003881612907028 stripped

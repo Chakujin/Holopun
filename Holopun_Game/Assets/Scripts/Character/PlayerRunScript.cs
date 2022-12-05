@@ -9,7 +9,7 @@ public class PlayerRunScript : MonoBehaviour
     [SerializeField] private InputActionReference eventButtonRun;
     [SerializeField] private ActionBasedContinuousMoveProvider m_continusMove;
     [SerializeField] private Slider m_runSlider;
-    private RectTransform m_sliderRecTrans;
+    [SerializeField] private RectTransform m_sliderRecTrans;
 
     [SerializeField] private float f_runSpeed;
     private float f_currentSped;
@@ -17,12 +17,20 @@ public class PlayerRunScript : MonoBehaviour
     private float f_currentStamina;
     private float f_maxStamina;
 
+    private float f_scaleY;
+
     private bool b_run = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Get start scale
+        f_scaleY = m_sliderRecTrans.localScale.y; 
+        
+        //Subscribe event button
         eventButtonRun.action.performed += RunPlayer;
+      
+        //Prepare Slider
         m_runSlider.gameObject.SetActive(false);
         f_currentSped = m_continusMove.moveSpeed;
         
@@ -65,6 +73,7 @@ public class PlayerRunScript : MonoBehaviour
 
     private void RunPlayer(InputAction.CallbackContext context) //Called via input 
     {
+        Debug.Log("Called Run");
         m_runSlider.gameObject.SetActive(true);
         if (b_run == false)
         {
@@ -77,7 +86,7 @@ public class PlayerRunScript : MonoBehaviour
             m_sliderRecTrans.DOScaleY(0, 0f);
 
             //StartAnimation
-            m_sliderRecTrans.DOScaleY(1f, 0.75f).SetEase(Ease.OutQuart);
+            m_sliderRecTrans.DOScaleY(f_scaleY, 0.75f).SetEase(Ease.OutQuart);
         }
         else
         {

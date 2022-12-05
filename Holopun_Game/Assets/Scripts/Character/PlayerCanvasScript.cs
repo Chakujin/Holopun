@@ -38,7 +38,7 @@ public class PlayerCanvasScript : MonoBehaviour
             //Canvas
             m_canvasOptions.SetActive(true);
             b_used = true;
-            m_audioSource.Play();
+            //m_audioSource.Play();
         }
         else //Desactivate UI
         {
