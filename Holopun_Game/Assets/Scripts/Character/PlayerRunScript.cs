@@ -15,7 +15,7 @@ public class PlayerRunScript : MonoBehaviour
     private float f_currentSped;
 
     private float f_currentStamina;
-    private float f_maxStamina;
+    private const float f_maxStamina = 1;
 
     private float f_scaleY;
 
@@ -31,12 +31,15 @@ public class PlayerRunScript : MonoBehaviour
         eventButtonRun.action.performed += RunPlayer;
       
         //Prepare Slider
-        m_runSlider.gameObject.SetActive(false);
         f_currentSped = m_continusMove.moveSpeed;
-        
+
         //Slider
-        m_runSlider.value = f_currentStamina;
-        m_runSlider.maxValue = f_maxStamina;
+        m_runSlider.maxValue = f_maxStamina;        //Set max value slider
+        m_runSlider.value = m_runSlider.maxValue;   //Set value slider
+
+        f_currentStamina = m_runSlider.maxValue;    //Update Stamina start to max level
+
+        m_runSlider.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -49,7 +52,7 @@ public class PlayerRunScript : MonoBehaviour
         //Player Run
         if (b_run == true)
         {
-            f_currentStamina -= 1 * Time.deltaTime;
+            f_currentStamina -= 0.1f * Time.deltaTime;
 
             if (f_currentStamina <= 0)
             {
@@ -61,7 +64,7 @@ public class PlayerRunScript : MonoBehaviour
         {
             if (f_currentStamina < f_maxStamina)
             {
-                f_currentStamina += 1 * Time.deltaTime; //Add Stamina
+                f_currentStamina += 0.2f * Time.deltaTime; //Add Stamina
             }
             else
             {
@@ -80,8 +83,6 @@ public class PlayerRunScript : MonoBehaviour
             m_continusMove.moveSpeed = f_runSpeed;
             b_run = true;
 
-            //Animation
-            m_runSlider.gameObject.SetActive(true);
             //RestartPos
             m_sliderRecTrans.DOScaleY(0, 0f);
 

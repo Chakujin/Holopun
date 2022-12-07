@@ -188,8 +188,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -260,8 +260,8 @@ GameObject:
   - component: {fileID: 656122164}
   - component: {fileID: 2423522707480763063}
   - component: {fileID: 1049312504132608611}
-  - component: {fileID: 1858887479405452110}
   - component: {fileID: 1201066758}
+  - component: {fileID: 1858887479405452110}
   m_Layer: 0
   m_Name: Hakos_Ingame
   m_TagString: Untagged
@@ -338,6 +338,24 @@ MonoBehaviour:
   eventButtonCanvas: {fileID: 3552889706214631285, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_canvasOptions: {fileID: 6730019518231825569}
   m_audioSource: {fileID: 1858887479405452110}
+--- !u!114 &1201066758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3150476341261325759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc9512d7183b23468e70ced08b6238a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventButtonRun: {fileID: 8930361061584298899, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_continusMove: {fileID: 3440441201576459461}
+  m_runSlider: {fileID: 7999160932382718887}
+  m_sliderRecTrans: {fileID: 5765377348172520015}
+  f_runSpeed: 2.5
+  f_currentStamina: 0
 --- !u!82 &1858887479405452110
 AudioSource:
   m_ObjectHideFlags: 0
@@ -434,23 +452,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1201066758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3150476341261325759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcc9512d7183b23468e70ced08b6238a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventButtonRun: {fileID: 8930361061584298899, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_continusMove: {fileID: 3440441201576459461}
-  m_runSlider: {fileID: 7999160932382718887}
-  m_sliderRecTrans: {fileID: 5765377348172520015}
-  f_runSpeed: 2.5
 --- !u!1 &4154263164401262723
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +539,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.516
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -568,18 +569,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4823674798878740035}
-  m_LocalRotation: {x: 0.4130795, y: 0.7887223, z: -0.3946304, w: 0.22704473}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00095}
-  m_LocalScale: {x: 0.025000002, y: 0.02500001, z: 0.02500001}
+  m_LocalRotation: {x: 0.61009276, y: 0.31506246, z: -0.30850342, w: 0.6582918}
+  m_LocalPosition: {x: 0, y: 0, z: -0.001437}
+  m_LocalScale: {x: 0.024999995, y: 0.025000006, z: 0.025}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5765377348172520015}
-  m_Father: {fileID: 6461036608765384698}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 54.104, y: -183.141, z: 53.681}
+  m_Father: {fileID: 3669763371714888940}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 86.058, y: -326.07098, z: -18.43}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.00355, y: 0.00315}
+  m_AnchoredPosition: {x: -0.001858, y: 0.000028}
   m_SizeDelta: {x: 0.2, y: 0.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7788654549700599323
@@ -1011,7 +1012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8110706641160328653, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: m_Name
-      value: Hakos_Ingame
+      value: Hakos_Player
       objectReference: {fileID: 0}
     - target: {fileID: 8918486375157927799, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
       propertyPath: m_RootOrder
@@ -1076,14 +1077,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8918486375157927799, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
   m_PrefabInstance: {fileID: 5469351211973318598}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3669763371714888940 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8721950362900878122, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
+  m_PrefabInstance: {fileID: 5469351211973318598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6426224616542324109 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1353754788313289291, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
-  m_PrefabInstance: {fileID: 5469351211973318598}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6461036608765384698 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1318779961527812156, guid: 16c22f5984593f5468f9de41fc220b3a, type: 3}
   m_PrefabInstance: {fileID: 5469351211973318598}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7507589119246697967 stripped
