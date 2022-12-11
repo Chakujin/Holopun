@@ -56,7 +56,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelData: {fileID: 0}
   s_levelName: {fileID: 2611993222210796765}
-  bgImage: {fileID: 368216410565673099}
+  bgImage: {fileID: 4084189588607537046}
 --- !u!114 &5673580623387615486
 MonoBehaviour:
   m_ObjectHideFlags: 0

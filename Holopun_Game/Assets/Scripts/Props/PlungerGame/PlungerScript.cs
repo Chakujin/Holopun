@@ -88,10 +88,14 @@ public class PlungerScript : MonoBehaviour
         {
             coll.enabled = true;
         }
-        
+
+        //Rigidbody phisycs
+        Rigidbody myRb = GetComponent<Rigidbody>();
+        myRb.isKinematic = false;
+        myRb.useGravity = true;
+
         //Turn off gameobject
         gameObject.SetActive(false);
-
     }
 
     private void DesactiveCollision()
