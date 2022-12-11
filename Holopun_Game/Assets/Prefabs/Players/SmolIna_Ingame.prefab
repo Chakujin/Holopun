@@ -257,22 +257,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8792884816186973914}
     m_Modifications:
-    - target: {fileID: 1574365355507910648, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1574365355507910648, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1574365355507910648, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654621944412250922, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 63
-      objectReference: {fileID: 0}
     - target: {fileID: 1654621944804747931, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
       propertyPath: m_Name
       value: XR Origin_SmolHolo_Ina
@@ -373,22 +357,6 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 1948121954400360176}
-    - target: {fileID: 8558920199590813374, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8558920199590813374, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820444082332774955, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820444082332774955, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8938293076718454667, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
       propertyPath: controller
       value: 

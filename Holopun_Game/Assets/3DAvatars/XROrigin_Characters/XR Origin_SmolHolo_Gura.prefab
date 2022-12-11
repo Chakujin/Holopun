@@ -277,7 +277,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 63
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 5830027499170426646}
   m_CameraFloorOffsetObject: {fileID: 5830027499314025209}
   m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 0.6
+  m_CameraYOffset: 0.4
 --- !u!114 &5830027499170426859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,6 +2588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5830027499170426640}
     m_Modifications:
+    - target: {fileID: 882987752316414542, guid: 61ace3cc5e74a044683acbdde3f7d837, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2277368773957244828, guid: 61ace3cc5e74a044683acbdde3f7d837, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

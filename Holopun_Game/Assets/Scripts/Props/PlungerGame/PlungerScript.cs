@@ -5,6 +5,7 @@ public class PlungerScript : MonoBehaviour
 {
     [SerializeField] Transform m_raycastPosition;
     private GameObject m_mySpawn;
+    private PlungerPool m_myPool;
     
     [Range(0,1),Min(0.1f)]
     [SerializeField] float f_rangeRaycast;
@@ -13,9 +14,12 @@ public class PlungerScript : MonoBehaviour
     [SerializeField] private Collider[] myCollisions;
     [SerializeField] private AudioSource m_audioHit;
 
+    private bool b_lastSpawned = false;
+
     private void Start()
     {
         m_mySpawn = transform.parent.gameObject; //Get parent
+        m_myPool = m_mySpawn.GetComponent<PlungerPool>();
     }
 
     public bool CompareDirection()
@@ -34,12 +38,24 @@ public class PlungerScript : MonoBehaviour
         return false;
     }
 
+    public void OnHoverEnter()
+    {
+        if (gameObject.transform.parent.tag == "PlungerSpawn")
+        {
+            b_lastSpawned = true;
+        }
+    }
+
     //Catching the player who has Hover the plunger
     public void OnGrabPlunger(SelectEnterEventArgs args)
     {
-        Debug.Log("Agarro");
-        //Debug.Log(args.interactorObject.transform.root);
         highscoreEntry = args.interactorObject.transform.root.GetComponent<HighscoreEntry>();
+
+        if(b_lastSpawned == true)
+        {
+            b_lastSpawned = false;
+            m_myPool.RequestPlunger();
+        }
 
         transform.parent = null; //Unparent from the pool objects 
 
@@ -51,7 +67,7 @@ public class PlungerScript : MonoBehaviour
 
     public void OnHoverExit()
     {
-        Debug.Log("Suelto");
+        //Debug.Log("Suelto");
         foreach (Collider coll in myCollisions)
         {
             coll.enabled = true;

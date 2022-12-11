@@ -1867,7 +1867,7 @@ GameObject:
   - component: {fileID: 7672194825962702177}
   - component: {fileID: 1210371767078909629}
   - component: {fileID: 2989472488184272329}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: calliMESH
   m_TagString: Untagged
   m_Icon: {fileID: 0}

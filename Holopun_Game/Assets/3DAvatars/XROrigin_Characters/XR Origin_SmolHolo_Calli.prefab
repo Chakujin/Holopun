@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 6912626465461036353}
   m_CameraFloorOffsetObject: {fileID: 6912626465336203438}
   m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 0.6
+  m_CameraYOffset: 0.4
 --- !u!114 &6912626465461036476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2290,7 +2290,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 63
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

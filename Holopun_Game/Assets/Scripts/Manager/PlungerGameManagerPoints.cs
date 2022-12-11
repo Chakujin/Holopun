@@ -10,7 +10,7 @@ public class PlungerGameManagerPoints : MonoBehaviour
     [SerializeField] private List<Transform> highscoreEntryTransformList = new List<Transform>();
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         FindPlayers();
     }

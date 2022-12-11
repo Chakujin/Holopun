@@ -232,10 +232,6 @@ PrefabInstance:
       propertyPath: rightHand.vrTarget
       value: 
       objectReference: {fileID: 4443003883025983259}
-    - target: {fileID: 8525078044487493115, guid: 480a94ebca65c634c99b5815df1dc1da, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 480a94ebca65c634c99b5815df1dc1da, type: 3}
 --- !u!114 &1217233846097462746 stripped
@@ -283,6 +279,14 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 3919320946260963799, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919320946260963799, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4326323668106040837, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
       propertyPath: controller
       value: 
@@ -303,6 +307,18 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 1217233846097462746}
+    - target: {fileID: 6159263763655321745, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159263763655321745, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159263763655321745, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444739514542016594, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
       propertyPath: controller
       value: 
@@ -363,10 +379,6 @@ PrefabInstance:
       propertyPath: m_AttachTransform
       value: 
       objectReference: {fileID: 3771527754108387685}
-    - target: {fileID: 6912626466104667376, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 63
-      objectReference: {fileID: 0}
     - target: {fileID: 8889114941897866237, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
       propertyPath: controller
       value: 
