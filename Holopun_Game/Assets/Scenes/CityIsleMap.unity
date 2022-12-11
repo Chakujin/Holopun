@@ -833,7 +833,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1714
+  m_Name: pb_Mesh-12408
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1149,7 +1149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3825968024774478446, guid: 288f7187ebf3c5b4499ef13cbad52d08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3825968024774478446, guid: 288f7187ebf3c5b4499ef13cbad52d08, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7935,6 +7935,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1908544767423757485, guid: fdf41e4215723e8448a3e0283d667c5b, type: 3}
+      propertyPath: playerSpawn
+      value: 
+      objectReference: {fileID: 8917487193294473032, guid: 3c11916ddb361984791b6fc0109c3e64, type: 3}
     - target: {fileID: 5469885667192651775, guid: fdf41e4215723e8448a3e0283d667c5b, type: 3}
       propertyPath: m_Name
       value: SelectedPlayerManager
@@ -11932,7 +11936,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-162678
+  m_Name: pb_Mesh42744
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

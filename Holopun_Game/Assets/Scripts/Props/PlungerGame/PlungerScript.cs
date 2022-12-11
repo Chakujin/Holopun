@@ -30,10 +30,10 @@ public class PlungerScript : MonoBehaviour
         {
             if (hit.collider.tag == "Mesh")
             {
+                DesactiveCollision();
                 return true;
             }
-            Debug.Log(hit.transform.gameObject);
-            Debug.DrawRay(m_raycastPosition.position, m_raycastPosition.forward, Color.green);
+            //Debug.DrawRay(m_raycastPosition.position, m_raycastPosition.forward, Color.green);
         }
         return false;
     }
@@ -92,6 +92,14 @@ public class PlungerScript : MonoBehaviour
         //Turn off gameobject
         gameObject.SetActive(false);
 
+    }
+
+    private void DesactiveCollision()
+    {
+        foreach(Collider col in myCollisions)
+        {
+            col.enabled = false;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

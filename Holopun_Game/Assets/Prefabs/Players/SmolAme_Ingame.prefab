@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin_SmolHolo_Ame
       objectReference: {fileID: 0}
+    - target: {fileID: 1654621944804747932, guid: 22b08d51f3e5cac43a517354fa9f06e3, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1654621944804747933, guid: 22b08d51f3e5cac43a517354fa9f06e3, type: 3}
       propertyPath: m_RootOrder
       value: 1

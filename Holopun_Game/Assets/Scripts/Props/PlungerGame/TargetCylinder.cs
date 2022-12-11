@@ -75,7 +75,10 @@ public class TargetCylinder : MonoBehaviour
         m_renderer.material.color = color;
 
         //Quit plunger
-        myPlunger.GetComponent<PlungerScript>().ReturnSpawn();
+        if (myPlunger != null)
+        {
+            myPlunger.GetComponent<PlungerScript>().ReturnSpawn();
+        }
 
         //On collider trigger
         m_collider.enabled = true;

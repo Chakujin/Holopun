@@ -331,6 +331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin_SmolHolo_Calli
       objectReference: {fileID: 0}
+    - target: {fileID: 6912626465461036358, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6912626465461036359, guid: b17392bd144c61d4aa8a6b7edf2ab96a, type: 3}
       propertyPath: m_RootOrder
       value: 1
