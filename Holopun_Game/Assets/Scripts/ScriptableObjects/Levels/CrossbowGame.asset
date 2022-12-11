@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Crossbow Game
   sceneLoad: 2
-  bgImage: {fileID: 0}
+  bgImage: {fileID: 21300000, guid: 99dee3554bf9c254a9e30ec5f83ab48c, type: 3}
   characters:
   - {fileID: 11400000, guid: 053267db52ecd9b47bd67f5993d2e29f, type: 2}
   - {fileID: 11400000, guid: 5203448d484636e4692625c625a88c1d, type: 2}
