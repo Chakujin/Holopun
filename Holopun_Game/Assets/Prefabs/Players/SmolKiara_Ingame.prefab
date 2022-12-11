@@ -394,6 +394,10 @@ PrefabInstance:
       propertyPath: rightHand.vrTarget
       value: 
       objectReference: {fileID: 4443003883025983259}
+    - target: {fileID: 9065192282659815798, guid: a65394a504cfb9440ae37fd4cdcaec11, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a65394a504cfb9440ae37fd4cdcaec11, type: 3}
 --- !u!114 &679932176459678610 stripped

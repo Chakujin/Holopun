@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 1508072402523769143, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3199991471806916285, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
       propertyPath: controller
       value: 
@@ -303,6 +307,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4741589885062130347}
+    - target: {fileID: 5830027499008616103, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 63
+      objectReference: {fileID: 0}
     - target: {fileID: 5830027499170426640, guid: 79c4fe6127a65fa42be7b756e7695b77, type: 3}
       propertyPath: m_RootOrder
       value: 1

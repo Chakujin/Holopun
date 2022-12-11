@@ -332,6 +332,10 @@ PrefabInstance:
       propertyPath: m_AttachTransform
       value: 
       objectReference: {fileID: 5943575168497210360}
+    - target: {fileID: 1654621944412250922, guid: 22b08d51f3e5cac43a517354fa9f06e3, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 63
+      objectReference: {fileID: 0}
     - target: {fileID: 1654621944804747931, guid: 22b08d51f3e5cac43a517354fa9f06e3, type: 3}
       propertyPath: m_Name
       value: XR Origin_SmolHolo_Ame

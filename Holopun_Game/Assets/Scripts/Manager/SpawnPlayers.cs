@@ -13,7 +13,8 @@ public class SpawnPlayers : MonoBehaviour
 
     private void InstantiatePlayer()
     {
-        Instantiate(m_selectedPlayer.playerSpawn, transform);
+        GameObject player = Instantiate(m_selectedPlayer.playerSpawn, transform);
+        player.transform.parent = null;
     }
 
     [SerializeField]private Color color = Color.blue;

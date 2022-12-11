@@ -269,6 +269,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1654621944412250922, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 63
+      objectReference: {fileID: 0}
     - target: {fileID: 1654621944804747931, guid: 397efa0ed9bfcfc4fa062c3e48234c2b, type: 3}
       propertyPath: m_Name
       value: XR Origin_SmolHolo_Ina

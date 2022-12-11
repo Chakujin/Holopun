@@ -13,7 +13,12 @@ public class CharacterDisplay : MonoBehaviour
     
     [SerializeField]private int i_currentSelected;
     private GameObject currentPlayer;
-    [SerializeField] private SelectedPlayerManager m_selectedmanager;
+    private SelectedPlayerManager m_selectedmanager;
+
+    private void Start()
+    {
+        m_selectedmanager = GameObject.FindGameObjectWithTag("SelectedPlayer").GetComponent<SelectedPlayerManager>();
+    }
 
     public void PassDatas(CharacterData[] data)
     {

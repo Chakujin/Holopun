@@ -5,7 +5,7 @@ public class SelectedPlayerManager : MonoBehaviour
 {
     public static SelectedPlayerManager instance;
     private int levelLoad;
-    [HideInInspector] public GameObject playerSpawn;
+    [HideInInspector]public GameObject playerSpawn;
 
     void Awake()
     {
