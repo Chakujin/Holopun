@@ -1218,6 +1218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1908544767423757485, guid: fdf41e4215723e8448a3e0283d667c5b, type: 3}
+      propertyPath: playerSpawn
+      value: 
+      objectReference: {fileID: 3150476341261325759, guid: 31e67b9500aeb024a9429ba201149795, type: 3}
     - target: {fileID: 5469885667192651775, guid: fdf41e4215723e8448a3e0283d667c5b, type: 3}
       propertyPath: m_Name
       value: SelectedPlayerManager
@@ -11254,11 +11258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3825968024774478446, guid: 288f7187ebf3c5b4499ef13cbad52d08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.322
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3825968024774478446, guid: 288f7187ebf3c5b4499ef13cbad52d08, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.197
+      value: -0.938
       objectReference: {fileID: 0}
     - target: {fileID: 3825968024774478446, guid: 288f7187ebf3c5b4499ef13cbad52d08, type: 3}
       propertyPath: m_LocalRotation.w

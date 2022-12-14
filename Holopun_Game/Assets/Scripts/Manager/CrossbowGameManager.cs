@@ -82,7 +82,7 @@ public class CrossbowGameManager : MonoBehaviour
         //Reset points
         foreach (GameObject player in playersList)
         {
-            player.GetComponent<HighscoreEntry>().score = 0;
+            player.GetComponentInParent<HighscoreEntry>().score = 0;
         }
     }
 }

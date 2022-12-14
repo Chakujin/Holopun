@@ -17,6 +17,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
     [SerializeField]private int i_dmg;
     private bool b_findPlayer = false;
+    private bool b_finishGame = false;
 
     [SerializeField] private VisualEffect m_explosionVFX;
     [SerializeField] private AudioSource m_audioSource;
@@ -38,12 +39,17 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     {
         if (collision.gameObject.tag == "Player") //Attack player
         {
-            gameObject.GetComponent<PlayerCorsbowGame>().TakeDamage(i_dmg); //Collision with the player
-            StartCoroutine(Die());
+            collision.gameObject.GetComponentInParent<PlayerCorsbowGame>().TakeDamage(i_dmg); //Collision with the player
+            
+            if(b_finishGame == false)
+            {
+                Debug.Log("Se temrino");
+                StartCoroutine(Die());
+            }
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         FindPlayer();
     }
@@ -51,24 +57,32 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     //FindPlayer
     private void FindPlayer()
     {
-        if (b_findPlayer == false)
+        if (b_findPlayer == false) //Enemy dont find player and start try find
         {
-            int i = Random.Range(0, m_playersList.Count);//Take random num
-            if (m_playersList[i].GetComponentInParent<PlayerCorsbowGame>().Alive == true) //Inparent get script
+            int i = Random.Range(0, m_playersList.Count);//Take random num players
+            
+            if (m_playersList[i].GetComponentInParent<PlayerCorsbowGame>().Alive == true) //If random player taked is alive
             {
-                m_selectedPlayer = m_playersList[i];
+                m_selectedPlayer = m_playersList[i]; //Add alive player
 
                 m_selectedPlayer.GetComponentInParent<PlayerCorsbowGame>().PlayerDieCallback += PlayerFindedDie; // Subscribe to the event current player
 
-                b_findPlayer = true;
+                b_findPlayer = true; //Finded Player
             }
         }
-        m_agent.destination = m_selectedPlayer.transform.position; //Find Player
+        if (m_agent != null)
+        {
+            m_agent.destination = m_selectedPlayer.transform.position; //Find Player
+        }
+        else
+        {
+            Debug.Log("Player Borrado player");
+        }
     }
 
     private void PlayerFindedDie()
     {
-        m_selectedPlayer.GetComponent<PlayerCorsbowGame>().PlayerDieCallback -= PlayerFindedDie; //Unsubscrube the event 
+        m_selectedPlayer.GetComponentInParent<PlayerCorsbowGame>().PlayerDieCallback -= PlayerFindedDie; //Unsubscrube the event 
         
         b_findPlayer = false;
         FindPlayer(); //Find new player
@@ -77,7 +91,6 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     //Hits
     public void Hited(GameObject playerHitMe)//IHiteable Interface
     {
-        Debug.Log("Enemy Hited");
         playerHitMe.GetComponent<HighscoreEntry>().score++; // Get highscore player and update
 
         m_enemiesSpawnManager.UpdateEnemiesKilled(); // Update total enemies killed manager
@@ -86,7 +99,9 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
     private void FinishGame()
     {
-        Destroy(this.gameObject);
+        b_finishGame = true;
+        m_selectedPlayer.GetComponentInParent<PlayerCorsbowGame>().PlayerDieCallback -= PlayerFindedDie;
+        Destroy(gameObject);
     }
 
     private IEnumerator Die()
@@ -102,6 +117,6 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         m_audioSource.Play();
         //Audio
         yield return new WaitForSeconds(1f);
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }
