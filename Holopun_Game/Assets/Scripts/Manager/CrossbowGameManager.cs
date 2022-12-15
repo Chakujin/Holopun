@@ -79,6 +79,8 @@ public class CrossbowGameManager : MonoBehaviour
         i_CurrentRound = 0;
         i_playersTotal = playersList.Count;
 
+        m_ObjectStartRounds.SetActive(true);
+
         //Reset points
         foreach (GameObject player in playersList)
         {

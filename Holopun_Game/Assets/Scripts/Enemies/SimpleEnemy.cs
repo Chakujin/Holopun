@@ -8,7 +8,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 {
     [SerializeField] private NavMeshAgent m_agent;
     [SerializeField] private List<GameObject> m_playersList; //If dont serializable null ref error
-    private GameObject m_selectedPlayer;
+    [SerializeField] private GameObject m_selectedPlayer;
 
     private EnemiesSpawnedManager m_enemiesSpawnManager;
     [SerializeField] private GameObject m_mesh;
@@ -16,8 +16,10 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     [SerializeField] private BoxCollider m_collider;
 
     [SerializeField]private int i_dmg;
-    private bool b_findPlayer = false;
-    private bool b_finishGame = false;
+    private bool b_findPlayer = false; // Used for make loop if dont find player
+    [SerializeField] private bool b_imDied = false;
+    
+    private bool b_killedPlayer = false;
 
     [SerializeField] private VisualEffect m_explosionVFX;
     [SerializeField] private AudioSource m_audioSource;
@@ -39,18 +41,16 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     {
         if (collision.gameObject.tag == "Player") //Attack player
         {
+            b_killedPlayer = true;
+
             collision.gameObject.GetComponentInParent<PlayerCorsbowGame>().TakeDamage(i_dmg); //Collision with the player
-            
-            if(b_finishGame == false)
-            {
-                Debug.Log("Se temrino");
-                StartCoroutine(Die());
-            }
+            StartCoroutine(Die());
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
+        if (b_findPlayer == false)
         FindPlayer();
     }
 
@@ -70,13 +70,10 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
                 b_findPlayer = true; //Finded Player
             }
         }
-        if (m_agent != null)
+        
+        if(b_imDied == false)
         {
             m_agent.destination = m_selectedPlayer.transform.position; //Find Player
-        }
-        else
-        {
-            Debug.Log("Player Borrado player");
         }
     }
 
@@ -99,24 +96,30 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
     private void FinishGame()
     {
-        b_finishGame = true;
         m_selectedPlayer.GetComponentInParent<PlayerCorsbowGame>().PlayerDieCallback -= PlayerFindedDie;
-        Destroy(gameObject);
+
+        if(b_killedPlayer == false)
+        StartCoroutine(Die());
     }
 
     private IEnumerator Die()
     {
-        //Make Static mesh
-        m_collider.enabled = false;
-        m_agent.velocity = Vector3.zero;
+        if(b_imDied == false) //Used to dont destoy twice times if kill player
+        {
+            b_imDied = true;
 
-        m_mesh.SetActive(false);
+            //Make Static mesh
+            m_collider.enabled = false;
+            m_agent.velocity = Vector3.zero;
 
-        //FX
-        m_explosionVFX.Play();
-        m_audioSource.Play();
-        //Audio
-        yield return new WaitForSeconds(1f);
-        Destroy(gameObject);
+            m_mesh.SetActive(false);
+
+            //FX
+            m_explosionVFX.Play();
+            m_audioSource.Play();
+            //Audio
+            yield return new WaitForSeconds(1f);
+            Destroy(gameObject);
+        }
     }
 }
