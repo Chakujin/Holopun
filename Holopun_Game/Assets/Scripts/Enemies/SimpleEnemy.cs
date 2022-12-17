@@ -50,7 +50,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
     private void Update()
     {
-        if (b_findPlayer == false)
+       // if (b_findPlayer == false)
         FindPlayer();
     }
 

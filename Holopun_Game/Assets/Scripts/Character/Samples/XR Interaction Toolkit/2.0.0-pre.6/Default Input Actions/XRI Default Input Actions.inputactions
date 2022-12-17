@@ -1116,7 +1116,7 @@
                 {
                     "name": "",
                     "id": "df045402-f383-434d-826b-6e7553646162",
-                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "path": "<XRController>{RightHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",

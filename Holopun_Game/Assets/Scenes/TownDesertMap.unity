@@ -269,8 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6b7dc7e6d974a43971a323e33403c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalEnemiesSpawned: 0
-  totalEnemiesKilled: 0
   crossbowGameManager: {fileID: 8567606155814578105}
 --- !u!1001 &92765975
 PrefabInstance:

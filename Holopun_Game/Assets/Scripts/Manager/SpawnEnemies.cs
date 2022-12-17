@@ -11,10 +11,19 @@ public class SpawnEnemies : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CrossbowGameManager.StartGameCallback += StartSpawnEnemies;
         m_enemiesSpawnManager = GameObject.FindGameObjectWithTag("EnemiesManager").GetComponent<EnemiesSpawnedManager>();
     }
 
+
+    private void OnEnable()
+    {
+        CrossbowGameManager.StartGameCallback += StartSpawnEnemies;
+    }
+
+    private void OnDisable()
+    {
+        CrossbowGameManager.StartGameCallback -= StartSpawnEnemies;
+    }
 
     private void StartSpawnEnemies()
     {
