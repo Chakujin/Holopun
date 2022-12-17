@@ -205,15 +205,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Run",
-                    "type": "Button",
-                    "id": "93a398b5-126d-44fe-bd21-a84a6037a25a",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -579,17 +570,6 @@
                     "action": "UI Press Value",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "231d1dcc-e41b-486e-b6f7-4b92334fc19d",
-                    "path": "<XRController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Run",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -754,6 +734,15 @@
                     "name": "Activate/Desactivate UI",
                     "type": "Button",
                     "id": "e09204b2-8550-4a27-986c-90dd67a07605",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "ded312c0-95d6-4618-8570-b5b88541e359",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -1121,6 +1110,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Activate/Desactivate UI",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df045402-f383-434d-826b-6e7553646162",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

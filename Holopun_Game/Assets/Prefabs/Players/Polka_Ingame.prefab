@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc9512d7183b23468e70ced08b6238a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventButtonRun: {fileID: 8930361061584298899, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  eventButtonRun: {fileID: 5770384761007928537, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_continusMove: {fileID: 5041254137003712068}
   m_runSlider: {fileID: 7688703801953895805}
   m_sliderRecTrans: {fileID: 6175496140941354133}

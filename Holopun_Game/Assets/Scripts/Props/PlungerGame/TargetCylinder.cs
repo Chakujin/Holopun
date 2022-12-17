@@ -52,10 +52,8 @@ public class TargetCylinder : MonoBehaviour
         Rigidbody rb = myPlunger.GetComponent<Rigidbody>();
         rb.isKinematic = true;
 
-        //Change Alpha color to 100% alpha
-        Color color = m_renderer.material.color;
-        color.a = 0;
-        m_renderer.material.color = color;
+        //Turn off renderer
+        m_renderer.enabled = false;
 
         m_myManagerPoints.UpdateScoreborad(); //Updatea el scoreboard (Alomejor solo haverlo al final del juego)
         
@@ -69,10 +67,8 @@ public class TargetCylinder : MonoBehaviour
 
     private void RestartGame()
     {
-        //Change Alpha color to 0% alpha
-        Color color = m_renderer.material.color;
-        color.a = 255;
-        m_renderer.material.color = color;
+        //Turn On renderer
+        m_renderer.enabled = true;
 
         //Quit plunger
         if (myPlunger != null)

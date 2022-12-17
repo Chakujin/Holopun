@@ -10,7 +10,7 @@ public class PlungerReturn : MonoBehaviour
         {
             ReturnPlunger(other.gameObject);
         }
-        if (other.gameObject.transform.parent.tag == "Player")
+        if (other.gameObject.GetComponentInParent<Transform>().parent.tag == "Player")
         {
             ReturnPlayer(other.gameObject);
         }

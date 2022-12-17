@@ -20,7 +20,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &492159296001906126
 Transform:
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 0
+  m_VersionIndex: 45
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1137,6 +1137,7 @@ MonoBehaviour:
   m_particleSystem: {fileID: 7467841797814876381}
   i_points: 100
   m_renderer: {fileID: 492159296001906124}
+  m_material: {fileID: 2100000, guid: bd97bb492f1f91f4e9e3b2f9c43c8261, type: 2}
   m_collider: {fileID: 492159296001906121}
 --- !u!136 &492159296001906121
 CapsuleCollider:
@@ -1165,7 +1166,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 111111921ee31b14ba023f4ec0f5ec2d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0
