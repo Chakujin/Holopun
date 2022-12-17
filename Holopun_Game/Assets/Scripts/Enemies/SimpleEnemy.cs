@@ -32,9 +32,19 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
 
         m_agent.speed = CrossbowGameManager.enemySpeed;
 
-        CrossbowGameManager.FinishGameCallback += FinishGame;
-
         FindPlayer();
+    }
+
+    private void OnEnable()
+    {
+
+        CrossbowGameManager.FinishGameCallback += FinishGame;
+    }
+
+    private void OnDisable()
+    {
+
+        CrossbowGameManager.FinishGameCallback -= FinishGame;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -61,7 +71,7 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
         {
             int i = Random.Range(0, m_playersList.Count);//Take random num players
             
-            if (m_playersList[i].GetComponentInParent<PlayerCorsbowGame>().Alive == true) //If random player taked is alive
+            if (m_playersList[i].GetComponentInParent<PlayerCorsbowGame>().alive == true) //If random player taked is alive
             {
                 m_selectedPlayer = m_playersList[i]; //Add alive player
 
@@ -97,6 +107,8 @@ public class SimpleEnemy : MonoBehaviour,IHiteable
     private void FinishGame()
     {
         m_selectedPlayer.GetComponentInParent<PlayerCorsbowGame>().PlayerDieCallback -= PlayerFindedDie;
+
+        Debug.Log("Enemy recibe game finish");
 
         if(b_killedPlayer == false)
         StartCoroutine(Die());

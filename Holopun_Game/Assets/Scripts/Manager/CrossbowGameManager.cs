@@ -13,7 +13,6 @@ public class CrossbowGameManager : MonoBehaviour
 
     //Players
     private List<GameObject> playersList = new List<GameObject>();
-    private int i_playersTotal;
     [HideInInspector] public int totalPlayersDied = 0;
 
     //Rounds
@@ -29,7 +28,6 @@ public class CrossbowGameManager : MonoBehaviour
     void Start()
     {
         playersList.AddRange(GameObject.FindGameObjectsWithTag("Player"));
-        i_playersTotal = playersList.Count;
     }
 
     public void StartRoundCrossbowGame()
@@ -37,6 +35,8 @@ public class CrossbowGameManager : MonoBehaviour
         if (StartGameCallback != null)
         {
             i_CurrentRound++; //Update current round
+            totalPlayersDied = 0;
+
             if (i_CurrentRound < i_MaxRounds)//If is not the last start round
             {
                 enemySpeed = enemySpeed + (0.25f * i_CurrentRound);
@@ -54,16 +54,7 @@ public class CrossbowGameManager : MonoBehaviour
     public void UpdatePlayersDied()
     {
         totalPlayersDied++;
-        if(totalPlayersDied == i_playersTotal)
-        {
-            GameFinish();
-        }
-    }
-
-    public void UpdatePlayersAlive()
-    {
-        i_playersTotal--;
-        if (i_playersTotal == 0)
+        if(totalPlayersDied == playersList.Count)
         {
             GameFinish();
         }
@@ -77,7 +68,6 @@ public class CrossbowGameManager : MonoBehaviour
         }
         //Reset rounds
         i_CurrentRound = 0;
-        i_playersTotal = playersList.Count;
 
         m_ObjectStartRounds.SetActive(true);
 

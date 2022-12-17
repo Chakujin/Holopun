@@ -1124,9 +1124,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_agent: {fileID: 1735170665057949405}
   m_playersList: []
+  m_selectedPlayer: {fileID: 0}
   m_mesh: {fileID: 4132786282353224570}
   m_collider: {fileID: 1005165701277609792}
   i_dmg: 1
+  b_imDied: 0
   m_explosionVFX: {fileID: 4720994407062998736}
   m_audioSource: {fileID: 3701917396588397842}
 --- !u!195 &1735170665057949405
@@ -1200,7 +1202,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.1
+  MinDistance: 1
   MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0

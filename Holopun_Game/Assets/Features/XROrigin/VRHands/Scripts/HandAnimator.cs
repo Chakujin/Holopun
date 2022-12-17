@@ -185,7 +185,7 @@ public class HandAnimator : MonoBehaviour
     }
     private void AnimateFinger(string fingerName, float animationBlendValue)
     {
-        handAnimator.SetFloat(fingerName, animationBlendValue);
+        //handAnimator.SetFloat(fingerName, animationBlendValue);
     }
 
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerCorsbowGame : MonoBehaviour
 {
-    public bool Alive = true; // Used by enemy for track  the player
+    public bool alive = true; // Used by enemy for track  the player
     public int totalKilled; //Used by countPoints manager
 
     [SerializeField] private int i_hp;
@@ -43,20 +43,23 @@ public class PlayerCorsbowGame : MonoBehaviour
             PlayerDieCallback.Invoke(); //Send call to enemyes for change the target follows
         }
 
-        Alive = false; //Used by enemy to find players alive
+        alive = false; //Used by enemy to find players alive
 
-        m_crossbowGameManager.UpdatePlayersAlive(); //Send manager rest one player
         m_playerMesh.SetActive(false); //Desactive mesh player
         
         foreach (Collider col in controllersCol) // Enable false grab colliders
         {
             col.enabled = false;
         }
+
+        m_crossbowGameManager.UpdatePlayersDied(); //Send manager rest one player
     }
 
     private void RevivePlayer()//Event Delegate
     {
+        Debug.Log("Revive Player");
         i_hp = i_maxHp;
+        alive = true; //Used by enemy to find players alive
         m_playerMesh.SetActive(true);
         foreach (Collider col in controllersCol) // Enable true grab colliders
         {
